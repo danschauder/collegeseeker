@@ -1,0 +1,8234 @@
+[
+  {
+    "id": "436818",
+    "label": "University of Connecticut-Waterbury Campus"
+  },
+  {
+    "id": "436827",
+    "label": "University of Connecticut-Avery Point"
+  },
+  {
+    "id": "436836",
+    "label": "University of Connecticut-Stamford"
+  },
+  {
+    "id": "440828",
+    "label": "Oregon State University-Cascades Campus"
+  },
+  {
+    "id": "463056",
+    "label": "University of Connecticut-Hartford Campus"
+  },
+  {
+    "id": "464226",
+    "label": "Ottawa University-Surprise"
+  },
+  {
+    "id": "486956",
+    "label": "Chamberlain University-New Jersey"
+  },
+  {
+    "id": "486965",
+    "label": "Hussian College-Los Angeles"
+  },
+  {
+    "id": "487375",
+    "label": "Arizona College-Las Vegas"
+  },
+  {
+    "id": "489344",
+    "label": "Chamberlain University-North Carolina"
+  },
+  {
+    "id": "489353",
+    "label": "Chamberlain University-California"
+  },
+  {
+    "id": "492759",
+    "label": "Chamberlain University-Louisiana"
+  },
+  {
+    "id": "492801",
+    "label": "Drury University-College of Continuing Professional Studies"
+  },
+  {
+    "id": "492962",
+    "label": "Indiana Institute of Technology-College of Professional Studies"
+  },
+  {
+    "id": "101116",
+    "label": "South University-Montgomery"
+  },
+  {
+    "id": "105367",
+    "label": "Ottawa University-Phoenix"
+  },
+  {
+    "id": "112570",
+    "label": "Columbia College Hollywood"
+  },
+  {
+    "id": "115773",
+    "label": "Humphreys University-Stockton and Modesto Campuses"
+  },
+  {
+    "id": "117168",
+    "label": "Laguna College of Art and Design"
+  },
+  {
+    "id": "127945",
+    "label": "Rocky Mountain College of Art and Design"
+  },
+  {
+    "id": "133465",
+    "label": "South University-West Palm Beach"
+  },
+  {
+    "id": "135610",
+    "label": "Trinity International University-Florida"
+  },
+  {
+    "id": "140340",
+    "label": "Herzing University-Atlanta"
+  },
+  {
+    "id": "142887",
+    "label": "American Academy of Art"
+  },
+  {
+    "id": "150172",
+    "label": "Calumet College of Saint Joseph"
+  },
+  {
+    "id": "153409",
+    "label": "Purdue University Global-Mason City"
+  },
+  {
+    "id": "153418",
+    "label": "Purdue University Global-Cedar Rapids"
+  },
+  {
+    "id": "153977",
+    "label": "Mercy College of Health Sciences"
+  },
+  {
+    "id": "155636",
+    "label": "Ottawa University-Kansas City"
+  },
+  {
+    "id": "160074",
+    "label": "Franciscan Missionaries of Our Lady University"
+  },
+  {
+    "id": "160940",
+    "label": "Purdue University Global-Lewiston"
+  },
+  {
+    "id": "162681",
+    "label": "Purdue University Global-Hagerstown"
+  },
+  {
+    "id": "164641",
+    "label": "Bay State College"
+  },
+  {
+    "id": "164872",
+    "label": "Boston Architectural College"
+  },
+  {
+    "id": "170000",
+    "label": "Grace Christian University"
+  },
+  {
+    "id": "174154",
+    "label": "Herzing University-Minneapolis"
+  },
+  {
+    "id": "181242",
+    "label": "Purdue University Global-Lincoln"
+  },
+  {
+    "id": "181297",
+    "label": "Nebraska Methodist College of Nursing & Allied Health"
+  },
+  {
+    "id": "181400",
+    "label": "Purdue University Global-Omaha"
+  },
+  {
+    "id": "182111",
+    "label": "The Art Institute of Las Vegas"
+  },
+  {
+    "id": "183071",
+    "label": "University of New Hampshire at Manchester"
+  },
+  {
+    "id": "195544",
+    "label": "St. Joseph's College-New York"
+  },
+  {
+    "id": "201061",
+    "label": "Art Academy of Cincinnati"
+  },
+  {
+    "id": "201821",
+    "label": "The Christ College of Nursing and Health Sciences"
+  },
+  {
+    "id": "203544",
+    "label": "Kettering College"
+  },
+  {
+    "id": "204176",
+    "label": "Mount Carmel College of Nursing"
+  },
+  {
+    "id": "204671",
+    "label": "Ohio State University-Lima Campus"
+  },
+  {
+    "id": "206613",
+    "label": "Wright State University-Lake Campus"
+  },
+  {
+    "id": "211477",
+    "label": "Central Penn College"
+  },
+  {
+    "id": "212993",
+    "label": "Hussian College-Philadelphia"
+  },
+  {
+    "id": "214625",
+    "label": "Pennsylvania State University-Penn State New Kensington"
+  },
+  {
+    "id": "214634",
+    "label": "Pennsylvania State University-Penn State Shenango"
+  },
+  {
+    "id": "214643",
+    "label": "Pennsylvania State University-Penn State Wilkes-Barre"
+  },
+  {
+    "id": "214652",
+    "label": "Pennsylvania State University-Penn State Scranton"
+  },
+  {
+    "id": "214670",
+    "label": "Pennsylvania State University-Penn State Lehigh Valley"
+  },
+  {
+    "id": "214759",
+    "label": "Pennsylvania State University-Penn State Fayette- Eberly"
+  },
+  {
+    "id": "214829",
+    "label": "Pennsylvania State University-Penn State York"
+  },
+  {
+    "id": "214883",
+    "label": "Peirce College"
+  },
+  {
+    "id": "219639",
+    "label": "Baptist Memorial College of Health Sciences"
+  },
+  {
+    "id": "222938",
+    "label": "The Art Institute of Houston"
+  },
+  {
+    "id": "224776",
+    "label": "Miami International University of Art & Design-Art Institute Dallas"
+  },
+  {
+    "id": "230630",
+    "label": "Stevens-Henager College"
+  },
+  {
+    "id": "251312",
+    "label": "South University-Columbia"
+  },
+  {
+    "id": "260910",
+    "label": "Purdue University Global-Cedar Falls"
+  },
+  {
+    "id": "368452",
+    "label": "Nossi College of Art"
+  },
+  {
+    "id": "380465",
+    "label": "University of Phoenix-Utah"
+  },
+  {
+    "id": "405997",
+    "label": "University of Phoenix-New Mexico"
+  },
+  {
+    "id": "414878",
+    "label": "Trine University-Regional/Non-Traditional Campuses"
+  },
+  {
+    "id": "420042",
+    "label": "University of Phoenix-Hawaii"
+  },
+  {
+    "id": "428259",
+    "label": "Ottawa University-Milwaukee"
+  },
+  {
+    "id": "432223",
+    "label": "University of Phoenix-Washington"
+  },
+  {
+    "id": "437316",
+    "label": "Linfield College-School of Nursing"
+  },
+  {
+    "id": "437325",
+    "label": "Linfield College-Online and Continuing Education"
+  },
+  {
+    "id": "438151",
+    "label": "Stevens-Henager College"
+  },
+  {
+    "id": "442161",
+    "label": "University of Phoenix-Illinois"
+  },
+  {
+    "id": "444990",
+    "label": "Flagler College-Tallahassee"
+  },
+  {
+    "id": "445133",
+    "label": "American InterContinental University-Houston"
+  },
+  {
+    "id": "445300",
+    "label": "University of Phoenix-New Jersey"
+  },
+  {
+    "id": "446677",
+    "label": "Stevens-Henager College"
+  },
+  {
+    "id": "447458",
+    "label": "SAE Expression College"
+  },
+  {
+    "id": "449898",
+    "label": "South University-Tampa"
+  },
+  {
+    "id": "449931",
+    "label": "Averett University-Non-Traditional Programs"
+  },
+  {
+    "id": "451820",
+    "label": "The Art Institute of Austin"
+  },
+  {
+    "id": "454236",
+    "label": "Chamberlain University-Ohio"
+  },
+  {
+    "id": "454245",
+    "label": "Chamberlain University-Arizona"
+  },
+  {
+    "id": "454582",
+    "label": "Ottawa University-Online"
+  },
+  {
+    "id": "457129",
+    "label": "Chamberlain University-Florida"
+  },
+  {
+    "id": "458496",
+    "label": "The Art Institute of Virginia Beach"
+  },
+  {
+    "id": "458982",
+    "label": "The Art Institute of San Antonio"
+  },
+  {
+    "id": "459259",
+    "label": "South University-Richmond"
+  },
+  {
+    "id": "459268",
+    "label": "South University-Virginia Beach"
+  },
+  {
+    "id": "459842",
+    "label": "Herzing University-Kenosha"
+  },
+  {
+    "id": "459851",
+    "label": "Herzing University-Brookfield"
+  },
+  {
+    "id": "460349",
+    "label": "Johnson & Wales University-Online"
+  },
+  {
+    "id": "460871",
+    "label": "Chamberlain University-Virginia"
+  },
+  {
+    "id": "466921",
+    "label": "Chamberlain University-Missouri"
+  },
+  {
+    "id": "466930",
+    "label": "Chamberlain University-Texas"
+  },
+  {
+    "id": "468024",
+    "label": "South University-Novi"
+  },
+  {
+    "id": "475200",
+    "label": "Whitworth University-Adult Degree Programs"
+  },
+  {
+    "id": "475273",
+    "label": "Springfield College-Regional Online and Continuing Education"
+  },
+  {
+    "id": "475732",
+    "label": "Chamberlain University-Georgia"
+  },
+  {
+    "id": "475741",
+    "label": "Chamberlain University-Indiana"
+  },
+  {
+    "id": "477039",
+    "label": "West Coast University-Dallas"
+  },
+  {
+    "id": "480064",
+    "label": "Purdue University Global-Augusta"
+  },
+  {
+    "id": "480073",
+    "label": "South University-Austin"
+  },
+  {
+    "id": "480082",
+    "label": "South University-Cleveland"
+  },
+  {
+    "id": "480134",
+    "label": "Elizabethtown College School of Continuing and Professional Studies"
+  },
+  {
+    "id": "480198",
+    "label": "Warner Pacific University Professional and Graduate Studies"
+  },
+  {
+    "id": "481720",
+    "label": "South University-High Point"
+  },
+  {
+    "id": "482422",
+    "label": "DeVry University-Arizona"
+  },
+  {
+    "id": "482440",
+    "label": "DeVry University-Colorado"
+  },
+  {
+    "id": "482459",
+    "label": "DeVry University-Florida"
+  },
+  {
+    "id": "482468",
+    "label": "DeVry University-Georgia"
+  },
+  {
+    "id": "482486",
+    "label": "DeVry University-Indiana"
+  },
+  {
+    "id": "482538",
+    "label": "DeVry University-Missouri"
+  },
+  {
+    "id": "482547",
+    "label": "DeVry University-Nevada"
+  },
+  {
+    "id": "482556",
+    "label": "DeVry University-New Jersey"
+  },
+  {
+    "id": "482565",
+    "label": "DeVry University-North Carolina"
+  },
+  {
+    "id": "482574",
+    "label": "DeVry University-Ohio"
+  },
+  {
+    "id": "482608",
+    "label": "DeVry University-Pennsylvania"
+  },
+  {
+    "id": "482617",
+    "label": "DeVry University-Tennessee"
+  },
+  {
+    "id": "482635",
+    "label": "DeVry University-Texas"
+  },
+  {
+    "id": "482653",
+    "label": "DeVry University-Virginia"
+  },
+  {
+    "id": "484640",
+    "label": "University of Phoenix-Colorado"
+  },
+  {
+    "id": "484668",
+    "label": "University of Phoenix-Florida"
+  },
+  {
+    "id": "484677",
+    "label": "University of Phoenix-Georgia"
+  },
+  {
+    "id": "484686",
+    "label": "University of Phoenix-Louisiana"
+  },
+  {
+    "id": "484695",
+    "label": "University of Phoenix-Michigan"
+  },
+  {
+    "id": "484710",
+    "label": "University of Phoenix-Nevada"
+  },
+  {
+    "id": "484729",
+    "label": "University of Phoenix-North Carolina"
+  },
+  {
+    "id": "484747",
+    "label": "University of Phoenix-Tennessee"
+  },
+  {
+    "id": "484765",
+    "label": "University of Phoenix-Virginia"
+  },
+  {
+    "id": "484783",
+    "label": "University of Phoenix-Pennsylvania"
+  },
+  {
+    "id": "485272",
+    "label": "West Coast University-Miami"
+  },
+  {
+    "id": "486938",
+    "label": "Chamberlain University-Nevada"
+  },
+  {
+    "id": "486947",
+    "label": "Chamberlain University-Michigan"
+  },
+  {
+    "id": "487296",
+    "label": "University of Arizona-Sierra Vista"
+  },
+  {
+    "id": "487603",
+    "label": "Northwest University-College of Adult and Professional Studies"
+  },
+  {
+    "id": "489779",
+    "label": "Purdue University Global"
+  },
+  {
+    "id": "489788",
+    "label": "Purdue University Global-Milwaukee"
+  },
+  {
+    "id": "490771",
+    "label": "Purdue University Global-St. Louis"
+  },
+  {
+    "id": "491288",
+    "label": "University of Wisconsin-Milwaukee Flex"
+  },
+  {
+    "id": "101435",
+    "label": "Huntingdon College"
+  },
+  {
+    "id": "101541",
+    "label": "Judson College"
+  },
+  {
+    "id": "105899",
+    "label": "Arizona Christian University"
+  },
+  {
+    "id": "106713",
+    "label": "Central Baptist College"
+  },
+  {
+    "id": "112084",
+    "label": "San Diego Christian College"
+  },
+  {
+    "id": "112394",
+    "label": "Cogswell College"
+  },
+  {
+    "id": "122454",
+    "label": "San Francisco Art Institute"
+  },
+  {
+    "id": "127653",
+    "label": "Naropa University"
+  },
+  {
+    "id": "146667",
+    "label": "Lincoln Christian University"
+  },
+  {
+    "id": "146676",
+    "label": "Lincoln College"
+  },
+  {
+    "id": "152381",
+    "label": "Saint Mary-of-the-Woods College"
+  },
+  {
+    "id": "152992",
+    "label": "Briar Cliff University"
+  },
+  {
+    "id": "154855",
+    "label": "Central Christian College of Kansas"
+  },
+  {
+    "id": "155900",
+    "label": "Southwestern College"
+  },
+  {
+    "id": "156356",
+    "label": "Brescia University"
+  },
+  {
+    "id": "162061",
+    "label": "Capitol Technology University"
+  },
+  {
+    "id": "167251",
+    "label": "Newbury College"
+  },
+  {
+    "id": "170842",
+    "label": "Marygrove College"
+  },
+  {
+    "id": "170967",
+    "label": "Rochester University"
+  },
+  {
+    "id": "174127",
+    "label": "Minneapolis College of Art and Design"
+  },
+  {
+    "id": "177746",
+    "label": "Kansas City Art Institute"
+  },
+  {
+    "id": "180258",
+    "label": "University of Providence"
+  },
+  {
+    "id": "182458",
+    "label": "Sierra Nevada College"
+  },
+  {
+    "id": "186618",
+    "label": "College of Saint Elizabeth"
+  },
+  {
+    "id": "188182",
+    "label": "University of the Southwest"
+  },
+  {
+    "id": "191205",
+    "label": "Five Towns College"
+  },
+  {
+    "id": "191621",
+    "label": "Hilbert College"
+  },
+  {
+    "id": "199032",
+    "label": "Montreat College"
+  },
+  {
+    "id": "200226",
+    "label": "Mayville State University"
+  },
+  {
+    "id": "202046",
+    "label": "Cleveland Institute of Art"
+  },
+  {
+    "id": "206349",
+    "label": "Ursuline College"
+  },
+  {
+    "id": "206835",
+    "label": "Oklahoma Wesleyan University"
+  },
+  {
+    "id": "207856",
+    "label": "Southwestern Christian University"
+  },
+  {
+    "id": "209409",
+    "label": "Northwest Christian University"
+  },
+  {
+    "id": "209603",
+    "label": "Pacific Northwest College of Art"
+  },
+  {
+    "id": "211024",
+    "label": "Clarks Summit University"
+  },
+  {
+    "id": "214698",
+    "label": "Pennsylvania State University-Penn State Beaver"
+  },
+  {
+    "id": "214786",
+    "label": "Pennsylvania State University-Penn State Greater Allegheny"
+  },
+  {
+    "id": "214810",
+    "label": "Pennsylvania State University-Penn State Schuylkill"
+  },
+  {
+    "id": "217013",
+    "label": "Wilson College"
+  },
+  {
+    "id": "219198",
+    "label": "Mount Marty College"
+  },
+  {
+    "id": "219295",
+    "label": "Presentation College"
+  },
+  {
+    "id": "220312",
+    "label": "Hiwassee College"
+  },
+  {
+    "id": "220701",
+    "label": "Martin Methodist College"
+  },
+  {
+    "id": "224244",
+    "label": "Dallas Christian College"
+  },
+  {
+    "id": "231554",
+    "label": "Bluefield College"
+  },
+  {
+    "id": "235024",
+    "label": "Cornish College of the Arts"
+  },
+  {
+    "id": "239309",
+    "label": "Milwaukee Institute of Art & Design"
+  },
+  {
+    "id": "363934",
+    "label": "University of Advancing Technology"
+  },
+  {
+    "id": "102270",
+    "label": "Stillman College"
+  },
+  {
+    "id": "102298",
+    "label": "Talladega College"
+  },
+  {
+    "id": "107600",
+    "label": "Philander Smith College"
+  },
+  {
+    "id": "107877",
+    "label": "Williams Baptist University"
+  },
+  {
+    "id": "115728",
+    "label": "Holy Names University"
+  },
+  {
+    "id": "117104",
+    "label": "Life Pacific University"
+  },
+  {
+    "id": "118693",
+    "label": "Menlo College"
+  },
+  {
+    "id": "123457",
+    "label": "Simpson University"
+  },
+  {
+    "id": "129774",
+    "label": "Mitchell College"
+  },
+  {
+    "id": "132879",
+    "label": "Johnson University Florida"
+  },
+  {
+    "id": "138293",
+    "label": "Webber International University"
+  },
+  {
+    "id": "138600",
+    "label": "Agnes Scott College"
+  },
+  {
+    "id": "139630",
+    "label": "Emmanuel College"
+  },
+  {
+    "id": "140234",
+    "label": "LaGrange College"
+  },
+  {
+    "id": "140720",
+    "label": "Paine College"
+  },
+  {
+    "id": "141325",
+    "label": "Wesleyan College"
+  },
+  {
+    "id": "142294",
+    "label": "The College of Idaho"
+  },
+  {
+    "id": "143288",
+    "label": "Blackburn College"
+  },
+  {
+    "id": "144971",
+    "label": "Eureka College"
+  },
+  {
+    "id": "145691",
+    "label": "Illinois College"
+  },
+  {
+    "id": "148131",
+    "label": "Quincy University"
+  },
+  {
+    "id": "150604",
+    "label": "Franklin College"
+  },
+  {
+    "id": "150668",
+    "label": "Goshen College"
+  },
+  {
+    "id": "150774",
+    "label": "Holy Cross College"
+  },
+  {
+    "id": "152673",
+    "label": "Wabash College"
+  },
+  {
+    "id": "153126",
+    "label": "Clarke University"
+  },
+  {
+    "id": "154721",
+    "label": "Bethany College"
+  },
+  {
+    "id": "154749",
+    "label": "Bethel College-North Newton"
+  },
+  {
+    "id": "155414",
+    "label": "Kansas Wesleyan University"
+  },
+  {
+    "id": "155496",
+    "label": "Manhattan Christian College"
+  },
+  {
+    "id": "155511",
+    "label": "McPherson College"
+  },
+  {
+    "id": "155627",
+    "label": "Ottawa University-Ottawa"
+  },
+  {
+    "id": "155937",
+    "label": "Sterling College"
+  },
+  {
+    "id": "155973",
+    "label": "Tabor College"
+  },
+  {
+    "id": "157076",
+    "label": "Kentucky Wesleyan College"
+  },
+  {
+    "id": "157100",
+    "label": "Kentucky Christian University"
+  },
+  {
+    "id": "157818",
+    "label": "Transylvania University"
+  },
+  {
+    "id": "158477",
+    "label": "Centenary College of Louisiana"
+  },
+  {
+    "id": "161509",
+    "label": "Maine College of Art"
+  },
+  {
+    "id": "161572",
+    "label": "Unity College"
+  },
+  {
+    "id": "162210",
+    "label": "Washington Adventist University"
+  },
+  {
+    "id": "165644",
+    "label": "Eastern Nazarene College"
+  },
+  {
+    "id": "166911",
+    "label": "Montserrat College of Art"
+  },
+  {
+    "id": "167455",
+    "label": "Pine Manor College"
+  },
+  {
+    "id": "169363",
+    "label": "Concordia University-Ann Arbor"
+  },
+  {
+    "id": "172440",
+    "label": "Finlandia University"
+  },
+  {
+    "id": "174437",
+    "label": "North Central University"
+  },
+  {
+    "id": "175980",
+    "label": "Millsaps College"
+  },
+  {
+    "id": "176318",
+    "label": "Rust College"
+  },
+  {
+    "id": "176406",
+    "label": "Tougaloo College"
+  },
+  {
+    "id": "176664",
+    "label": "Baptist Bible College"
+  },
+  {
+    "id": "177542",
+    "label": "Hannibal-LaGrange University"
+  },
+  {
+    "id": "179548",
+    "label": "Stephens College"
+  },
+  {
+    "id": "179946",
+    "label": "Westminster College"
+  },
+  {
+    "id": "179955",
+    "label": "William Jewell College"
+  },
+  {
+    "id": "180595",
+    "label": "Rocky Mountain College"
+  },
+  {
+    "id": "181376",
+    "label": "Nebraska Christian College of Hope International University"
+  },
+  {
+    "id": "181738",
+    "label": "Union College"
+  },
+  {
+    "id": "181853",
+    "label": "York College"
+  },
+  {
+    "id": "182634",
+    "label": "Colby-Sawyer College"
+  },
+  {
+    "id": "189848",
+    "label": "Cazenovia College"
+  },
+  {
+    "id": "190983",
+    "label": "Elmira College"
+  },
+  {
+    "id": "194392",
+    "label": "Paul Smiths College of Arts and Science"
+  },
+  {
+    "id": "197230",
+    "label": "Wells College"
+  },
+  {
+    "id": "197911",
+    "label": "Barton College"
+  },
+  {
+    "id": "197993",
+    "label": "Bennett College"
+  },
+  {
+    "id": "198066",
+    "label": "Brevard College"
+  },
+  {
+    "id": "198598",
+    "label": "Greensboro College"
+  },
+  {
+    "id": "198808",
+    "label": "Lees-McRae College"
+  },
+  {
+    "id": "199184",
+    "label": "University of North Carolina School of the Arts"
+  },
+  {
+    "id": "199272",
+    "label": "William Peace University"
+  },
+  {
+    "id": "199306",
+    "label": "Pfeiffer University"
+  },
+  {
+    "id": "199582",
+    "label": "Saint Augustine's University"
+  },
+  {
+    "id": "199607",
+    "label": "Salem College"
+  },
+  {
+    "id": "199698",
+    "label": "St. Andrews University"
+  },
+  {
+    "id": "199865",
+    "label": "Warren Wilson College"
+  },
+  {
+    "id": "201371",
+    "label": "Bluffton University"
+  },
+  {
+    "id": "201858",
+    "label": "Cincinnati Christian University"
+  },
+  {
+    "id": "202514",
+    "label": "Defiance College"
+  },
+  {
+    "id": "203128",
+    "label": "Hiram College"
+  },
+  {
+    "id": "203580",
+    "label": "Lake Erie College"
+  },
+  {
+    "id": "206491",
+    "label": "Wilberforce University"
+  },
+  {
+    "id": "206817",
+    "label": "Bacone College"
+  },
+  {
+    "id": "207351",
+    "label": "Oklahoma Panhandle State University"
+  },
+  {
+    "id": "209287",
+    "label": "Multnomah University"
+  },
+  {
+    "id": "210304",
+    "label": "Warner Pacific University"
+  },
+  {
+    "id": "210492",
+    "label": "Bryn Athyn College of the New Church"
+  },
+  {
+    "id": "211608",
+    "label": "Cheyney University of Pennsylvania"
+  },
+  {
+    "id": "214148",
+    "label": "Moore College of Art and Design"
+  },
+  {
+    "id": "214768",
+    "label": "Pennsylvania State University-Penn State Hazleton"
+  },
+  {
+    "id": "214795",
+    "label": "Pennsylvania State University-Penn State Mont Alto"
+  },
+  {
+    "id": "215114",
+    "label": "Cairn University-Langhorne"
+  },
+  {
+    "id": "215691",
+    "label": "Rosemont College"
+  },
+  {
+    "id": "216357",
+    "label": "Thiel College"
+  },
+  {
+    "id": "216542",
+    "label": "University of Valley Forge"
+  },
+  {
+    "id": "217624",
+    "label": "Allen University"
+  },
+  {
+    "id": "217998",
+    "label": "Erskine College"
+  },
+  {
+    "id": "218399",
+    "label": "Morris College"
+  },
+  {
+    "id": "218919",
+    "label": "Voorhees College"
+  },
+  {
+    "id": "219091",
+    "label": "Dakota Wesleyan University"
+  },
+  {
+    "id": "220181",
+    "label": "Fisk University"
+  },
+  {
+    "id": "220473",
+    "label": "Johnson University"
+  },
+  {
+    "id": "220808",
+    "label": "Memphis College of Art"
+  },
+  {
+    "id": "225548",
+    "label": "Howard Payne University"
+  },
+  {
+    "id": "225885",
+    "label": "Jarvis Christian College"
+  },
+  {
+    "id": "228468",
+    "label": "Southwestern Adventist University"
+  },
+  {
+    "id": "228884",
+    "label": "Texas College"
+  },
+  {
+    "id": "230816",
+    "label": "Bennington College"
+  },
+  {
+    "id": "230898",
+    "label": "Green Mountain College"
+  },
+  {
+    "id": "231086",
+    "label": "Southern Vermont College"
+  },
+  {
+    "id": "231420",
+    "label": "Averett University"
+  },
+  {
+    "id": "232308",
+    "label": "Hollins University"
+  },
+  {
+    "id": "233301",
+    "label": "Randolph College"
+  },
+  {
+    "id": "233611",
+    "label": "Southern Virginia University"
+  },
+  {
+    "id": "233718",
+    "label": "Sweet Briar College"
+  },
+  {
+    "id": "237118",
+    "label": "Alderson Broaddus University"
+  },
+  {
+    "id": "237181",
+    "label": "Bethany College"
+  },
+  {
+    "id": "237358",
+    "label": "Davis & Elkins College"
+  },
+  {
+    "id": "237640",
+    "label": "Ohio Valley University"
+  },
+  {
+    "id": "238078",
+    "label": "Wheeling University"
+  },
+  {
+    "id": "239512",
+    "label": "Northland College"
+  },
+  {
+    "id": "239628",
+    "label": "Ripon College"
+  },
+  {
+    "id": "240338",
+    "label": "Wisconsin Lutheran College"
+  },
+  {
+    "id": "384254",
+    "label": "Beacon College"
+  },
+  {
+    "id": "392840",
+    "label": "Watkins College of Art Design & Film"
+  },
+  {
+    "id": "445692",
+    "label": "Neumont College of Computer Science"
+  },
+  {
+    "id": "454184",
+    "label": "The King's College"
+  },
+  {
+    "id": "456959",
+    "label": "University of Minnesota-Rochester"
+  },
+  {
+    "id": "109651",
+    "label": "Art Center College of Design"
+  },
+  {
+    "id": "120403",
+    "label": "Otis College of Art and Design"
+  },
+  {
+    "id": "125897",
+    "label": "Woodbury University"
+  },
+  {
+    "id": "131876",
+    "label": "Trinity Washington University"
+  },
+  {
+    "id": "133872",
+    "label": "AdventHealth University"
+  },
+  {
+    "id": "134811",
+    "label": "AI Miami International University of Art and Design"
+  },
+  {
+    "id": "138813",
+    "label": "The Art Institute of Atlanta"
+  },
+  {
+    "id": "139579",
+    "label": "South University-Savannah"
+  },
+  {
+    "id": "141486",
+    "label": "Chaminade University of Honolulu"
+  },
+  {
+    "id": "142328",
+    "label": "Lewis-Clark State College"
+  },
+  {
+    "id": "144005",
+    "label": "Chicago State University"
+  },
+  {
+    "id": "151333",
+    "label": "Indiana University-Kokomo"
+  },
+  {
+    "id": "151388",
+    "label": "Indiana University-East"
+  },
+  {
+    "id": "152336",
+    "label": "University of Saint Francis-Fort Wayne"
+  },
+  {
+    "id": "159382",
+    "label": "Louisiana State University-Alexandria"
+  },
+  {
+    "id": "164632",
+    "label": "Bay Path University"
+  },
+  {
+    "id": "165802",
+    "label": "Fisher College"
+  },
+  {
+    "id": "169983",
+    "label": "Kettering University"
+  },
+  {
+    "id": "170806",
+    "label": "Madonna University"
+  },
+  {
+    "id": "178244",
+    "label": "Missouri Baptist University"
+  },
+  {
+    "id": "180416",
+    "label": "Montana Technological University"
+  },
+  {
+    "id": "183789",
+    "label": "Berkeley College-Woodland Park"
+  },
+  {
+    "id": "188304",
+    "label": "Western New Mexico University"
+  },
+  {
+    "id": "190725",
+    "label": "Daemen College"
+  },
+  {
+    "id": "193645",
+    "label": "The College of New Rochelle"
+  },
+  {
+    "id": "195173",
+    "label": "St Francis College"
+  },
+  {
+    "id": "199069",
+    "label": "University of Mount Olive"
+  },
+  {
+    "id": "202806",
+    "label": "Franklin University"
+  },
+  {
+    "id": "204006",
+    "label": "Miami University-Hamilton"
+  },
+  {
+    "id": "204015",
+    "label": "Miami University-Middletown"
+  },
+  {
+    "id": "207342",
+    "label": "University of Oklahoma-Health Sciences Center"
+  },
+  {
+    "id": "208646",
+    "label": "Eastern Oregon University"
+  },
+  {
+    "id": "212984",
+    "label": "Holy Family University"
+  },
+  {
+    "id": "214731",
+    "label": "Pennsylvania State University-Penn State Brandywine"
+  },
+  {
+    "id": "224004",
+    "label": "Concordia University Texas"
+  },
+  {
+    "id": "225502",
+    "label": "University of Houston-Victoria"
+  },
+  {
+    "id": "227863",
+    "label": "University of St Thomas"
+  },
+  {
+    "id": "229780",
+    "label": "Wayland Baptist University"
+  },
+  {
+    "id": "237899",
+    "label": "West Virginia State University"
+  },
+  {
+    "id": "238193",
+    "label": "Alverno College"
+  },
+  {
+    "id": "238980",
+    "label": "Lakeland University"
+  },
+  {
+    "id": "245953",
+    "label": "Mid-America Christian University"
+  },
+  {
+    "id": "385619",
+    "label": "Everglades University"
+  },
+  {
+    "id": "438586",
+    "label": "American InterContinental University-Atlanta"
+  },
+  {
+    "id": "443331",
+    "label": "West Coast University-Los Angeles"
+  },
+  {
+    "id": "443410",
+    "label": "DigiPen Institute of Technology"
+  },
+  {
+    "id": "445267",
+    "label": "Central Methodist University-College of Graduate and Extended Studies"
+  },
+  {
+    "id": "448284",
+    "label": "Doane University-Graduate and Professional Studies"
+  },
+  {
+    "id": "451671",
+    "label": "University of South Florida-Sarasota-Manatee"
+  },
+  {
+    "id": "458210",
+    "label": "West Coast University-Orange County"
+  },
+  {
+    "id": "458229",
+    "label": "West Coast University-Ontario"
+  },
+  {
+    "id": "480569",
+    "label": "Florida Institute of Technology-Online"
+  },
+  {
+    "id": "482413",
+    "label": "DeVry College of New York"
+  },
+  {
+    "id": "482431",
+    "label": "DeVry University-California"
+  },
+  {
+    "id": "484473",
+    "label": "University of Florida-Online"
+  },
+  {
+    "id": "484756",
+    "label": "University of Phoenix-Texas"
+  },
+  {
+    "id": "101189",
+    "label": "Faulkner University"
+  },
+  {
+    "id": "104586",
+    "label": "Embry-Riddle Aeronautical University-Prescott"
+  },
+  {
+    "id": "110370",
+    "label": "California College of the Arts"
+  },
+  {
+    "id": "111081",
+    "label": "California Institute of the Arts"
+  },
+  {
+    "id": "113698",
+    "label": "Dominican University of California"
+  },
+  {
+    "id": "117627",
+    "label": "La Sierra University"
+  },
+  {
+    "id": "119173",
+    "label": "Mount Saint Mary's University"
+  },
+  {
+    "id": "120184",
+    "label": "Notre Dame de Namur University"
+  },
+  {
+    "id": "120537",
+    "label": "Hope International University"
+  },
+  {
+    "id": "128498",
+    "label": "Albertus Magnus College"
+  },
+  {
+    "id": "133711",
+    "label": "Flagler College-St Augustine"
+  },
+  {
+    "id": "137476",
+    "label": "St. Thomas University"
+  },
+  {
+    "id": "138275",
+    "label": "Warner University"
+  },
+  {
+    "id": "138868",
+    "label": "Point University"
+  },
+  {
+    "id": "139199",
+    "label": "Brenau University"
+  },
+  {
+    "id": "139764",
+    "label": "Georgia Southwestern State University"
+  },
+  {
+    "id": "146339",
+    "label": "Judson University"
+  },
+  {
+    "id": "148405",
+    "label": "Rockford University"
+  },
+  {
+    "id": "148496",
+    "label": "Dominican University"
+  },
+  {
+    "id": "148584",
+    "label": "University of St Francis"
+  },
+  {
+    "id": "149514",
+    "label": "Trinity International University-Illinois"
+  },
+  {
+    "id": "151786",
+    "label": "Marian University"
+  },
+  {
+    "id": "153278",
+    "label": "University of Dubuque"
+  },
+  {
+    "id": "154013",
+    "label": "Mount Mercy University"
+  },
+  {
+    "id": "154518",
+    "label": "Waldorf University"
+  },
+  {
+    "id": "154688",
+    "label": "Baker University"
+  },
+  {
+    "id": "155089",
+    "label": "Friends University"
+  },
+  {
+    "id": "155335",
+    "label": "Newman University"
+  },
+  {
+    "id": "155812",
+    "label": "University of Saint Mary"
+  },
+  {
+    "id": "157058",
+    "label": "Kentucky State University"
+  },
+  {
+    "id": "157377",
+    "label": "Midway University"
+  },
+  {
+    "id": "157757",
+    "label": "Spalding University"
+  },
+  {
+    "id": "157809",
+    "label": "Thomas More University"
+  },
+  {
+    "id": "157863",
+    "label": "Union College"
+  },
+  {
+    "id": "161518",
+    "label": "Saint Joseph's College of Maine"
+  },
+  {
+    "id": "162283",
+    "label": "Coppin State University"
+  },
+  {
+    "id": "163578",
+    "label": "Notre Dame of Maryland University"
+  },
+  {
+    "id": "164492",
+    "label": "Anna Maria College"
+  },
+  {
+    "id": "167394",
+    "label": "College of Our Lady of the Elms"
+  },
+  {
+    "id": "169442",
+    "label": "College for Creative Studies"
+  },
+  {
+    "id": "170037",
+    "label": "Cornerstone University"
+  },
+  {
+    "id": "170675",
+    "label": "Lawrence Technological University"
+  },
+  {
+    "id": "171492",
+    "label": "Northwood University"
+  },
+  {
+    "id": "172264",
+    "label": "Siena Heights University"
+  },
+  {
+    "id": "172334",
+    "label": "Spring Arbor University"
+  },
+  {
+    "id": "173665",
+    "label": "Hamline University"
+  },
+  {
+    "id": "174075",
+    "label": "University of Minnesota-Crookston"
+  },
+  {
+    "id": "174862",
+    "label": "Crown College"
+  },
+  {
+    "id": "175421",
+    "label": "Belhaven University"
+  },
+  {
+    "id": "175616",
+    "label": "Delta State University"
+  },
+  {
+    "id": "176035",
+    "label": "Mississippi University for Women"
+  },
+  {
+    "id": "176628",
+    "label": "Avila University"
+  },
+  {
+    "id": "177214",
+    "label": "Drury University"
+  },
+  {
+    "id": "177418",
+    "label": "Fontbonne University"
+  },
+  {
+    "id": "177551",
+    "label": "Harris-Stowe State University"
+  },
+  {
+    "id": "179326",
+    "label": "Southwest Baptist University"
+  },
+  {
+    "id": "180692",
+    "label": "The University of Montana-Western"
+  },
+  {
+    "id": "181534",
+    "label": "Peru State College"
+  },
+  {
+    "id": "181604",
+    "label": "College of Saint Mary"
+  },
+  {
+    "id": "182980",
+    "label": "New England College"
+  },
+  {
+    "id": "183211",
+    "label": "Rivier University"
+  },
+  {
+    "id": "183822",
+    "label": "Bloomfield College"
+  },
+  {
+    "id": "183910",
+    "label": "Caldwell University"
+  },
+  {
+    "id": "184612",
+    "label": "Felician University"
+  },
+  {
+    "id": "184773",
+    "label": "Georgian Court University"
+  },
+  {
+    "id": "186432",
+    "label": "Saint Peter's University"
+  },
+  {
+    "id": "190248",
+    "label": "Concordia College-New York"
+  },
+  {
+    "id": "190716",
+    "label": "D'Youville College"
+  },
+  {
+    "id": "190761",
+    "label": "Dominican College of Blauvelt"
+  },
+  {
+    "id": "192192",
+    "label": "Keuka College"
+  },
+  {
+    "id": "192271",
+    "label": "LIM College"
+  },
+  {
+    "id": "192864",
+    "label": "Marymount Manhattan College"
+  },
+  {
+    "id": "192925",
+    "label": "Medaille College"
+  },
+  {
+    "id": "196103",
+    "label": "SUNY College of Environmental Science and Forestry"
+  },
+  {
+    "id": "196112",
+    "label": "SUNY Polytechnic Institute"
+  },
+  {
+    "id": "199209",
+    "label": "North Carolina Wesleyan College"
+  },
+  {
+    "id": "202170",
+    "label": "Columbus College of Art and Design"
+  },
+  {
+    "id": "203757",
+    "label": "Lourdes University"
+  },
+  {
+    "id": "204200",
+    "label": "Mount Saint Joseph University"
+  },
+  {
+    "id": "204468",
+    "label": "Notre Dame College"
+  },
+  {
+    "id": "206048",
+    "label": "Tiffin University"
+  },
+  {
+    "id": "207306",
+    "label": "Northwestern Oklahoma State University"
+  },
+  {
+    "id": "207661",
+    "label": "Rogers State University"
+  },
+  {
+    "id": "210739",
+    "label": "DeSales University"
+  },
+  {
+    "id": "210775",
+    "label": "Alvernia University"
+  },
+  {
+    "id": "211431",
+    "label": "Carlow University"
+  },
+  {
+    "id": "211468",
+    "label": "Cedar Crest College"
+  },
+  {
+    "id": "211583",
+    "label": "Chestnut Hill College"
+  },
+  {
+    "id": "212133",
+    "label": "Eastern University"
+  },
+  {
+    "id": "212832",
+    "label": "Gwynedd Mercy University"
+  },
+  {
+    "id": "213011",
+    "label": "Immaculata University"
+  },
+  {
+    "id": "213303",
+    "label": "Keystone College"
+  },
+  {
+    "id": "213358",
+    "label": "La Roche University"
+  },
+  {
+    "id": "213400",
+    "label": "Lancaster Bible College"
+  },
+  {
+    "id": "214069",
+    "label": "Misericordia University"
+  },
+  {
+    "id": "214166",
+    "label": "Mount Aloysius College"
+  },
+  {
+    "id": "214272",
+    "label": "Neumann University"
+  },
+  {
+    "id": "214704",
+    "label": "Pennsylvania State University-Penn State Berks"
+  },
+  {
+    "id": "215105",
+    "label": "The University of the Arts"
+  },
+  {
+    "id": "215132",
+    "label": "University of the Sciences"
+  },
+  {
+    "id": "215275",
+    "label": "University of Pittsburgh-Greensburg"
+  },
+  {
+    "id": "217776",
+    "label": "Southern Wesleyan University"
+  },
+  {
+    "id": "217934",
+    "label": "Columbia College"
+  },
+  {
+    "id": "218238",
+    "label": "Limestone College"
+  },
+  {
+    "id": "218645",
+    "label": "University of South Carolina Aiken"
+  },
+  {
+    "id": "218654",
+    "label": "University of South Carolina Beaufort"
+  },
+  {
+    "id": "219046",
+    "label": "Black Hills State University"
+  },
+  {
+    "id": "219082",
+    "label": "Dakota State University"
+  },
+  {
+    "id": "219347",
+    "label": "South Dakota School of Mines and Technology"
+  },
+  {
+    "id": "219833",
+    "label": "Christian Brothers University"
+  },
+  {
+    "id": "219949",
+    "label": "Cumberland University"
+  },
+  {
+    "id": "220516",
+    "label": "King University"
+  },
+  {
+    "id": "221892",
+    "label": "Trevecca Nazarene University"
+  },
+  {
+    "id": "221971",
+    "label": "Union University"
+  },
+  {
+    "id": "225399",
+    "label": "Houston Baptist University"
+  },
+  {
+    "id": "226231",
+    "label": "LeTourneau University"
+  },
+  {
+    "id": "226383",
+    "label": "Lubbock Christian University"
+  },
+  {
+    "id": "227331",
+    "label": "Our Lady of the Lake University"
+  },
+  {
+    "id": "228501",
+    "label": "Sul Ross State University"
+  },
+  {
+    "id": "229160",
+    "label": "Texas Wesleyan University"
+  },
+  {
+    "id": "230807",
+    "label": "Westminster College"
+  },
+  {
+    "id": "230913",
+    "label": "Northern Vermont University"
+  },
+  {
+    "id": "232672",
+    "label": "Mary Baldwin University"
+  },
+  {
+    "id": "232706",
+    "label": "Marymount University"
+  },
+  {
+    "id": "237312",
+    "label": "University of Charleston"
+  },
+  {
+    "id": "237783",
+    "label": "Salem University"
+  },
+  {
+    "id": "237950",
+    "label": "West Virginia University Institute of Technology"
+  },
+  {
+    "id": "238430",
+    "label": "Cardinal Stritch University"
+  },
+  {
+    "id": "238661",
+    "label": "Edgewood College"
+  },
+  {
+    "id": "239080",
+    "label": "Marian University"
+  },
+  {
+    "id": "239390",
+    "label": "Mount Mary University"
+  },
+  {
+    "id": "240107",
+    "label": "Viterbo University"
+  },
+  {
+    "id": "240426",
+    "label": "University of Wisconsin-Superior"
+  },
+  {
+    "id": "100937",
+    "label": "Birmingham-Southern College"
+  },
+  {
+    "id": "101693",
+    "label": "University of Mobile"
+  },
+  {
+    "id": "101709",
+    "label": "University of Montevallo"
+  },
+  {
+    "id": "101912",
+    "label": "Oakwood University"
+  },
+  {
+    "id": "102234",
+    "label": "Spring Hill College"
+  },
+  {
+    "id": "106412",
+    "label": "University of Arkansas at Pine Bluff"
+  },
+  {
+    "id": "107071",
+    "label": "Henderson State University"
+  },
+  {
+    "id": "107080",
+    "label": "Hendrix College"
+  },
+  {
+    "id": "107141",
+    "label": "John Brown University"
+  },
+  {
+    "id": "107512",
+    "label": "Ouachita Baptist University"
+  },
+  {
+    "id": "111188",
+    "label": "California State University Maritime Academy"
+  },
+  {
+    "id": "117751",
+    "label": "The Master's University and Seminary"
+  },
+  {
+    "id": "118888",
+    "label": "Mills College"
+  },
+  {
+    "id": "120254",
+    "label": "Occidental College"
+  },
+  {
+    "id": "120865",
+    "label": "Pacific Union College"
+  },
+  {
+    "id": "122728",
+    "label": "William Jessup University"
+  },
+  {
+    "id": "123651",
+    "label": "Vanguard University of Southern California"
+  },
+  {
+    "id": "125727",
+    "label": "Westmont College"
+  },
+  {
+    "id": "125763",
+    "label": "Whittier College"
+  },
+  {
+    "id": "128391",
+    "label": "Western Colorado University"
+  },
+  {
+    "id": "130314",
+    "label": "University of Saint Joseph"
+  },
+  {
+    "id": "131098",
+    "label": "Wesley College"
+  },
+  {
+    "id": "131450",
+    "label": "Gallaudet University"
+  },
+  {
+    "id": "132657",
+    "label": "Lynn University"
+  },
+  {
+    "id": "133492",
+    "label": "Eckerd College"
+  },
+  {
+    "id": "133979",
+    "label": "Florida Memorial University"
+  },
+  {
+    "id": "134079",
+    "label": "Florida Southern College"
+  },
+  {
+    "id": "136774",
+    "label": "Ringling College of Art and Design"
+  },
+  {
+    "id": "136950",
+    "label": "Rollins College"
+  },
+  {
+    "id": "139144",
+    "label": "Berry College"
+  },
+  {
+    "id": "139393",
+    "label": "Covenant College"
+  },
+  {
+    "id": "139719",
+    "label": "Fort Valley State University"
+  },
+  {
+    "id": "140252",
+    "label": "Life University"
+  },
+  {
+    "id": "140553",
+    "label": "Morehouse College"
+  },
+  {
+    "id": "140696",
+    "label": "Oglethorpe University"
+  },
+  {
+    "id": "140818",
+    "label": "Piedmont College"
+  },
+  {
+    "id": "140872",
+    "label": "Reinhardt University"
+  },
+  {
+    "id": "140988",
+    "label": "Shorter University"
+  },
+  {
+    "id": "141060",
+    "label": "Spelman College"
+  },
+  {
+    "id": "141185",
+    "label": "Toccoa Falls College"
+  },
+  {
+    "id": "141237",
+    "label": "Truett McConnell University"
+  },
+  {
+    "id": "141361",
+    "label": "Young Harris College"
+  },
+  {
+    "id": "142461",
+    "label": "Northwest Nazarene University"
+  },
+  {
+    "id": "143084",
+    "label": "Augustana College"
+  },
+  {
+    "id": "144351",
+    "label": "Concordia University-Chicago"
+  },
+  {
+    "id": "145372",
+    "label": "Greenville University"
+  },
+  {
+    "id": "145646",
+    "label": "Illinois Wesleyan University"
+  },
+  {
+    "id": "146427",
+    "label": "Knox College"
+  },
+  {
+    "id": "146481",
+    "label": "Lake Forest College"
+  },
+  {
+    "id": "147013",
+    "label": "McKendree University"
+  },
+  {
+    "id": "147244",
+    "label": "Millikin University"
+  },
+  {
+    "id": "147341",
+    "label": "Monmouth College"
+  },
+  {
+    "id": "147660",
+    "label": "North Central College"
+  },
+  {
+    "id": "147679",
+    "label": "North Park University"
+  },
+  {
+    "id": "149505",
+    "label": "Trinity Christian College"
+  },
+  {
+    "id": "149781",
+    "label": "Wheaton College"
+  },
+  {
+    "id": "150066",
+    "label": "Anderson University"
+  },
+  {
+    "id": "150145",
+    "label": "Bethel University"
+  },
+  {
+    "id": "150400",
+    "label": "DePauw University"
+  },
+  {
+    "id": "150455",
+    "label": "Earlham College"
+  },
+  {
+    "id": "150534",
+    "label": "University of Evansville"
+  },
+  {
+    "id": "150677",
+    "label": "Grace College and Theological Seminary"
+  },
+  {
+    "id": "150756",
+    "label": "Hanover College"
+  },
+  {
+    "id": "150941",
+    "label": "Huntington University"
+  },
+  {
+    "id": "151777",
+    "label": "Manchester University"
+  },
+  {
+    "id": "151801",
+    "label": "Indiana Wesleyan University-Marion"
+  },
+  {
+    "id": "152318",
+    "label": "Rose-Hulman Institute of Technology"
+  },
+  {
+    "id": "152390",
+    "label": "Saint Mary's College"
+  },
+  {
+    "id": "152530",
+    "label": "Taylor University"
+  },
+  {
+    "id": "152567",
+    "label": "Trine University"
+  },
+  {
+    "id": "153001",
+    "label": "Buena Vista University"
+  },
+  {
+    "id": "153108",
+    "label": "Central College"
+  },
+  {
+    "id": "153144",
+    "label": "Coe College"
+  },
+  {
+    "id": "153162",
+    "label": "Cornell College"
+  },
+  {
+    "id": "153250",
+    "label": "Dordt University"
+  },
+  {
+    "id": "153366",
+    "label": "Graceland University-Lamoni"
+  },
+  {
+    "id": "153375",
+    "label": "Grand View University"
+  },
+  {
+    "id": "153825",
+    "label": "Loras College"
+  },
+  {
+    "id": "153834",
+    "label": "Luther College"
+  },
+  {
+    "id": "154004",
+    "label": "Morningside College"
+  },
+  {
+    "id": "154101",
+    "label": "Northwestern College"
+  },
+  {
+    "id": "154235",
+    "label": "Saint Ambrose University"
+  },
+  {
+    "id": "154350",
+    "label": "Simpson College"
+  },
+  {
+    "id": "154527",
+    "label": "Wartburg College"
+  },
+  {
+    "id": "154590",
+    "label": "William Penn University"
+  },
+  {
+    "id": "154712",
+    "label": "Benedictine College"
+  },
+  {
+    "id": "155520",
+    "label": "MidAmerica Nazarene University"
+  },
+  {
+    "id": "156213",
+    "label": "Asbury University"
+  },
+  {
+    "id": "156745",
+    "label": "Georgetown College"
+  },
+  {
+    "id": "157216",
+    "label": "Lindsey Wilson College"
+  },
+  {
+    "id": "157535",
+    "label": "University of Pikeville"
+  },
+  {
+    "id": "158802",
+    "label": "Dillard University"
+  },
+  {
+    "id": "159568",
+    "label": "Louisiana College"
+  },
+  {
+    "id": "160904",
+    "label": "Xavier University of Louisiana"
+  },
+  {
+    "id": "161226",
+    "label": "University of Maine at Farmington"
+  },
+  {
+    "id": "161299",
+    "label": "Maine Maritime Academy"
+  },
+  {
+    "id": "161563",
+    "label": "Thomas College"
+  },
+  {
+    "id": "162654",
+    "label": "Goucher College"
+  },
+  {
+    "id": "162760",
+    "label": "Hood College"
+  },
+  {
+    "id": "163295",
+    "label": "Maryland Institute College of Art"
+  },
+  {
+    "id": "163462",
+    "label": "Mount St. Mary's University"
+  },
+  {
+    "id": "163912",
+    "label": "St. Mary's College of Maryland"
+  },
+  {
+    "id": "164216",
+    "label": "Washington College"
+  },
+  {
+    "id": "164270",
+    "label": "McDaniel College"
+  },
+  {
+    "id": "164447",
+    "label": "American International College"
+  },
+  {
+    "id": "164562",
+    "label": "Assumption College"
+  },
+  {
+    "id": "164720",
+    "label": "Becker College"
+  },
+  {
+    "id": "165529",
+    "label": "Curry College"
+  },
+  {
+    "id": "165574",
+    "label": "Dean College"
+  },
+  {
+    "id": "165671",
+    "label": "Emmanuel College"
+  },
+  {
+    "id": "165936",
+    "label": "Gordon College"
+  },
+  {
+    "id": "166018",
+    "label": "Hampshire College"
+  },
+  {
+    "id": "166391",
+    "label": "Lasell University"
+  },
+  {
+    "id": "166674",
+    "label": "Massachusetts College of Art and Design"
+  },
+  {
+    "id": "166692",
+    "label": "Massachusetts Maritime Academy"
+  },
+  {
+    "id": "166939",
+    "label": "Mount Holyoke College"
+  },
+  {
+    "id": "167260",
+    "label": "Nichols College"
+  },
+  {
+    "id": "167288",
+    "label": "Massachusetts College of Liberal Arts"
+  },
+  {
+    "id": "167598",
+    "label": "Regis College"
+  },
+  {
+    "id": "167996",
+    "label": "Stonehill College"
+  },
+  {
+    "id": "168281",
+    "label": "Wheaton College"
+  },
+  {
+    "id": "168528",
+    "label": "Adrian College"
+  },
+  {
+    "id": "168546",
+    "label": "Albion College"
+  },
+  {
+    "id": "168591",
+    "label": "Alma College"
+  },
+  {
+    "id": "168740",
+    "label": "Andrews University"
+  },
+  {
+    "id": "168786",
+    "label": "Aquinas College"
+  },
+  {
+    "id": "170532",
+    "label": "Kalamazoo College"
+  },
+  {
+    "id": "170639",
+    "label": "Lake Superior State University"
+  },
+  {
+    "id": "171599",
+    "label": "Olivet College"
+  },
+  {
+    "id": "173300",
+    "label": "Concordia College at Moorhead"
+  },
+  {
+    "id": "173647",
+    "label": "Gustavus Adolphus College"
+  },
+  {
+    "id": "174251",
+    "label": "University of Minnesota-Morris"
+  },
+  {
+    "id": "174491",
+    "label": "University of Northwestern-St Paul"
+  },
+  {
+    "id": "174747",
+    "label": "College of Saint Benedict"
+  },
+  {
+    "id": "174792",
+    "label": "Saint Johns University"
+  },
+  {
+    "id": "176044",
+    "label": "Mississippi Valley State University"
+  },
+  {
+    "id": "176947",
+    "label": "Central Methodist University-College of Liberal Arts and Sciences"
+  },
+  {
+    "id": "177144",
+    "label": "Culver-Stockton College"
+  },
+  {
+    "id": "177339",
+    "label": "Evangel University"
+  },
+  {
+    "id": "177940",
+    "label": "Lincoln University"
+  },
+  {
+    "id": "178369",
+    "label": "Missouri Valley College"
+  },
+  {
+    "id": "179043",
+    "label": "Rockhurst University"
+  },
+  {
+    "id": "179265",
+    "label": "St. Louis College of Pharmacy"
+  },
+  {
+    "id": "179964",
+    "label": "William Woods University"
+  },
+  {
+    "id": "180106",
+    "label": "Carroll College"
+  },
+  {
+    "id": "180948",
+    "label": "Chadron State College"
+  },
+  {
+    "id": "180984",
+    "label": "Concordia University-Nebraska"
+  },
+  {
+    "id": "181020",
+    "label": "Doane University"
+  },
+  {
+    "id": "181127",
+    "label": "Hastings College"
+  },
+  {
+    "id": "181330",
+    "label": "Midland University"
+  },
+  {
+    "id": "181446",
+    "label": "Nebraska Wesleyan University"
+  },
+  {
+    "id": "181783",
+    "label": "Wayne State College"
+  },
+  {
+    "id": "182795",
+    "label": "Franklin Pierce University"
+  },
+  {
+    "id": "183239",
+    "label": "Saint Anselm College"
+  },
+  {
+    "id": "183974",
+    "label": "Centenary University"
+  },
+  {
+    "id": "184348",
+    "label": "Drew University"
+  },
+  {
+    "id": "188526",
+    "label": "Albany College of Pharmacy and Health Sciences"
+  },
+  {
+    "id": "188641",
+    "label": "Alfred University"
+  },
+  {
+    "id": "189088",
+    "label": "Bard College"
+  },
+  {
+    "id": "189097",
+    "label": "Barnard College"
+  },
+  {
+    "id": "191533",
+    "label": "Hartwick College"
+  },
+  {
+    "id": "191630",
+    "label": "Hobart William Smith Colleges"
+  },
+  {
+    "id": "191676",
+    "label": "Houghton College"
+  },
+  {
+    "id": "192323",
+    "label": "Le Moyne College"
+  },
+  {
+    "id": "192712",
+    "label": "Manhattan School of Music"
+  },
+  {
+    "id": "192749",
+    "label": "Manhattanville College"
+  },
+  {
+    "id": "193353",
+    "label": "Mount Saint Mary College"
+  },
+  {
+    "id": "193399",
+    "label": "College of Mount Saint Vincent"
+  },
+  {
+    "id": "193584",
+    "label": "Nazareth College"
+  },
+  {
+    "id": "194161",
+    "label": "Nyack College"
+  },
+  {
+    "id": "194958",
+    "label": "Roberts Wesleyan College"
+  },
+  {
+    "id": "195128",
+    "label": "Russell Sage College"
+  },
+  {
+    "id": "195164",
+    "label": "St Bonaventure University"
+  },
+  {
+    "id": "195216",
+    "label": "St Lawrence University"
+  },
+  {
+    "id": "195243",
+    "label": "St. Thomas Aquinas College"
+  },
+  {
+    "id": "195304",
+    "label": "Sarah Lawrence College"
+  },
+  {
+    "id": "196033",
+    "label": "SUNY College of Agriculture and Technology at Cobleskill"
+  },
+  {
+    "id": "196291",
+    "label": "SUNY Maritime College"
+  },
+  {
+    "id": "197197",
+    "label": "Wagner College"
+  },
+  {
+    "id": "197984",
+    "label": "Belmont Abbey College"
+  },
+  {
+    "id": "198215",
+    "label": "Catawba College"
+  },
+  {
+    "id": "198303",
+    "label": "Chowan University"
+  },
+  {
+    "id": "198507",
+    "label": "Elizabeth City State University"
+  },
+  {
+    "id": "198561",
+    "label": "Gardner-Webb University"
+  },
+  {
+    "id": "198613",
+    "label": "Guilford College"
+  },
+  {
+    "id": "198756",
+    "label": "Johnson C Smith University"
+  },
+  {
+    "id": "198835",
+    "label": "Lenoir-Rhyne University"
+  },
+  {
+    "id": "198862",
+    "label": "Livingstone College"
+  },
+  {
+    "id": "198899",
+    "label": "Mars Hill University"
+  },
+  {
+    "id": "198950",
+    "label": "Meredith College"
+  },
+  {
+    "id": "198969",
+    "label": "Methodist University"
+  },
+  {
+    "id": "199412",
+    "label": "Queens University of Charlotte"
+  },
+  {
+    "id": "199643",
+    "label": "Shaw University"
+  },
+  {
+    "id": "200156",
+    "label": "University of Jamestown"
+  },
+  {
+    "id": "200217",
+    "label": "University of Mary"
+  },
+  {
+    "id": "201690",
+    "label": "Central State University"
+  },
+  {
+    "id": "202523",
+    "label": "Denison University"
+  },
+  {
+    "id": "203085",
+    "label": "Heidelberg University"
+  },
+  {
+    "id": "203775",
+    "label": "Malone University"
+  },
+  {
+    "id": "203845",
+    "label": "Marietta College"
+  },
+  {
+    "id": "204185",
+    "label": "University of Mount Union"
+  },
+  {
+    "id": "204194",
+    "label": "Mount Vernon Nazarene University"
+  },
+  {
+    "id": "204264",
+    "label": "Muskingum University"
+  },
+  {
+    "id": "204501",
+    "label": "Oberlin College"
+  },
+  {
+    "id": "204617",
+    "label": "Ohio Dominican University"
+  },
+  {
+    "id": "204635",
+    "label": "Ohio Northern University"
+  },
+  {
+    "id": "204909",
+    "label": "Ohio Wesleyan University"
+  },
+  {
+    "id": "204936",
+    "label": "Otterbein University"
+  },
+  {
+    "id": "205957",
+    "label": "Franciscan University of Steubenville"
+  },
+  {
+    "id": "206437",
+    "label": "Walsh University"
+  },
+  {
+    "id": "206507",
+    "label": "Wilmington College"
+  },
+  {
+    "id": "206525",
+    "label": "Wittenberg University"
+  },
+  {
+    "id": "206589",
+    "label": "The College of Wooster"
+  },
+  {
+    "id": "206862",
+    "label": "Southern Nazarene University"
+  },
+  {
+    "id": "207209",
+    "label": "Langston University"
+  },
+  {
+    "id": "207324",
+    "label": "Oklahoma Christian University"
+  },
+  {
+    "id": "207403",
+    "label": "Oklahoma Baptist University"
+  },
+  {
+    "id": "207458",
+    "label": "Oklahoma City University"
+  },
+  {
+    "id": "209065",
+    "label": "Linfield College-McMinnville Campus"
+  },
+  {
+    "id": "209922",
+    "label": "Reed College"
+  },
+  {
+    "id": "210331",
+    "label": "Corban University"
+  },
+  {
+    "id": "210401",
+    "label": "Willamette University"
+  },
+  {
+    "id": "210571",
+    "label": "Albright College"
+  },
+  {
+    "id": "210669",
+    "label": "Allegheny College"
+  },
+  {
+    "id": "211352",
+    "label": "Cabrini University"
+  },
+  {
+    "id": "211556",
+    "label": "Chatham University"
+  },
+  {
+    "id": "211981",
+    "label": "Delaware Valley University"
+  },
+  {
+    "id": "212009",
+    "label": "Dickinson College"
+  },
+  {
+    "id": "212197",
+    "label": "Elizabethtown College"
+  },
+  {
+    "id": "212577",
+    "label": "Franklin and Marshall College"
+  },
+  {
+    "id": "212656",
+    "label": "Geneva College"
+  },
+  {
+    "id": "212674",
+    "label": "Gettysburg College"
+  },
+  {
+    "id": "213251",
+    "label": "Juniata College"
+  },
+  {
+    "id": "213321",
+    "label": "King's College"
+  },
+  {
+    "id": "213507",
+    "label": "Lebanon Valley College"
+  },
+  {
+    "id": "213598",
+    "label": "Lincoln University"
+  },
+  {
+    "id": "213668",
+    "label": "Lycoming College"
+  },
+  {
+    "id": "213783",
+    "label": "Mansfield University of Pennsylvania"
+  },
+  {
+    "id": "213826",
+    "label": "Marywood University"
+  },
+  {
+    "id": "213987",
+    "label": "Mercyhurst University"
+  },
+  {
+    "id": "213996",
+    "label": "Messiah University"
+  },
+  {
+    "id": "214157",
+    "label": "Moravian College"
+  },
+  {
+    "id": "214175",
+    "label": "Muhlenberg College"
+  },
+  {
+    "id": "215266",
+    "label": "University of Pittsburgh-Bradford"
+  },
+  {
+    "id": "215284",
+    "label": "University of Pittsburgh-Johnstown"
+  },
+  {
+    "id": "215743",
+    "label": "Saint Francis University"
+  },
+  {
+    "id": "215798",
+    "label": "Saint Vincent College"
+  },
+  {
+    "id": "215947",
+    "label": "Seton Hill University"
+  },
+  {
+    "id": "216278",
+    "label": "Susquehanna University"
+  },
+  {
+    "id": "216524",
+    "label": "Ursinus College"
+  },
+  {
+    "id": "216667",
+    "label": "Washington & Jefferson College"
+  },
+  {
+    "id": "216694",
+    "label": "Waynesburg University"
+  },
+  {
+    "id": "216807",
+    "label": "Westminster College"
+  },
+  {
+    "id": "217493",
+    "label": "Rhode Island School of Design"
+  },
+  {
+    "id": "217536",
+    "label": "Salve Regina University"
+  },
+  {
+    "id": "217721",
+    "label": "Benedict College"
+  },
+  {
+    "id": "217749",
+    "label": "Bob Jones University"
+  },
+  {
+    "id": "217873",
+    "label": "Claflin University"
+  },
+  {
+    "id": "217907",
+    "label": "Coker University"
+  },
+  {
+    "id": "217961",
+    "label": "Converse College"
+  },
+  {
+    "id": "218070",
+    "label": "Furman University"
+  },
+  {
+    "id": "218229",
+    "label": "Lander University"
+  },
+  {
+    "id": "218414",
+    "label": "Newberry College"
+  },
+  {
+    "id": "218441",
+    "label": "North Greenville University"
+  },
+  {
+    "id": "218539",
+    "label": "Presbyterian College"
+  },
+  {
+    "id": "218733",
+    "label": "South Carolina State University"
+  },
+  {
+    "id": "218973",
+    "label": "Wofford College"
+  },
+  {
+    "id": "219000",
+    "label": "Augustana University"
+  },
+  {
+    "id": "219259",
+    "label": "Northern State University"
+  },
+  {
+    "id": "219383",
+    "label": "University of Sioux Falls"
+  },
+  {
+    "id": "219790",
+    "label": "Bryan College-Dayton"
+  },
+  {
+    "id": "219806",
+    "label": "Carson-Newman University"
+  },
+  {
+    "id": "220215",
+    "label": "Freed-Hardeman University"
+  },
+  {
+    "id": "220710",
+    "label": "Maryville College"
+  },
+  {
+    "id": "221351",
+    "label": "Rhodes College"
+  },
+  {
+    "id": "221519",
+    "label": "The University of the South"
+  },
+  {
+    "id": "221661",
+    "label": "Southern Adventist University"
+  },
+  {
+    "id": "221953",
+    "label": "Tusculum University"
+  },
+  {
+    "id": "222983",
+    "label": "Austin College"
+  },
+  {
+    "id": "224323",
+    "label": "University of Dallas"
+  },
+  {
+    "id": "224527",
+    "label": "East Texas Baptist University"
+  },
+  {
+    "id": "225247",
+    "label": "Hardin-Simmons University"
+  },
+  {
+    "id": "226587",
+    "label": "McMurry University"
+  },
+  {
+    "id": "228042",
+    "label": "Schreiner University"
+  },
+  {
+    "id": "228325",
+    "label": "Southwestern Assemblies of God University"
+  },
+  {
+    "id": "228343",
+    "label": "Southwestern University"
+  },
+  {
+    "id": "228981",
+    "label": "Texas Lutheran University"
+  },
+  {
+    "id": "229267",
+    "label": "Trinity University"
+  },
+  {
+    "id": "229887",
+    "label": "Wiley College"
+  },
+  {
+    "id": "230834",
+    "label": "Castleton University"
+  },
+  {
+    "id": "231059",
+    "label": "Saint Michael's College"
+  },
+  {
+    "id": "231581",
+    "label": "Bridgewater College"
+  },
+  {
+    "id": "232025",
+    "label": "Emory & Henry College"
+  },
+  {
+    "id": "232043",
+    "label": "Eastern Mennonite University"
+  },
+  {
+    "id": "232089",
+    "label": "Ferrum College"
+  },
+  {
+    "id": "232256",
+    "label": "Hampden-Sydney College"
+  },
+  {
+    "id": "232609",
+    "label": "University of Lynchburg"
+  },
+  {
+    "id": "233295",
+    "label": "Randolph-Macon College"
+  },
+  {
+    "id": "233426",
+    "label": "Roanoke College"
+  },
+  {
+    "id": "233897",
+    "label": "The University of Virginia's College at Wise"
+  },
+  {
+    "id": "234085",
+    "label": "Virginia Military Institute"
+  },
+  {
+    "id": "234164",
+    "label": "Virginia Union University"
+  },
+  {
+    "id": "234173",
+    "label": "Virginia Wesleyan University"
+  },
+  {
+    "id": "236133",
+    "label": "Northwest University"
+  },
+  {
+    "id": "236230",
+    "label": "Pacific Lutheran University"
+  },
+  {
+    "id": "236328",
+    "label": "University of Puget Sound"
+  },
+  {
+    "id": "236452",
+    "label": "Saint Martin's University"
+  },
+  {
+    "id": "236896",
+    "label": "Walla Walla University"
+  },
+  {
+    "id": "237066",
+    "label": "Whitworth University"
+  },
+  {
+    "id": "237330",
+    "label": "Concord University"
+  },
+  {
+    "id": "237932",
+    "label": "West Liberty University"
+  },
+  {
+    "id": "237969",
+    "label": "West Virginia Wesleyan College"
+  },
+  {
+    "id": "238333",
+    "label": "Beloit College"
+  },
+  {
+    "id": "238476",
+    "label": "Carthage College"
+  },
+  {
+    "id": "239017",
+    "label": "Lawrence University"
+  },
+  {
+    "id": "239318",
+    "label": "Milwaukee School of Engineering"
+  },
+  {
+    "id": "239716",
+    "label": "Saint Norbert College"
+  },
+  {
+    "id": "414823",
+    "label": "Johnson & Wales University-North Miami"
+  },
+  {
+    "id": "439288",
+    "label": "Johnson & Wales University-Denver"
+  },
+  {
+    "id": "445708",
+    "label": "Johnson & Wales University-Charlotte"
+  },
+  {
+    "id": "446048",
+    "label": "Ave Maria University"
+  },
+  {
+    "id": "486901",
+    "label": "Milligan University"
+  },
+  {
+    "id": "100706",
+    "label": "University of Alabama in Huntsville"
+  },
+  {
+    "id": "106245",
+    "label": "University of Arkansas at Little Rock"
+  },
+  {
+    "id": "108232",
+    "label": "Academy of Art University"
+  },
+  {
+    "id": "110495",
+    "label": "California State University-Stanislaus"
+  },
+  {
+    "id": "114813",
+    "label": "Fresno Pacific University"
+  },
+  {
+    "id": "117140",
+    "label": "University of La Verne"
+  },
+  {
+    "id": "126669",
+    "label": "Colorado Christian University"
+  },
+  {
+    "id": "127918",
+    "label": "Regis University"
+  },
+  {
+    "id": "130183",
+    "label": "Post University"
+  },
+  {
+    "id": "131113",
+    "label": "Wilmington University"
+  },
+  {
+    "id": "138309",
+    "label": "Rasmussen College-Florida"
+  },
+  {
+    "id": "138354",
+    "label": "The University of West Florida"
+  },
+  {
+    "id": "139311",
+    "label": "Clayton  State University"
+  },
+  {
+    "id": "139366",
+    "label": "Columbus State University"
+  },
+  {
+    "id": "141644",
+    "label": "Hawaii Pacific University"
+  },
+  {
+    "id": "142276",
+    "label": "Idaho State University"
+  },
+  {
+    "id": "143118",
+    "label": "Aurora University"
+  },
+  {
+    "id": "147536",
+    "label": "National Louis University"
+  },
+  {
+    "id": "147776",
+    "label": "Northeastern Illinois University"
+  },
+  {
+    "id": "148627",
+    "label": "Saint Xavier University"
+  },
+  {
+    "id": "151102",
+    "label": "Purdue University Fort Wayne"
+  },
+  {
+    "id": "151290",
+    "label": "Indiana Institute of Technology"
+  },
+  {
+    "id": "151342",
+    "label": "Indiana University-South Bend"
+  },
+  {
+    "id": "151360",
+    "label": "Indiana University-Northwest"
+  },
+  {
+    "id": "151379",
+    "label": "Indiana University-Southeast"
+  },
+  {
+    "id": "154493",
+    "label": "Upper Iowa University"
+  },
+  {
+    "id": "155025",
+    "label": "Emporia State University"
+  },
+  {
+    "id": "155061",
+    "label": "Fort Hays State University"
+  },
+  {
+    "id": "156082",
+    "label": "Washburn University"
+  },
+  {
+    "id": "159717",
+    "label": "McNeese State University"
+  },
+  {
+    "id": "160038",
+    "label": "Northwestern State University of Louisiana"
+  },
+  {
+    "id": "161554",
+    "label": "University of Southern Maine"
+  },
+  {
+    "id": "161873",
+    "label": "University of Baltimore"
+  },
+  {
+    "id": "164748",
+    "label": "Berklee College of Music"
+  },
+  {
+    "id": "169479",
+    "label": "Davenport University"
+  },
+  {
+    "id": "171137",
+    "label": "University of Michigan-Dearborn"
+  },
+  {
+    "id": "171146",
+    "label": "University of Michigan-Flint"
+  },
+  {
+    "id": "173328",
+    "label": "Concordia University-Saint Paul"
+  },
+  {
+    "id": "177065",
+    "label": "Columbia College"
+  },
+  {
+    "id": "178341",
+    "label": "Missouri Southern State University"
+  },
+  {
+    "id": "178420",
+    "label": "University of Missouri-St Louis"
+  },
+  {
+    "id": "178721",
+    "label": "Park University"
+  },
+  {
+    "id": "180179",
+    "label": "Montana State University Billings"
+  },
+  {
+    "id": "180814",
+    "label": "Bellevue University"
+  },
+  {
+    "id": "186371",
+    "label": "Rutgers University-Camden"
+  },
+  {
+    "id": "189228",
+    "label": "Berkeley College-New York"
+  },
+  {
+    "id": "193016",
+    "label": "Mercy College"
+  },
+  {
+    "id": "193292",
+    "label": "Molloy College"
+  },
+  {
+    "id": "193308",
+    "label": "Monroe College"
+  },
+  {
+    "id": "194091",
+    "label": "New York Institute of Technology"
+  },
+  {
+    "id": "195562",
+    "label": "St. Joseph's College-Long Island"
+  },
+  {
+    "id": "196042",
+    "label": "Farmingdale State College"
+  },
+  {
+    "id": "196592",
+    "label": "Touro College"
+  },
+  {
+    "id": "201964",
+    "label": "Ohio Christian University"
+  },
+  {
+    "id": "207263",
+    "label": "Northeastern State University"
+  },
+  {
+    "id": "207847",
+    "label": "Southeastern Oklahoma State University"
+  },
+  {
+    "id": "209506",
+    "label": "Oregon Institute of Technology"
+  },
+  {
+    "id": "214713",
+    "label": "Pennsylvania State University-Penn State Harrisburg"
+  },
+  {
+    "id": "214801",
+    "label": "Pennsylvania State University-Penn State Abington"
+  },
+  {
+    "id": "217420",
+    "label": "Rhode Island College"
+  },
+  {
+    "id": "218742",
+    "label": "University of South Carolina-Upstate"
+  },
+  {
+    "id": "219602",
+    "label": "Austin Peay State University"
+  },
+  {
+    "id": "221847",
+    "label": "Tennessee Technological University"
+  },
+  {
+    "id": "225432",
+    "label": "University of Houston-Downtown"
+  },
+  {
+    "id": "225627",
+    "label": "University of the Incarnate Word"
+  },
+  {
+    "id": "226152",
+    "label": "Texas A & M International University"
+  },
+  {
+    "id": "228802",
+    "label": "The University of Texas at Tyler"
+  },
+  {
+    "id": "229063",
+    "label": "Texas Southern University"
+  },
+  {
+    "id": "230603",
+    "label": "Southern Utah University"
+  },
+  {
+    "id": "231651",
+    "label": "Regent University"
+  },
+  {
+    "id": "240374",
+    "label": "University of Wisconsin-Parkside"
+  },
+  {
+    "id": "242617",
+    "label": "Inter American University of Puerto Rico-San German"
+  },
+  {
+    "id": "242662",
+    "label": "Inter American University of Puerto Rico-Ponce"
+  },
+  {
+    "id": "242705",
+    "label": "Inter American University of Puerto Rico-Bayamon"
+  },
+  {
+    "id": "242972",
+    "label": "National University College"
+  },
+  {
+    "id": "377555",
+    "label": "University of Washington-Bothell Campus"
+  },
+  {
+    "id": "377564",
+    "label": "University of Washington-Tacoma Campus"
+  },
+  {
+    "id": "407009",
+    "label": "Arizona State University-West"
+  },
+  {
+    "id": "426314",
+    "label": "Embry-Riddle Aeronautical University-Worldwide"
+  },
+  {
+    "id": "441937",
+    "label": "California State University-Channel Islands"
+  },
+  {
+    "id": "445027",
+    "label": "American InterContinental University"
+  },
+  {
+    "id": "447689",
+    "label": "Georgia Gwinnett College"
+  },
+  {
+    "id": "448840",
+    "label": "University of South Florida-St Petersburg"
+  },
+  {
+    "id": "475121",
+    "label": "South University-Savannah Online"
+  },
+  {
+    "id": "479956",
+    "label": "Pennsylvania State University-World Campus"
+  },
+  {
+    "id": "482149",
+    "label": "Augusta University"
+  },
+  {
+    "id": "482477",
+    "label": "DeVry University-Illinois"
+  },
+  {
+    "id": "482705",
+    "label": "Northeastern University Lifelong Learning Network"
+  },
+  {
+    "id": "484631",
+    "label": "University of Phoenix-California"
+  },
+  {
+    "id": "490805",
+    "label": "Purdue University Northwest"
+  },
+  {
+    "id": "100830",
+    "label": "Auburn University at Montgomery"
+  },
+  {
+    "id": "101480",
+    "label": "Jacksonville State University"
+  },
+  {
+    "id": "101587",
+    "label": "University of West Alabama"
+  },
+  {
+    "id": "101879",
+    "label": "University of North Alabama"
+  },
+  {
+    "id": "102614",
+    "label": "University of Alaska Fairbanks"
+  },
+  {
+    "id": "106458",
+    "label": "Arkansas State University-Main Campus"
+  },
+  {
+    "id": "106467",
+    "label": "Arkansas Tech University"
+  },
+  {
+    "id": "106704",
+    "label": "University of Central Arkansas"
+  },
+  {
+    "id": "110361",
+    "label": "California Baptist University"
+  },
+  {
+    "id": "110413",
+    "label": "California Lutheran University"
+  },
+  {
+    "id": "111948",
+    "label": "Chapman University"
+  },
+  {
+    "id": "115755",
+    "label": "Humboldt State University"
+  },
+  {
+    "id": "122436",
+    "label": "University of San Diego"
+  },
+  {
+    "id": "123572",
+    "label": "Sonoma State University"
+  },
+  {
+    "id": "126775",
+    "label": "Colorado School of Mines"
+  },
+  {
+    "id": "127060",
+    "label": "University of Denver"
+  },
+  {
+    "id": "127185",
+    "label": "Fort Lewis College"
+  },
+  {
+    "id": "127556",
+    "label": "Colorado Mesa University"
+  },
+  {
+    "id": "128106",
+    "label": "Colorado State University-Pueblo"
+  },
+  {
+    "id": "128744",
+    "label": "University of Bridgeport"
+  },
+  {
+    "id": "128771",
+    "label": "Central Connecticut State University"
+  },
+  {
+    "id": "130493",
+    "label": "Southern Connecticut State University"
+  },
+  {
+    "id": "130776",
+    "label": "Western Connecticut State University"
+  },
+  {
+    "id": "132471",
+    "label": "Barry University"
+  },
+  {
+    "id": "133553",
+    "label": "Embry-Riddle Aeronautical University-Daytona Beach"
+  },
+  {
+    "id": "133650",
+    "label": "Florida Agricultural and Mechanical University"
+  },
+  {
+    "id": "134945",
+    "label": "Jacksonville University"
+  },
+  {
+    "id": "137564",
+    "label": "Southeastern University"
+  },
+  {
+    "id": "139861",
+    "label": "Georgia College & State University"
+  },
+  {
+    "id": "140447",
+    "label": "Mercer University"
+  },
+  {
+    "id": "141264",
+    "label": "Valdosta State University"
+  },
+  {
+    "id": "141565",
+    "label": "University of Hawaii at Hilo"
+  },
+  {
+    "id": "142285",
+    "label": "University of Idaho"
+  },
+  {
+    "id": "143048",
+    "label": "School of the Art Institute of Chicago"
+  },
+  {
+    "id": "143358",
+    "label": "Bradley University"
+  },
+  {
+    "id": "144281",
+    "label": "Columbia College Chicago"
+  },
+  {
+    "id": "144962",
+    "label": "Elmhurst College"
+  },
+  {
+    "id": "145619",
+    "label": "Benedictine University"
+  },
+  {
+    "id": "146612",
+    "label": "Lewis University"
+  },
+  {
+    "id": "148487",
+    "label": "Roosevelt University"
+  },
+  {
+    "id": "148654",
+    "label": "University of Illinois at Springfield"
+  },
+  {
+    "id": "151263",
+    "label": "University of Indianapolis"
+  },
+  {
+    "id": "151306",
+    "label": "University of Southern Indiana"
+  },
+  {
+    "id": "155681",
+    "label": "Pittsburg State University"
+  },
+  {
+    "id": "156286",
+    "label": "Bellarmine University"
+  },
+  {
+    "id": "156365",
+    "label": "Campbellsville University"
+  },
+  {
+    "id": "157401",
+    "label": "Murray State University"
+  },
+  {
+    "id": "159939",
+    "label": "University of New Orleans"
+  },
+  {
+    "id": "159966",
+    "label": "Nicholls State University"
+  },
+  {
+    "id": "159993",
+    "label": "University of Louisiana at Monroe"
+  },
+  {
+    "id": "160621",
+    "label": "Southern University and A & M College"
+  },
+  {
+    "id": "161253",
+    "label": "University of Maine"
+  },
+  {
+    "id": "162007",
+    "label": "Bowie State University"
+  },
+  {
+    "id": "162584",
+    "label": "Frostburg State University"
+  },
+  {
+    "id": "163453",
+    "label": "Morgan State University"
+  },
+  {
+    "id": "163851",
+    "label": "Salisbury University"
+  },
+  {
+    "id": "165024",
+    "label": "Bridgewater State University"
+  },
+  {
+    "id": "165820",
+    "label": "Fitchburg State University"
+  },
+  {
+    "id": "165866",
+    "label": "Framingham State University"
+  },
+  {
+    "id": "166452",
+    "label": "Lesley University"
+  },
+  {
+    "id": "166656",
+    "label": "MCPHS University"
+  },
+  {
+    "id": "167729",
+    "label": "Salem State University"
+  },
+  {
+    "id": "168005",
+    "label": "Suffolk University"
+  },
+  {
+    "id": "168421",
+    "label": "Worcester Polytechnic Institute"
+  },
+  {
+    "id": "168430",
+    "label": "Worcester State University"
+  },
+  {
+    "id": "169716",
+    "label": "University of Detroit Mercy"
+  },
+  {
+    "id": "171456",
+    "label": "Northern Michigan University"
+  },
+  {
+    "id": "172051",
+    "label": "Saginaw Valley State University"
+  },
+  {
+    "id": "173045",
+    "label": "Augsburg University"
+  },
+  {
+    "id": "173124",
+    "label": "Bemidji State University"
+  },
+  {
+    "id": "174358",
+    "label": "Minnesota State University Moorhead"
+  },
+  {
+    "id": "174817",
+    "label": "Saint Mary's University of Minnesota"
+  },
+  {
+    "id": "174899",
+    "label": "The College of Saint Scholastica"
+  },
+  {
+    "id": "174914",
+    "label": "University of St Thomas"
+  },
+  {
+    "id": "175005",
+    "label": "St Catherine University"
+  },
+  {
+    "id": "175078",
+    "label": "Southwest Minnesota State University"
+  },
+  {
+    "id": "175272",
+    "label": "Winona State University"
+  },
+  {
+    "id": "175856",
+    "label": "Jackson State University"
+  },
+  {
+    "id": "176479",
+    "label": "William Carey University"
+  },
+  {
+    "id": "176965",
+    "label": "University of Central Missouri"
+  },
+  {
+    "id": "178059",
+    "label": "Maryville University of Saint Louis"
+  },
+  {
+    "id": "178387",
+    "label": "Missouri Western State University"
+  },
+  {
+    "id": "178411",
+    "label": "Missouri University of Science and Technology"
+  },
+  {
+    "id": "179557",
+    "label": "Southeast Missouri State University"
+  },
+  {
+    "id": "179894",
+    "label": "Webster University"
+  },
+  {
+    "id": "180489",
+    "label": "The University of Montana"
+  },
+  {
+    "id": "184603",
+    "label": "Fairleigh Dickinson University-Metropolitan Campus"
+  },
+  {
+    "id": "185572",
+    "label": "Monmouth University"
+  },
+  {
+    "id": "185828",
+    "label": "New Jersey Institute of Technology"
+  },
+  {
+    "id": "186584",
+    "label": "Seton Hall University"
+  },
+  {
+    "id": "186876",
+    "label": "Stockton University"
+  },
+  {
+    "id": "187444",
+    "label": "William Paterson University of New Jersey"
+  },
+  {
+    "id": "187648",
+    "label": "Eastern New Mexico University-Main Campus"
+  },
+  {
+    "id": "188429",
+    "label": "Adelphi University"
+  },
+  {
+    "id": "193654",
+    "label": "The New School"
+  },
+  {
+    "id": "193973",
+    "label": "Niagara University"
+  },
+  {
+    "id": "195234",
+    "label": "The College of Saint Rose"
+  },
+  {
+    "id": "196121",
+    "label": "SUNY College at Brockport"
+  },
+  {
+    "id": "196130",
+    "label": "SUNY Buffalo State"
+  },
+  {
+    "id": "196149",
+    "label": "SUNY Cortland"
+  },
+  {
+    "id": "196176",
+    "label": "State University of New York at New Paltz"
+  },
+  {
+    "id": "196246",
+    "label": "SUNY College at Plattsburgh"
+  },
+  {
+    "id": "197045",
+    "label": "Utica College"
+  },
+  {
+    "id": "197151",
+    "label": "School of Visual Arts"
+  },
+  {
+    "id": "198136",
+    "label": "Campbell University"
+  },
+  {
+    "id": "198543",
+    "label": "Fayetteville State University"
+  },
+  {
+    "id": "199111",
+    "label": "University of North Carolina at Asheville"
+  },
+  {
+    "id": "199157",
+    "label": "North Carolina Central University"
+  },
+  {
+    "id": "199281",
+    "label": "University of North Carolina at Pembroke"
+  },
+  {
+    "id": "200004",
+    "label": "Western Carolina University"
+  },
+  {
+    "id": "205443",
+    "label": "Shawnee State University"
+  },
+  {
+    "id": "207041",
+    "label": "East Central University"
+  },
+  {
+    "id": "207865",
+    "label": "Southwestern Oklahoma State University"
+  },
+  {
+    "id": "208488",
+    "label": "Concordia University-Portland"
+  },
+  {
+    "id": "208822",
+    "label": "George Fox University"
+  },
+  {
+    "id": "210146",
+    "label": "Southern Oregon University"
+  },
+  {
+    "id": "210429",
+    "label": "Western Oregon University"
+  },
+  {
+    "id": "211158",
+    "label": "Bloomsburg University of Pennsylvania"
+  },
+  {
+    "id": "211361",
+    "label": "California University of Pennsylvania"
+  },
+  {
+    "id": "211644",
+    "label": "Clarion University of Pennsylvania"
+  },
+  {
+    "id": "213367",
+    "label": "La Salle University"
+  },
+  {
+    "id": "213543",
+    "label": "Lehigh University"
+  },
+  {
+    "id": "213613",
+    "label": "Lock Haven University"
+  },
+  {
+    "id": "214041",
+    "label": "Millersville University of Pennsylvania"
+  },
+  {
+    "id": "214591",
+    "label": "Pennsylvania State University-Penn State Erie-Behrend College"
+  },
+  {
+    "id": "214689",
+    "label": "Pennsylvania State University-Penn State Altoona"
+  },
+  {
+    "id": "215442",
+    "label": "Point Park University"
+  },
+  {
+    "id": "215655",
+    "label": "Robert Morris University"
+  },
+  {
+    "id": "216010",
+    "label": "Shippensburg University of Pennsylvania"
+  },
+  {
+    "id": "216038",
+    "label": "Slippery Rock University of Pennsylvania"
+  },
+  {
+    "id": "216931",
+    "label": "Wilkes University"
+  },
+  {
+    "id": "217688",
+    "label": "Charleston Southern University"
+  },
+  {
+    "id": "217819",
+    "label": "College of Charleston"
+  },
+  {
+    "id": "218061",
+    "label": "Francis Marion University"
+  },
+  {
+    "id": "218724",
+    "label": "Coastal Carolina University"
+  },
+  {
+    "id": "219471",
+    "label": "University of South Dakota"
+  },
+  {
+    "id": "219718",
+    "label": "Bethel University"
+  },
+  {
+    "id": "220631",
+    "label": "Lincoln Memorial University"
+  },
+  {
+    "id": "221768",
+    "label": "The University of Tennessee-Martin"
+  },
+  {
+    "id": "222831",
+    "label": "Angelo State University"
+  },
+  {
+    "id": "224226",
+    "label": "Dallas Baptist University"
+  },
+  {
+    "id": "224554",
+    "label": "Texas A & M University-Commerce"
+  },
+  {
+    "id": "226833",
+    "label": "Midwestern State University"
+  },
+  {
+    "id": "227845",
+    "label": "Saint Edward's University"
+  },
+  {
+    "id": "228705",
+    "label": "Texas A & M University-Kingsville"
+  },
+  {
+    "id": "229814",
+    "label": "West Texas A & M University"
+  },
+  {
+    "id": "230852",
+    "label": "Champlain College"
+  },
+  {
+    "id": "230995",
+    "label": "Norwich University"
+  },
+  {
+    "id": "233277",
+    "label": "Radford University"
+  },
+  {
+    "id": "235167",
+    "label": "The Evergreen State College"
+  },
+  {
+    "id": "236595",
+    "label": "Seattle University"
+  },
+  {
+    "id": "237367",
+    "label": "Fairmont State University"
+  },
+  {
+    "id": "237792",
+    "label": "Shepherd University"
+  },
+  {
+    "id": "238616",
+    "label": "Concordia University-Wisconsin"
+  },
+  {
+    "id": "240277",
+    "label": "University of Wisconsin-Green Bay"
+  },
+  {
+    "id": "240329",
+    "label": "University of Wisconsin-La Crosse"
+  },
+  {
+    "id": "240417",
+    "label": "University of Wisconsin-Stout"
+  },
+  {
+    "id": "240462",
+    "label": "University of Wisconsin-Platteville"
+  },
+  {
+    "id": "240471",
+    "label": "University of Wisconsin-River Falls"
+  },
+  {
+    "id": "240480",
+    "label": "University of Wisconsin-Stevens Point"
+  },
+  {
+    "id": "420574",
+    "label": "Arizona State University-Polytechnic"
+  },
+  {
+    "id": "445188",
+    "label": "University of California-Merced"
+  },
+  {
+    "id": "482158",
+    "label": "Middle Georgia State University"
+  },
+  {
+    "id": "487524",
+    "label": "Husson University"
+  },
+  {
+    "id": "100654",
+    "label": "Alabama A & M University"
+  },
+  {
+    "id": "100724",
+    "label": "Alabama State University"
+  },
+  {
+    "id": "102049",
+    "label": "Samford University"
+  },
+  {
+    "id": "102377",
+    "label": "Tuskegee University"
+  },
+  {
+    "id": "107044",
+    "label": "Harding University"
+  },
+  {
+    "id": "107983",
+    "label": "Southern Arkansas University Main Campus"
+  },
+  {
+    "id": "109785",
+    "label": "Azusa Pacific University"
+  },
+  {
+    "id": "110097",
+    "label": "Biola University"
+  },
+  {
+    "id": "112075",
+    "label": "Concordia University-Irvine"
+  },
+  {
+    "id": "117946",
+    "label": "Loyola Marymount University"
+  },
+  {
+    "id": "120883",
+    "label": "University of the Pacific"
+  },
+  {
+    "id": "121150",
+    "label": "Pepperdine University"
+  },
+  {
+    "id": "121309",
+    "label": "Point Loma Nazarene University"
+  },
+  {
+    "id": "121691",
+    "label": "University of Redlands"
+  },
+  {
+    "id": "122931",
+    "label": "Santa Clara University"
+  },
+  {
+    "id": "123554",
+    "label": "Saint Mary's College of California"
+  },
+  {
+    "id": "129215",
+    "label": "Eastern Connecticut State University"
+  },
+  {
+    "id": "129242",
+    "label": "Fairfield University"
+  },
+  {
+    "id": "129525",
+    "label": "University of Hartford"
+  },
+  {
+    "id": "129941",
+    "label": "University of New Haven"
+  },
+  {
+    "id": "130226",
+    "label": "Quinnipiac University"
+  },
+  {
+    "id": "130253",
+    "label": "Sacred Heart University"
+  },
+  {
+    "id": "130934",
+    "label": "Delaware State University"
+  },
+  {
+    "id": "131283",
+    "label": "The Catholic University of America"
+  },
+  {
+    "id": "131520",
+    "label": "Howard University"
+  },
+  {
+    "id": "132602",
+    "label": "Bethune-Cookman University"
+  },
+  {
+    "id": "133881",
+    "label": "Florida Institute of Technology"
+  },
+  {
+    "id": "136330",
+    "label": "Palm Beach Atlantic University"
+  },
+  {
+    "id": "137546",
+    "label": "Stetson University"
+  },
+  {
+    "id": "137847",
+    "label": "The University of Tampa"
+  },
+  {
+    "id": "138947",
+    "label": "Clark Atlanta University"
+  },
+  {
+    "id": "140960",
+    "label": "Savannah State University"
+  },
+  {
+    "id": "144892",
+    "label": "Eastern Illinois University"
+  },
+  {
+    "id": "145725",
+    "label": "Illinois Institute of Technology"
+  },
+  {
+    "id": "147828",
+    "label": "Olivet Nazarene University"
+  },
+  {
+    "id": "149772",
+    "label": "Western Illinois University"
+  },
+  {
+    "id": "150163",
+    "label": "Butler University"
+  },
+  {
+    "id": "152600",
+    "label": "Valparaiso University"
+  },
+  {
+    "id": "153269",
+    "label": "Drake University"
+  },
+  {
+    "id": "156541",
+    "label": "University of the Cumberlands"
+  },
+  {
+    "id": "157386",
+    "label": "Morehead State University"
+  },
+  {
+    "id": "159009",
+    "label": "Grambling State University"
+  },
+  {
+    "id": "159656",
+    "label": "Loyola University New Orleans"
+  },
+  {
+    "id": "161457",
+    "label": "University of New England"
+  },
+  {
+    "id": "163046",
+    "label": "Loyola University Maryland"
+  },
+  {
+    "id": "163338",
+    "label": "University of Maryland Eastern Shore"
+  },
+  {
+    "id": "164173",
+    "label": "Stevenson University"
+  },
+  {
+    "id": "164739",
+    "label": "Bentley University"
+  },
+  {
+    "id": "165015",
+    "label": "Brandeis University"
+  },
+  {
+    "id": "165334",
+    "label": "Clark University"
+  },
+  {
+    "id": "165662",
+    "label": "Emerson College"
+  },
+  {
+    "id": "165699",
+    "label": "Endicott College"
+  },
+  {
+    "id": "166850",
+    "label": "Merrimack College"
+  },
+  {
+    "id": "167783",
+    "label": "Simmons University"
+  },
+  {
+    "id": "167899",
+    "label": "Springfield College"
+  },
+  {
+    "id": "167987",
+    "label": "University of Massachusetts-Dartmouth"
+  },
+  {
+    "id": "168227",
+    "label": "Wentworth Institute of Technology"
+  },
+  {
+    "id": "168254",
+    "label": "Western New England University"
+  },
+  {
+    "id": "168263",
+    "label": "Westfield State University"
+  },
+  {
+    "id": "169080",
+    "label": "Calvin University"
+  },
+  {
+    "id": "170301",
+    "label": "Hope College"
+  },
+  {
+    "id": "171128",
+    "label": "Michigan Technological University"
+  },
+  {
+    "id": "173160",
+    "label": "Bethel University"
+  },
+  {
+    "id": "174844",
+    "label": "St Olaf College"
+  },
+  {
+    "id": "175342",
+    "label": "Alcorn State University"
+  },
+  {
+    "id": "176053",
+    "label": "Mississippi College"
+  },
+  {
+    "id": "177968",
+    "label": "Lindenwood University"
+  },
+  {
+    "id": "178615",
+    "label": "Truman State University"
+  },
+  {
+    "id": "178624",
+    "label": "Northwest Missouri State University"
+  },
+  {
+    "id": "181002",
+    "label": "Creighton University"
+  },
+  {
+    "id": "181215",
+    "label": "University of Nebraska at Kearney"
+  },
+  {
+    "id": "182670",
+    "label": "Dartmouth College"
+  },
+  {
+    "id": "183062",
+    "label": "Keene State College"
+  },
+  {
+    "id": "183080",
+    "label": "Plymouth State University"
+  },
+  {
+    "id": "184694",
+    "label": "Fairleigh Dickinson University-Florham Campus"
+  },
+  {
+    "id": "186201",
+    "label": "Ramapo College of New Jersey"
+  },
+  {
+    "id": "186283",
+    "label": "Rider University"
+  },
+  {
+    "id": "186867",
+    "label": "Stevens Institute of Technology"
+  },
+  {
+    "id": "187134",
+    "label": "The College of New Jersey"
+  },
+  {
+    "id": "189705",
+    "label": "Canisius College"
+  },
+  {
+    "id": "190044",
+    "label": "Clarkson University"
+  },
+  {
+    "id": "191931",
+    "label": "Iona College"
+  },
+  {
+    "id": "191968",
+    "label": "Ithaca College"
+  },
+  {
+    "id": "192703",
+    "label": "Manhattan College"
+  },
+  {
+    "id": "192819",
+    "label": "Marist College"
+  },
+  {
+    "id": "194578",
+    "label": "Pratt Institute-Main"
+  },
+  {
+    "id": "194824",
+    "label": "Rensselaer Polytechnic Institute"
+  },
+  {
+    "id": "195474",
+    "label": "Siena College"
+  },
+  {
+    "id": "195720",
+    "label": "Saint John Fisher College"
+  },
+  {
+    "id": "196158",
+    "label": "SUNY at Fredonia"
+  },
+  {
+    "id": "196167",
+    "label": "SUNY College at Geneseo"
+  },
+  {
+    "id": "196185",
+    "label": "SUNY Oneonta"
+  },
+  {
+    "id": "196194",
+    "label": "SUNY College at Oswego"
+  },
+  {
+    "id": "196200",
+    "label": "SUNY College at Potsdam"
+  },
+  {
+    "id": "196219",
+    "label": "SUNY at Purchase College"
+  },
+  {
+    "id": "197708",
+    "label": "Yeshiva University"
+  },
+  {
+    "id": "198516",
+    "label": "Elon University"
+  },
+  {
+    "id": "198695",
+    "label": "High Point University"
+  },
+  {
+    "id": "199847",
+    "label": "Wake Forest University"
+  },
+  {
+    "id": "199962",
+    "label": "Wingate University"
+  },
+  {
+    "id": "199999",
+    "label": "Winston-Salem State University"
+  },
+  {
+    "id": "201104",
+    "label": "Ashland University"
+  },
+  {
+    "id": "201195",
+    "label": "Baldwin Wallace University"
+  },
+  {
+    "id": "201548",
+    "label": "Capital University"
+  },
+  {
+    "id": "201654",
+    "label": "Cedarville University"
+  },
+  {
+    "id": "202763",
+    "label": "The University of Findlay"
+  },
+  {
+    "id": "203368",
+    "label": "John Carroll University"
+  },
+  {
+    "id": "206622",
+    "label": "Xavier University"
+  },
+  {
+    "id": "207582",
+    "label": "Oral Roberts University"
+  },
+  {
+    "id": "207971",
+    "label": "University of Tulsa"
+  },
+  {
+    "id": "209056",
+    "label": "Lewis & Clark College"
+  },
+  {
+    "id": "209612",
+    "label": "Pacific University"
+  },
+  {
+    "id": "209825",
+    "label": "University of Portland"
+  },
+  {
+    "id": "211088",
+    "label": "Arcadia University"
+  },
+  {
+    "id": "211291",
+    "label": "Bucknell University"
+  },
+  {
+    "id": "212106",
+    "label": "Duquesne University"
+  },
+  {
+    "id": "212115",
+    "label": "East Stroudsburg University of Pennsylvania"
+  },
+  {
+    "id": "212160",
+    "label": "Edinboro University of Pennsylvania"
+  },
+  {
+    "id": "212601",
+    "label": "Gannon University"
+  },
+  {
+    "id": "213349",
+    "label": "Kutztown University of Pennsylvania"
+  },
+  {
+    "id": "215770",
+    "label": "Saint Joseph's University"
+  },
+  {
+    "id": "215929",
+    "label": "University of Scranton"
+  },
+  {
+    "id": "216366",
+    "label": "Thomas Jefferson University"
+  },
+  {
+    "id": "216597",
+    "label": "Villanova University"
+  },
+  {
+    "id": "216852",
+    "label": "Widener University"
+  },
+  {
+    "id": "217059",
+    "label": "York College of Pennsylvania"
+  },
+  {
+    "id": "217156",
+    "label": "Brown University"
+  },
+  {
+    "id": "217165",
+    "label": "Bryant University"
+  },
+  {
+    "id": "217235",
+    "label": "Johnson & Wales University-Providence"
+  },
+  {
+    "id": "217402",
+    "label": "Providence College"
+  },
+  {
+    "id": "217518",
+    "label": "Roger Williams University"
+  },
+  {
+    "id": "217633",
+    "label": "Anderson University"
+  },
+  {
+    "id": "217864",
+    "label": "Citadel Military College of South Carolina"
+  },
+  {
+    "id": "218964",
+    "label": "Winthrop University"
+  },
+  {
+    "id": "219709",
+    "label": "Belmont University"
+  },
+  {
+    "id": "219976",
+    "label": "Lipscomb University"
+  },
+  {
+    "id": "220613",
+    "label": "Lee University"
+  },
+  {
+    "id": "221838",
+    "label": "Tennessee State University"
+  },
+  {
+    "id": "222178",
+    "label": "Abilene Christian University"
+  },
+  {
+    "id": "226471",
+    "label": "University of Mary Hardin-Baylor"
+  },
+  {
+    "id": "227526",
+    "label": "Prairie View A & M University"
+  },
+  {
+    "id": "228149",
+    "label": "St. Mary's University"
+  },
+  {
+    "id": "228246",
+    "label": "Southern Methodist University"
+  },
+  {
+    "id": "231624",
+    "label": "William & Mary"
+  },
+  {
+    "id": "231712",
+    "label": "Christopher Newport University"
+  },
+  {
+    "id": "232265",
+    "label": "Hampton University"
+  },
+  {
+    "id": "232566",
+    "label": "Longwood University"
+  },
+  {
+    "id": "232681",
+    "label": "University of Mary Washington"
+  },
+  {
+    "id": "232937",
+    "label": "Norfolk State University"
+  },
+  {
+    "id": "233374",
+    "label": "University of Richmond"
+  },
+  {
+    "id": "233541",
+    "label": "Shenandoah University"
+  },
+  {
+    "id": "234155",
+    "label": "Virginia State University"
+  },
+  {
+    "id": "235316",
+    "label": "Gonzaga University"
+  },
+  {
+    "id": "236577",
+    "label": "Seattle Pacific University"
+  },
+  {
+    "id": "238458",
+    "label": "Carroll University"
+  },
+  {
+    "id": "409698",
+    "label": "California State University-Monterey Bay"
+  },
+  {
+    "id": "446640",
+    "label": "Harrisburg University of Science and Technology"
+  },
+  {
+    "id": "100663",
+    "label": "University of Alabama at Birmingham"
+  },
+  {
+    "id": "100858",
+    "label": "Auburn University"
+  },
+  {
+    "id": "102368",
+    "label": "Troy University"
+  },
+  {
+    "id": "102553",
+    "label": "University of Alaska Anchorage"
+  },
+  {
+    "id": "104179",
+    "label": "University of Arizona"
+  },
+  {
+    "id": "104717",
+    "label": "Grand Canyon University"
+  },
+  {
+    "id": "110510",
+    "label": "California State University-San Bernardino"
+  },
+  {
+    "id": "110529",
+    "label": "California State Polytechnic University-Pomona"
+  },
+  {
+    "id": "110538",
+    "label": "California State University-Chico"
+  },
+  {
+    "id": "110547",
+    "label": "California State University-Dominguez Hills"
+  },
+  {
+    "id": "110556",
+    "label": "California State University-Fresno"
+  },
+  {
+    "id": "110565",
+    "label": "California State University-Fullerton"
+  },
+  {
+    "id": "110574",
+    "label": "California State University-East Bay"
+  },
+  {
+    "id": "110583",
+    "label": "California State University-Long Beach"
+  },
+  {
+    "id": "110592",
+    "label": "California State University-Los Angeles"
+  },
+  {
+    "id": "110608",
+    "label": "California State University-Northridge"
+  },
+  {
+    "id": "110617",
+    "label": "California State University-Sacramento"
+  },
+  {
+    "id": "110644",
+    "label": "University of California-Davis"
+  },
+  {
+    "id": "119605",
+    "label": "National University"
+  },
+  {
+    "id": "122409",
+    "label": "San Diego State University"
+  },
+  {
+    "id": "122597",
+    "label": "San Francisco State University"
+  },
+  {
+    "id": "122755",
+    "label": "San Jose State University"
+  },
+  {
+    "id": "126562",
+    "label": "University of Colorado Denver/Anschutz Medical Campus"
+  },
+  {
+    "id": "126580",
+    "label": "University of Colorado Colorado Springs"
+  },
+  {
+    "id": "126827",
+    "label": "Colorado Technical University-Colorado Springs"
+  },
+  {
+    "id": "127565",
+    "label": "Metropolitan State University of Denver"
+  },
+  {
+    "id": "132903",
+    "label": "University of Central Florida"
+  },
+  {
+    "id": "133669",
+    "label": "Florida Atlantic University"
+  },
+  {
+    "id": "133951",
+    "label": "Florida International University"
+  },
+  {
+    "id": "134097",
+    "label": "Florida State University"
+  },
+  {
+    "id": "134237",
+    "label": "Full Sail University"
+  },
+  {
+    "id": "137032",
+    "label": "Saint Leo University"
+  },
+  {
+    "id": "137351",
+    "label": "University of South Florida-Main Campus"
+  },
+  {
+    "id": "139940",
+    "label": "Georgia State University"
+  },
+  {
+    "id": "142115",
+    "label": "Boise State University"
+  },
+  {
+    "id": "142522",
+    "label": "Brigham Young University-Idaho"
+  },
+  {
+    "id": "144740",
+    "label": "DePaul University"
+  },
+  {
+    "id": "145600",
+    "label": "University of Illinois at Chicago"
+  },
+  {
+    "id": "151111",
+    "label": "Indiana University-Purdue University-Indianapolis"
+  },
+  {
+    "id": "154022",
+    "label": "Ashford University"
+  },
+  {
+    "id": "156125",
+    "label": "Wichita State University"
+  },
+  {
+    "id": "157447",
+    "label": "Northern Kentucky University"
+  },
+  {
+    "id": "159391",
+    "label": "Louisiana State University and Agricultural & Mechanical College"
+  },
+  {
+    "id": "160612",
+    "label": "Southeastern Louisiana University"
+  },
+  {
+    "id": "160658",
+    "label": "University of Louisiana at Lafayette"
+  },
+  {
+    "id": "166638",
+    "label": "University of Massachusetts-Boston"
+  },
+  {
+    "id": "171571",
+    "label": "Oakland University"
+  },
+  {
+    "id": "172644",
+    "label": "Wayne State University"
+  },
+  {
+    "id": "173920",
+    "label": "Minnesota State University-Mankato"
+  },
+  {
+    "id": "174066",
+    "label": "University of Minnesota-Twin Cities"
+  },
+  {
+    "id": "178396",
+    "label": "University of Missouri-Columbia"
+  },
+  {
+    "id": "178402",
+    "label": "University of Missouri-Kansas City"
+  },
+  {
+    "id": "179566",
+    "label": "Missouri State University-Springfield"
+  },
+  {
+    "id": "181394",
+    "label": "University of Nebraska at Omaha"
+  },
+  {
+    "id": "182281",
+    "label": "University of Nevada-Las Vegas"
+  },
+  {
+    "id": "182290",
+    "label": "University of Nevada-Reno"
+  },
+  {
+    "id": "183026",
+    "label": "Southern New Hampshire University"
+  },
+  {
+    "id": "185262",
+    "label": "Kean University"
+  },
+  {
+    "id": "187985",
+    "label": "University of New Mexico-Main Campus"
+  },
+  {
+    "id": "188030",
+    "label": "New Mexico State University-Main Campus"
+  },
+  {
+    "id": "190512",
+    "label": "CUNY Bernard M Baruch College"
+  },
+  {
+    "id": "190549",
+    "label": "CUNY Brooklyn College"
+  },
+  {
+    "id": "190558",
+    "label": "College of Staten Island CUNY"
+  },
+  {
+    "id": "190567",
+    "label": "CUNY City College"
+  },
+  {
+    "id": "190594",
+    "label": "CUNY Hunter College"
+  },
+  {
+    "id": "190600",
+    "label": "CUNY John Jay College of Criminal Justice"
+  },
+  {
+    "id": "190664",
+    "label": "CUNY Queens College"
+  },
+  {
+    "id": "200800",
+    "label": "University of Akron Main Campus"
+  },
+  {
+    "id": "202134",
+    "label": "Cleveland State University"
+  },
+  {
+    "id": "206084",
+    "label": "University of Toledo"
+  },
+  {
+    "id": "206695",
+    "label": "Youngstown State University"
+  },
+  {
+    "id": "206941",
+    "label": "University of Central Oklahoma"
+  },
+  {
+    "id": "209542",
+    "label": "Oregon State University"
+  },
+  {
+    "id": "209807",
+    "label": "Portland State University"
+  },
+  {
+    "id": "216339",
+    "label": "Temple University"
+  },
+  {
+    "id": "220862",
+    "label": "University of Memphis"
+  },
+  {
+    "id": "220978",
+    "label": "Middle Tennessee State University"
+  },
+  {
+    "id": "225511",
+    "label": "University of Houston"
+  },
+  {
+    "id": "227216",
+    "label": "University of North Texas"
+  },
+  {
+    "id": "227368",
+    "label": "The University of Texas Rio Grande Valley"
+  },
+  {
+    "id": "227881",
+    "label": "Sam Houston State University"
+  },
+  {
+    "id": "228459",
+    "label": "Texas State University"
+  },
+  {
+    "id": "228778",
+    "label": "The University of Texas at Austin"
+  },
+  {
+    "id": "228796",
+    "label": "The University of Texas at El Paso"
+  },
+  {
+    "id": "229027",
+    "label": "The University of Texas at San Antonio"
+  },
+  {
+    "id": "229179",
+    "label": "Texas Woman's University"
+  },
+  {
+    "id": "230038",
+    "label": "Brigham Young University-Provo"
+  },
+  {
+    "id": "230728",
+    "label": "Utah State University"
+  },
+  {
+    "id": "230737",
+    "label": "Utah Valley University"
+  },
+  {
+    "id": "230764",
+    "label": "University of Utah"
+  },
+  {
+    "id": "232557",
+    "label": "Liberty University"
+  },
+  {
+    "id": "232982",
+    "label": "Old Dominion University"
+  },
+  {
+    "id": "234030",
+    "label": "Virginia Commonwealth University"
+  },
+  {
+    "id": "234827",
+    "label": "Central Washington University"
+  },
+  {
+    "id": "238032",
+    "label": "West Virginia University"
+  },
+  {
+    "id": "240453",
+    "label": "University of Wisconsin-Milwaukee"
+  },
+  {
+    "id": "260901",
+    "label": "Purdue University Global-Davenport"
+  },
+  {
+    "id": "366711",
+    "label": "California State University-San Marcos"
+  },
+  {
+    "id": "448886",
+    "label": "Arizona State University-Downtown Phoenix"
+  },
+  {
+    "id": "454227",
+    "label": "Chamberlain University-Illinois"
+  },
+  {
+    "id": "482680",
+    "label": "University of North Georgia"
+  },
+  {
+    "id": "483124",
+    "label": "Arizona State University-Skysong"
+  },
+  {
+    "id": "484613",
+    "label": "University of Phoenix-Arizona"
+  },
+  {
+    "id": "486840",
+    "label": "Kennesaw State University"
+  },
+  {
+    "id": "488679",
+    "label": "Indiana Wesleyan University-National & Global"
+  },
+  {
+    "id": "100751",
+    "label": "The University of Alabama"
+  },
+  {
+    "id": "102094",
+    "label": "University of South Alabama"
+  },
+  {
+    "id": "104151",
+    "label": "Arizona State University-Tempe"
+  },
+  {
+    "id": "105330",
+    "label": "Northern Arizona University"
+  },
+  {
+    "id": "106397",
+    "label": "University of Arkansas"
+  },
+  {
+    "id": "110422",
+    "label": "California Polytechnic State University-San Luis Obispo"
+  },
+  {
+    "id": "110635",
+    "label": "University of California-Berkeley"
+  },
+  {
+    "id": "110653",
+    "label": "University of California-Irvine"
+  },
+  {
+    "id": "110671",
+    "label": "University of California-Riverside"
+  },
+  {
+    "id": "110680",
+    "label": "University of California-San Diego"
+  },
+  {
+    "id": "110705",
+    "label": "University of California-Santa Barbara"
+  },
+  {
+    "id": "122612",
+    "label": "University of San Francisco"
+  },
+  {
+    "id": "123961",
+    "label": "University of Southern California"
+  },
+  {
+    "id": "126614",
+    "label": "University of Colorado Boulder"
+  },
+  {
+    "id": "126818",
+    "label": "Colorado State University-Fort Collins"
+  },
+  {
+    "id": "127741",
+    "label": "University of Northern Colorado"
+  },
+  {
+    "id": "130943",
+    "label": "University of Delaware"
+  },
+  {
+    "id": "134130",
+    "label": "University of Florida"
+  },
+  {
+    "id": "135726",
+    "label": "University of Miami"
+  },
+  {
+    "id": "136172",
+    "label": "University of North Florida"
+  },
+  {
+    "id": "136215",
+    "label": "Nova Southeastern University"
+  },
+  {
+    "id": "139931",
+    "label": "Georgia Southern University"
+  },
+  {
+    "id": "139959",
+    "label": "University of Georgia"
+  },
+  {
+    "id": "140951",
+    "label": "Savannah College of Art and Design"
+  },
+  {
+    "id": "141334",
+    "label": "University of West Georgia"
+  },
+  {
+    "id": "141574",
+    "label": "University of Hawaii at Manoa"
+  },
+  {
+    "id": "145813",
+    "label": "Illinois State University"
+  },
+  {
+    "id": "146719",
+    "label": "Loyola University Chicago"
+  },
+  {
+    "id": "147703",
+    "label": "Northern Illinois University"
+  },
+  {
+    "id": "147767",
+    "label": "Northwestern University"
+  },
+  {
+    "id": "149222",
+    "label": "Southern Illinois University-Carbondale"
+  },
+  {
+    "id": "149231",
+    "label": "Southern Illinois University-Edwardsville"
+  },
+  {
+    "id": "150136",
+    "label": "Ball State University"
+  },
+  {
+    "id": "151324",
+    "label": "Indiana State University"
+  },
+  {
+    "id": "151351",
+    "label": "Indiana University-Bloomington"
+  },
+  {
+    "id": "153603",
+    "label": "Iowa State University"
+  },
+  {
+    "id": "153658",
+    "label": "University of Iowa"
+  },
+  {
+    "id": "155317",
+    "label": "University of Kansas"
+  },
+  {
+    "id": "155399",
+    "label": "Kansas State University"
+  },
+  {
+    "id": "156620",
+    "label": "Eastern Kentucky University"
+  },
+  {
+    "id": "157085",
+    "label": "University of Kentucky"
+  },
+  {
+    "id": "157289",
+    "label": "University of Louisville"
+  },
+  {
+    "id": "157951",
+    "label": "Western Kentucky University"
+  },
+  {
+    "id": "159647",
+    "label": "Louisiana Tech University"
+  },
+  {
+    "id": "162928",
+    "label": "Johns Hopkins University"
+  },
+  {
+    "id": "163268",
+    "label": "University of Maryland-Baltimore County"
+  },
+  {
+    "id": "163286",
+    "label": "University of Maryland-College Park"
+  },
+  {
+    "id": "164076",
+    "label": "Towson University"
+  },
+  {
+    "id": "166513",
+    "label": "University of Massachusetts-Lowell"
+  },
+  {
+    "id": "169248",
+    "label": "Central Michigan University"
+  },
+  {
+    "id": "169798",
+    "label": "Eastern Michigan University"
+  },
+  {
+    "id": "169910",
+    "label": "Ferris State University"
+  },
+  {
+    "id": "170082",
+    "label": "Grand Valley State University"
+  },
+  {
+    "id": "170976",
+    "label": "University of Michigan-Ann Arbor"
+  },
+  {
+    "id": "171100",
+    "label": "Michigan State University"
+  },
+  {
+    "id": "172699",
+    "label": "Western Michigan University"
+  },
+  {
+    "id": "174233",
+    "label": "University of Minnesota-Duluth"
+  },
+  {
+    "id": "176017",
+    "label": "University of Mississippi"
+  },
+  {
+    "id": "176080",
+    "label": "Mississippi State University"
+  },
+  {
+    "id": "176372",
+    "label": "University of Southern Mississippi"
+  },
+  {
+    "id": "180461",
+    "label": "Montana State University"
+  },
+  {
+    "id": "181464",
+    "label": "University of Nebraska-Lincoln"
+  },
+  {
+    "id": "184782",
+    "label": "Rowan University"
+  },
+  {
+    "id": "185590",
+    "label": "Montclair State University"
+  },
+  {
+    "id": "186380",
+    "label": "Rutgers University-New Brunswick"
+  },
+  {
+    "id": "186399",
+    "label": "Rutgers University-Newark"
+  },
+  {
+    "id": "190415",
+    "label": "Cornell University"
+  },
+  {
+    "id": "191241",
+    "label": "Fordham University"
+  },
+  {
+    "id": "192448",
+    "label": "Long Island University"
+  },
+  {
+    "id": "194310",
+    "label": "Pace University"
+  },
+  {
+    "id": "195809",
+    "label": "St John's University-New York"
+  },
+  {
+    "id": "196088",
+    "label": "University at Buffalo"
+  },
+  {
+    "id": "197869",
+    "label": "Appalachian State University"
+  },
+  {
+    "id": "198464",
+    "label": "East Carolina University"
+  },
+  {
+    "id": "199102",
+    "label": "North Carolina A & T State University"
+  },
+  {
+    "id": "199139",
+    "label": "University of North Carolina at Charlotte"
+  },
+  {
+    "id": "199148",
+    "label": "University of North Carolina at Greensboro"
+  },
+  {
+    "id": "199193",
+    "label": "North Carolina State University at Raleigh"
+  },
+  {
+    "id": "199218",
+    "label": "University of North Carolina Wilmington"
+  },
+  {
+    "id": "200280",
+    "label": "University of North Dakota"
+  },
+  {
+    "id": "200332",
+    "label": "North Dakota State University-Main Campus"
+  },
+  {
+    "id": "201441",
+    "label": "Bowling Green State University-Main Campus"
+  },
+  {
+    "id": "201885",
+    "label": "University of Cincinnati-Main Campus"
+  },
+  {
+    "id": "203517",
+    "label": "Kent State University at Kent"
+  },
+  {
+    "id": "204024",
+    "label": "Miami University-Oxford"
+  },
+  {
+    "id": "204796",
+    "label": "Ohio State University-Main Campus"
+  },
+  {
+    "id": "204857",
+    "label": "Ohio University-Main Campus"
+  },
+  {
+    "id": "206604",
+    "label": "Wright State University-Main Campus"
+  },
+  {
+    "id": "207388",
+    "label": "Oklahoma State University-Main Campus"
+  },
+  {
+    "id": "207500",
+    "label": "University of Oklahoma-Norman Campus"
+  },
+  {
+    "id": "209551",
+    "label": "University of Oregon"
+  },
+  {
+    "id": "212054",
+    "label": "Drexel University"
+  },
+  {
+    "id": "213020",
+    "label": "Indiana University of Pennsylvania-Main Campus"
+  },
+  {
+    "id": "214777",
+    "label": "Pennsylvania State University-Main Campus"
+  },
+  {
+    "id": "215293",
+    "label": "University of Pittsburgh-Pittsburgh Campus"
+  },
+  {
+    "id": "216764",
+    "label": "West Chester University of Pennsylvania"
+  },
+  {
+    "id": "217484",
+    "label": "University of Rhode Island"
+  },
+  {
+    "id": "217882",
+    "label": "Clemson University"
+  },
+  {
+    "id": "218663",
+    "label": "University of South Carolina-Columbia"
+  },
+  {
+    "id": "219356",
+    "label": "South Dakota State University"
+  },
+  {
+    "id": "220075",
+    "label": "East Tennessee State University"
+  },
+  {
+    "id": "221740",
+    "label": "The University of Tennessee-Chattanooga"
+  },
+  {
+    "id": "221759",
+    "label": "The University of Tennessee-Knoxville"
+  },
+  {
+    "id": "223232",
+    "label": "Baylor University"
+  },
+  {
+    "id": "224147",
+    "label": "Texas A & M University-Corpus Christi"
+  },
+  {
+    "id": "228431",
+    "label": "Stephen F Austin State University"
+  },
+  {
+    "id": "228529",
+    "label": "Tarleton State University"
+  },
+  {
+    "id": "228723",
+    "label": "Texas A & M University-College Station"
+  },
+  {
+    "id": "228769",
+    "label": "The University of Texas at Arlington"
+  },
+  {
+    "id": "228787",
+    "label": "The University of Texas at Dallas"
+  },
+  {
+    "id": "228875",
+    "label": "Texas Christian University"
+  },
+  {
+    "id": "229115",
+    "label": "Texas Tech University"
+  },
+  {
+    "id": "232186",
+    "label": "George Mason University"
+  },
+  {
+    "id": "232423",
+    "label": "James Madison University"
+  },
+  {
+    "id": "233921",
+    "label": "Virginia Polytechnic Institute and State University"
+  },
+  {
+    "id": "234076",
+    "label": "University of Virginia-Main Campus"
+  },
+  {
+    "id": "235097",
+    "label": "Eastern Washington University"
+  },
+  {
+    "id": "236939",
+    "label": "Washington State University"
+  },
+  {
+    "id": "236948",
+    "label": "University of Washington-Seattle Campus"
+  },
+  {
+    "id": "237011",
+    "label": "Western Washington University"
+  },
+  {
+    "id": "237525",
+    "label": "Marshall University"
+  },
+  {
+    "id": "240189",
+    "label": "University of Wisconsin-Whitewater"
+  },
+  {
+    "id": "240268",
+    "label": "University of Wisconsin-Eau Claire"
+  },
+  {
+    "id": "240365",
+    "label": "University of Wisconsin-Oshkosh"
+  },
+  {
+    "id": "240444",
+    "label": "University of Wisconsin-Madison"
+  },
+  {
+    "id": "240727",
+    "label": "University of Wyoming"
+  },
+  {
+    "id": "243780",
+    "label": "Purdue University-Main Campus"
+  },
+  {
+    "id": "433660",
+    "label": "Florida Gulf Coast University"
+  },
+  {
+    "id": "110662",
+    "label": "University of California-Los Angeles"
+  },
+  {
+    "id": "110714",
+    "label": "University of California-Santa Cruz"
+  },
+  {
+    "id": "129020",
+    "label": "University of Connecticut"
+  },
+  {
+    "id": "130794",
+    "label": "Yale University"
+  },
+  {
+    "id": "131159",
+    "label": "American University"
+  },
+  {
+    "id": "131469",
+    "label": "George Washington University"
+  },
+  {
+    "id": "131496",
+    "label": "Georgetown University"
+  },
+  {
+    "id": "139658",
+    "label": "Emory University"
+  },
+  {
+    "id": "139755",
+    "label": "Georgia Institute of Technology-Main Campus"
+  },
+  {
+    "id": "144050",
+    "label": "University of Chicago"
+  },
+  {
+    "id": "145637",
+    "label": "University of Illinois at Urbana-Champaign"
+  },
+  {
+    "id": "152080",
+    "label": "University of Notre Dame"
+  },
+  {
+    "id": "154095",
+    "label": "University of Northern Iowa"
+  },
+  {
+    "id": "160755",
+    "label": "Tulane University of Louisiana"
+  },
+  {
+    "id": "164924",
+    "label": "Boston College"
+  },
+  {
+    "id": "164988",
+    "label": "Boston University"
+  },
+  {
+    "id": "166027",
+    "label": "Harvard University"
+  },
+  {
+    "id": "166629",
+    "label": "University of Massachusetts-Amherst"
+  },
+  {
+    "id": "167358",
+    "label": "Northeastern University"
+  },
+  {
+    "id": "168148",
+    "label": "Tufts University"
+  },
+  {
+    "id": "179159",
+    "label": "Saint Louis University"
+  },
+  {
+    "id": "183044",
+    "label": "University of New Hampshire-Main Campus"
+  },
+  {
+    "id": "190150",
+    "label": "Columbia University in the City of New York"
+  },
+  {
+    "id": "191649",
+    "label": "Hofstra University"
+  },
+  {
+    "id": "193900",
+    "label": "New York University"
+  },
+  {
+    "id": "195003",
+    "label": "Rochester Institute of Technology"
+  },
+  {
+    "id": "195030",
+    "label": "University of Rochester"
+  },
+  {
+    "id": "196060",
+    "label": "SUNY at Albany"
+  },
+  {
+    "id": "196079",
+    "label": "Binghamton University"
+  },
+  {
+    "id": "196097",
+    "label": "Stony Brook University"
+  },
+  {
+    "id": "196413",
+    "label": "Syracuse University"
+  },
+  {
+    "id": "198419",
+    "label": "Duke University"
+  },
+  {
+    "id": "199120",
+    "label": "University of North Carolina at Chapel Hill"
+  },
+  {
+    "id": "201645",
+    "label": "Case Western Reserve University"
+  },
+  {
+    "id": "202480",
+    "label": "University of Dayton"
+  },
+  {
+    "id": "211440",
+    "label": "Carnegie Mellon University"
+  },
+  {
+    "id": "215062",
+    "label": "University of Pennsylvania"
+  },
+  {
+    "id": "221999",
+    "label": "Vanderbilt University"
+  },
+  {
+    "id": "231174",
+    "label": "University of Vermont"
+  },
+  {
+    "id": "239105",
+    "label": "Marquette University"
+  },
+  {
+    "id": "243744",
+    "label": "Stanford University"
+  },
+  {
+    "id": "142957",
+    "label": "American Islamic College"
+  },
+  {
+    "id": "262165",
+    "label": "Montana Bible College"
+  },
+  {
+    "id": "443058",
+    "label": "Family of Faith Christian University"
+  },
+  {
+    "id": "488785",
+    "label": "University of Saint Katherine"
+  },
+  {
+    "id": "490230",
+    "label": "Reformed University"
+  },
+  {
+    "id": "491491",
+    "label": "Oikos University"
+  },
+  {
+    "id": "491525",
+    "label": "Union Bible College"
+  },
+  {
+    "id": "491613",
+    "label": "Yeshiva Gedolah Tiferes Boruch"
+  },
+  {
+    "id": "491631",
+    "label": "Women's Institute of Torah Seminary"
+  },
+  {
+    "id": "491710",
+    "label": "Yeshiva Gedolah of Cliffwood"
+  },
+  {
+    "id": "492069",
+    "label": "Champion Christian College"
+  },
+  {
+    "id": "492689",
+    "label": "Texas Tech University Health Sciences Center-El Paso"
+  },
+  {
+    "id": "100690",
+    "label": "Amridge University"
+  },
+  {
+    "id": "101453",
+    "label": "Heritage Christian University"
+  },
+  {
+    "id": "102058",
+    "label": "Selma University"
+  },
+  {
+    "id": "102395",
+    "label": "United States Sports Academy"
+  },
+  {
+    "id": "104188",
+    "label": "Southwest University of Visual Arts-Tucson"
+  },
+  {
+    "id": "110060",
+    "label": "Bethesda University"
+  },
+  {
+    "id": "110778",
+    "label": "Sofia University"
+  },
+  {
+    "id": "110918",
+    "label": "California Christian College"
+  },
+  {
+    "id": "113582",
+    "label": "Design Institute of San Diego"
+  },
+  {
+    "id": "116712",
+    "label": "John F. Kennedy University"
+  },
+  {
+    "id": "117557",
+    "label": "Lincoln University"
+  },
+  {
+    "id": "117575",
+    "label": "Southern California Seminary"
+  },
+  {
+    "id": "119058",
+    "label": "Middlebury Institute of International Studies at Monterey"
+  },
+  {
+    "id": "119775",
+    "label": "Newschool of Architecture and Design"
+  },
+  {
+    "id": "120698",
+    "label": "Palo Alto University"
+  },
+  {
+    "id": "120768",
+    "label": "Pacific Oaks College"
+  },
+  {
+    "id": "120838",
+    "label": "Pacific States University"
+  },
+  {
+    "id": "123952",
+    "label": "Southern California Institute of Architecture"
+  },
+  {
+    "id": "127714",
+    "label": "Nazarene Bible College"
+  },
+  {
+    "id": "128780",
+    "label": "Charter Oak State College"
+  },
+  {
+    "id": "129534",
+    "label": "Holy Apostles College and Seminary"
+  },
+  {
+    "id": "130110",
+    "label": "Paier College of Art Inc"
+  },
+  {
+    "id": "132842",
+    "label": "Carlos Albizu University-Miami"
+  },
+  {
+    "id": "134510",
+    "label": "Hobe Sound Bible College"
+  },
+  {
+    "id": "135364",
+    "label": "Luther Rice College & Seminary"
+  },
+  {
+    "id": "139153",
+    "label": "Beulah Heights University"
+  },
+  {
+    "id": "141167",
+    "label": "Thomas University"
+  },
+  {
+    "id": "143297",
+    "label": "Blessing Rieman College of Nursing and Health Sciences"
+  },
+  {
+    "id": "144883",
+    "label": "East-West University"
+  },
+  {
+    "id": "146533",
+    "label": "Lakeview College of Nursing"
+  },
+  {
+    "id": "146755",
+    "label": "Trinity College of Nursing & Health Sciences"
+  },
+  {
+    "id": "147129",
+    "label": "Methodist College"
+  },
+  {
+    "id": "148575",
+    "label": "Saint Francis Medical Center College of Nursing"
+  },
+  {
+    "id": "148593",
+    "label": "St. John's College-Department of Nursing"
+  },
+  {
+    "id": "149028",
+    "label": "Saint Anthony College of Nursing"
+  },
+  {
+    "id": "149639",
+    "label": "VanderCook College of Music"
+  },
+  {
+    "id": "149763",
+    "label": "Resurrection University"
+  },
+  {
+    "id": "151810",
+    "label": "Martin University"
+  },
+  {
+    "id": "152798",
+    "label": "Allen College"
+  },
+  {
+    "id": "156417",
+    "label": "Clear Creek Baptist Bible College"
+  },
+  {
+    "id": "161235",
+    "label": "University of Maine at Fort Kent"
+  },
+  {
+    "id": "164438",
+    "label": "New England College of Business and Finance"
+  },
+  {
+    "id": "169327",
+    "label": "Cleary University"
+  },
+  {
+    "id": "172608",
+    "label": "Walsh College"
+  },
+  {
+    "id": "176336",
+    "label": "Southeastern Baptist College"
+  },
+  {
+    "id": "176770",
+    "label": "Cox College"
+  },
+  {
+    "id": "177038",
+    "label": "Cleveland University-Kansas City"
+  },
+  {
+    "id": "177719",
+    "label": "Barnes-Jewish College Goldfarb School of Nursing"
+  },
+  {
+    "id": "178767",
+    "label": "Stevens-The Institute of Business & Arts"
+  },
+  {
+    "id": "179450",
+    "label": "Saint Luke's College of Health Sciences"
+  },
+  {
+    "id": "180832",
+    "label": "Clarkson College"
+  },
+  {
+    "id": "180878",
+    "label": "Bryan College of Health Sciences"
+  },
+  {
+    "id": "189264",
+    "label": "Beth Hatalmud Rabbinical College"
+  },
+  {
+    "id": "189273",
+    "label": "Beth Hamedrash Shaarei Yosher Institute"
+  },
+  {
+    "id": "189413",
+    "label": "Boricua College"
+  },
+  {
+    "id": "190372",
+    "label": "Cooper Union for the Advancement of Science and Art"
+  },
+  {
+    "id": "194116",
+    "label": "New York School of Interior Design"
+  },
+  {
+    "id": "197142",
+    "label": "Villa Maria College"
+  },
+  {
+    "id": "199971",
+    "label": "Carolina Christian College"
+  },
+  {
+    "id": "200624",
+    "label": "The Art Institute of Cincinnati-AIC College of Design"
+  },
+  {
+    "id": "206154",
+    "label": "Tri-State Bible College"
+  },
+  {
+    "id": "206279",
+    "label": "Union Institute & University"
+  },
+  {
+    "id": "209296",
+    "label": "National University of Natural Medicine"
+  },
+  {
+    "id": "209533",
+    "label": "Oregon College of Art and Craft"
+  },
+  {
+    "id": "210438",
+    "label": "University of Western States"
+  },
+  {
+    "id": "212452",
+    "label": "Faith Theological Seminary"
+  },
+  {
+    "id": "212771",
+    "label": "Gratz College"
+  },
+  {
+    "id": "215053",
+    "label": "Pennsylvania College of Art and Design"
+  },
+  {
+    "id": "219277",
+    "label": "Oglala Lakota College"
+  },
+  {
+    "id": "222628",
+    "label": "Amberton University"
+  },
+  {
+    "id": "223117",
+    "label": "Baptist Missionary Association Theological Seminary"
+  },
+  {
+    "id": "230889",
+    "label": "Goddard College"
+  },
+  {
+    "id": "231837",
+    "label": "Radford University-Carilion"
+  },
+  {
+    "id": "232885",
+    "label": "Sentara College of Health Sciences"
+  },
+  {
+    "id": "233356",
+    "label": "Bon Secours Memorial College of Nursing"
+  },
+  {
+    "id": "235422",
+    "label": "Heritage University"
+  },
+  {
+    "id": "238324",
+    "label": "Bellin College"
+  },
+  {
+    "id": "238573",
+    "label": "Columbia College of Nursing"
+  },
+  {
+    "id": "241100",
+    "label": "American University of Puerto Rico"
+  },
+  {
+    "id": "241128",
+    "label": "American University of Puerto Rico"
+  },
+  {
+    "id": "241386",
+    "label": "Caribbean University-Carolina"
+  },
+  {
+    "id": "241395",
+    "label": "Pontifical Catholic University of Puerto Rico-Arecibo"
+  },
+  {
+    "id": "241517",
+    "label": "CEM College-San Juan"
+  },
+  {
+    "id": "241614",
+    "label": "Universidad Teologica del Caribe"
+  },
+  {
+    "id": "241766",
+    "label": "Conservatory of Music of Puerto Rico"
+  },
+  {
+    "id": "241951",
+    "label": "Escuela de Artes Plasticas y Diseno de Puerto Rico"
+  },
+  {
+    "id": "245838",
+    "label": "Antioch University-Los Angeles"
+  },
+  {
+    "id": "245847",
+    "label": "Antioch University-Santa Barbara"
+  },
+  {
+    "id": "245883",
+    "label": "Antioch University-Seattle"
+  },
+  {
+    "id": "245892",
+    "label": "Antioch University-Midwest"
+  },
+  {
+    "id": "247825",
+    "label": "Austin Graduate School of Theology"
+  },
+  {
+    "id": "260813",
+    "label": "Platt College-Aurora"
+  },
+  {
+    "id": "363907",
+    "label": "Caribbean University-Ponce"
+  },
+  {
+    "id": "363916",
+    "label": "Caribbean University-Vega Baja"
+  },
+  {
+    "id": "366003",
+    "label": "South Florida Bible College and Theological Seminary"
+  },
+  {
+    "id": "367884",
+    "label": "Hodges University"
+  },
+  {
+    "id": "375230",
+    "label": "Yeshiva Gedolah Imrei Yosef D'spinka"
+  },
+  {
+    "id": "376224",
+    "label": "CEM College-Humacao"
+  },
+  {
+    "id": "377546",
+    "label": "Northwest College of Art & Design"
+  },
+  {
+    "id": "384412",
+    "label": "University of the Potomac-Washington DC Campus"
+  },
+  {
+    "id": "388520",
+    "label": "College of Biblical Studies-Houston"
+  },
+  {
+    "id": "398130",
+    "label": "Mt Sierra College"
+  },
+  {
+    "id": "401223",
+    "label": "World Mission University"
+  },
+  {
+    "id": "402776",
+    "label": "Southwest University of Visual Arts-Albuquerque"
+  },
+  {
+    "id": "404338",
+    "label": "Schiller International University"
+  },
+  {
+    "id": "405854",
+    "label": "Rabbinical College of Ohr Shimon Yisroel"
+  },
+  {
+    "id": "416801",
+    "label": "The University of Texas MD Anderson Cancer Center"
+  },
+  {
+    "id": "430670",
+    "label": "San Juan Bautista School of Medicine"
+  },
+  {
+    "id": "430704",
+    "label": "Texas Health and Science University"
+  },
+  {
+    "id": "433004",
+    "label": "American University of Health Sciences"
+  },
+  {
+    "id": "435000",
+    "label": "Louisiana State University Health Sciences Center-Shreveport"
+  },
+  {
+    "id": "437097",
+    "label": "University of Management and Technology"
+  },
+  {
+    "id": "439446",
+    "label": "Atlantic Institute of Oriental Medicine"
+  },
+  {
+    "id": "439613",
+    "label": "College of Biblical Studies"
+  },
+  {
+    "id": "439701",
+    "label": "The King's University"
+  },
+  {
+    "id": "440396",
+    "label": "New Saint Andrews College"
+  },
+  {
+    "id": "440411",
+    "label": "Marlboro College Graduate & Professional Studies"
+  },
+  {
+    "id": "440794",
+    "label": "Pillar College"
+  },
+  {
+    "id": "441511",
+    "label": "Apex School of Theology"
+  },
+  {
+    "id": "441690",
+    "label": "Universidad Pentecostal Mizpa"
+  },
+  {
+    "id": "442639",
+    "label": "University of the Potomac-VA Campus"
+  },
+  {
+    "id": "442949",
+    "label": "Birthingway College of Midwifery"
+  },
+  {
+    "id": "443049",
+    "label": "Faith International University"
+  },
+  {
+    "id": "443340",
+    "label": "Williamson Christian College"
+  },
+  {
+    "id": "443562",
+    "label": "Dewey University-Hato Rey"
+  },
+  {
+    "id": "444778",
+    "label": "Charlotte Christian College and Theological Seminary"
+  },
+  {
+    "id": "446394",
+    "label": "Maple Springs Baptist Bible College and Seminary"
+  },
+  {
+    "id": "447050",
+    "label": "United States University"
+  },
+  {
+    "id": "447953",
+    "label": "SUM Bible College and Theological Seminary"
+  },
+  {
+    "id": "448239",
+    "label": "Careers Unlimited"
+  },
+  {
+    "id": "449135",
+    "label": "Dewey University-Juana Diaz"
+  },
+  {
+    "id": "451370",
+    "label": "Yeshivas Be'er Yitzchok"
+  },
+  {
+    "id": "451404",
+    "label": "Talmudical Seminary of Bobov"
+  },
+  {
+    "id": "454689",
+    "label": "Taft University System"
+  },
+  {
+    "id": "454856",
+    "label": "Denver College of Nursing"
+  },
+  {
+    "id": "455257",
+    "label": "Yeshiva of Machzikai Hadas"
+  },
+  {
+    "id": "455664",
+    "label": "The Chicago School of Professional Psychology at Los Angeles"
+  },
+  {
+    "id": "456481",
+    "label": "Polytechnic University of Puerto Rico-Miami"
+  },
+  {
+    "id": "456490",
+    "label": "Polytechnic University of Puerto Rico-Orlando"
+  },
+  {
+    "id": "457226",
+    "label": "Horizon University"
+  },
+  {
+    "id": "457484",
+    "label": "Pacific Rim Christian University"
+  },
+  {
+    "id": "457688",
+    "label": "American Business and Technology University"
+  },
+  {
+    "id": "457697",
+    "label": "City Vision University"
+  },
+  {
+    "id": "458113",
+    "label": "Bethel College"
+  },
+  {
+    "id": "459417",
+    "label": "Compass College of Cinematic Arts"
+  },
+  {
+    "id": "459727",
+    "label": "Touro University Worldwide"
+  },
+  {
+    "id": "460075",
+    "label": "California University of Management and Sciences"
+  },
+  {
+    "id": "460376",
+    "label": "Fairfax University of America"
+  },
+  {
+    "id": "461032",
+    "label": "Carolina College of Biblical Studies"
+  },
+  {
+    "id": "461643",
+    "label": "Bergin University of Canine Studies"
+  },
+  {
+    "id": "461883",
+    "label": "Millennia Atlantic University"
+  },
+  {
+    "id": "475398",
+    "label": "Catholic Distance University"
+  },
+  {
+    "id": "475608",
+    "label": "Criswell College"
+  },
+  {
+    "id": "475635",
+    "label": "Beverly Hills Design Institute"
+  },
+  {
+    "id": "476717",
+    "label": "Be'er Yaakov Talmudic Seminary"
+  },
+  {
+    "id": "480781",
+    "label": "California Miramar University"
+  },
+  {
+    "id": "480912",
+    "label": "Gemini School of Visual Arts & Communication"
+  },
+  {
+    "id": "481058",
+    "label": "Grace Mission University"
+  },
+  {
+    "id": "481401",
+    "label": "Grace School of Theology"
+  },
+  {
+    "id": "482228",
+    "label": "Veritas Baptist College"
+  },
+  {
+    "id": "483780",
+    "label": "IGlobal University"
+  },
+  {
+    "id": "484835",
+    "label": "CEM College-Mayaguez"
+  },
+  {
+    "id": "485546",
+    "label": "California Intercontinental University"
+  },
+  {
+    "id": "485999",
+    "label": "Bet Medrash Gadol Ateret Torah"
+  },
+  {
+    "id": "486196",
+    "label": "Beth Medrash Meor Yitzchok"
+  },
+  {
+    "id": "486488",
+    "label": "California Jazz Conservatory"
+  },
+  {
+    "id": "488004",
+    "label": "Central Yeshiva Beth Joseph"
+  },
+  {
+    "id": "488776",
+    "label": "Radiological Technologies University VT"
+  },
+  {
+    "id": "490045",
+    "label": "Presbyterian Theological Seminary in America"
+  },
+  {
+    "id": "490063",
+    "label": "Southern States University"
+  },
+  {
+    "id": "490081",
+    "label": "America Evangelical University"
+  },
+  {
+    "id": "490328",
+    "label": "Mechon L'hoyroa"
+  },
+  {
+    "id": "490850",
+    "label": "East-West University"
+  },
+  {
+    "id": "102669",
+    "label": "Alaska Pacific University"
+  },
+  {
+    "id": "105589",
+    "label": "Prescott College"
+  },
+  {
+    "id": "123280",
+    "label": "Shasta Bible College and Graduate School"
+  },
+  {
+    "id": "132408",
+    "label": "The Baptist College of Florida"
+  },
+  {
+    "id": "137953",
+    "label": "Trinity Baptist College"
+  },
+  {
+    "id": "137962",
+    "label": "Trinity College of Florida"
+  },
+  {
+    "id": "147590",
+    "label": "National University of Health Sciences"
+  },
+  {
+    "id": "155070",
+    "label": "Barclay College"
+  },
+  {
+    "id": "160959",
+    "label": "College of the Atlantic"
+  },
+  {
+    "id": "161244",
+    "label": "University of Maine at Machias"
+  },
+  {
+    "id": "161341",
+    "label": "University of Maine at Presque Isle"
+  },
+  {
+    "id": "176789",
+    "label": "Calvary University"
+  },
+  {
+    "id": "178679",
+    "label": "Ozark Christian College"
+  },
+  {
+    "id": "178989",
+    "label": "Research College of Nursing"
+  },
+  {
+    "id": "180522",
+    "label": "Montana State University-Northern"
+  },
+  {
+    "id": "187745",
+    "label": "Institute of American Indian and Alaska Native Culture and Arts Development"
+  },
+  {
+    "id": "192624",
+    "label": "Machzikei Hadath Rabbinical College"
+  },
+  {
+    "id": "194569",
+    "label": "Davis College"
+  },
+  {
+    "id": "194666",
+    "label": "Rabbinical College Bobover Yeshiva Bnei Zion"
+  },
+  {
+    "id": "197601",
+    "label": "Yeshiva Karlin Stolin"
+  },
+  {
+    "id": "198677",
+    "label": "Heritage Bible College"
+  },
+  {
+    "id": "202073",
+    "label": "Cleveland Institute of Music"
+  },
+  {
+    "id": "202903",
+    "label": "Gods Bible School and College"
+  },
+  {
+    "id": "206330",
+    "label": "Urbana University"
+  },
+  {
+    "id": "207157",
+    "label": "Randall University"
+  },
+  {
+    "id": "208725",
+    "label": "New Hope Christian College-Eugene"
+  },
+  {
+    "id": "214971",
+    "label": "Pennsylvania Academy of the Fine Arts"
+  },
+  {
+    "id": "216047",
+    "label": "Saint Charles Borromeo Seminary-Overbrook"
+  },
+  {
+    "id": "219505",
+    "label": "American Baptist College"
+  },
+  {
+    "id": "220604",
+    "label": "Le Moyne-Owen College"
+  },
+  {
+    "id": "221731",
+    "label": "Tennessee Wesleyan University"
+  },
+  {
+    "id": "230977",
+    "label": "New England Culinary Institute"
+  },
+  {
+    "id": "436614",
+    "label": "International Baptist College and Seminary"
+  },
+  {
+    "id": "439862",
+    "label": "Pacific Islands University"
+  },
+  {
+    "id": "444398",
+    "label": "Baptist University of the Americas"
+  },
+  {
+    "id": "484871",
+    "label": "Rabbinical College Ohr Yisroel"
+  },
+  {
+    "id": "488101",
+    "label": "Yeshivas Maharit D'Satmar"
+  },
+  {
+    "id": "489937",
+    "label": "Piedmont International University"
+  },
+  {
+    "id": "491057",
+    "label": "Yeshiva Kollel Tifereth Elizer"
+  },
+  {
+    "id": "102580",
+    "label": "Alaska Bible College"
+  },
+  {
+    "id": "106342",
+    "label": "Lyon College"
+  },
+  {
+    "id": "106810",
+    "label": "Crowley's Ridge College"
+  },
+  {
+    "id": "107558",
+    "label": "University of the Ozarks"
+  },
+  {
+    "id": "115409",
+    "label": "Harvey Mudd College"
+  },
+  {
+    "id": "116846",
+    "label": "American Jewish University"
+  },
+  {
+    "id": "124292",
+    "label": "Thomas Aquinas College"
+  },
+  {
+    "id": "126076",
+    "label": "Yeshiva Ohr Elchonon Chabad West Coast Talmudical Seminary"
+  },
+  {
+    "id": "137272",
+    "label": "St. John Vianney College Seminary"
+  },
+  {
+    "id": "137777",
+    "label": "Talmudic College of Florida"
+  },
+  {
+    "id": "139205",
+    "label": "Brewton-Parker College"
+  },
+  {
+    "id": "142090",
+    "label": "Boise Bible College"
+  },
+  {
+    "id": "145497",
+    "label": "Hebrew Theological College"
+  },
+  {
+    "id": "146825",
+    "label": "MacMurray College"
+  },
+  {
+    "id": "148016",
+    "label": "Principia College"
+  },
+  {
+    "id": "149329",
+    "label": "Telshe Yeshiva-Chicago"
+  },
+  {
+    "id": "152099",
+    "label": "Oakland City University"
+  },
+  {
+    "id": "153241",
+    "label": "Divine Word College"
+  },
+  {
+    "id": "153320",
+    "label": "Faith Baptist Bible College and Theological Seminary"
+  },
+  {
+    "id": "153621",
+    "label": "Iowa Wesleyan University"
+  },
+  {
+    "id": "156189",
+    "label": "Alice Lloyd College"
+  },
+  {
+    "id": "157030",
+    "label": "Kentucky Mountain Bible College"
+  },
+  {
+    "id": "160409",
+    "label": "Saint Joseph Seminary College"
+  },
+  {
+    "id": "163532",
+    "label": "Ner Israel Rabbinical College"
+  },
+  {
+    "id": "163976",
+    "label": "St. John's College"
+  },
+  {
+    "id": "164614",
+    "label": "Boston Baptist College"
+  },
+  {
+    "id": "166054",
+    "label": "Hellenic College-Holy Cross Greek Orthodox School of Theology"
+  },
+  {
+    "id": "167057",
+    "label": "The New England Conservatory of Music"
+  },
+  {
+    "id": "167677",
+    "label": "Saint John's Seminary"
+  },
+  {
+    "id": "170091",
+    "label": "Great Lakes Christian College"
+  },
+  {
+    "id": "171881",
+    "label": "Kuyper College"
+  },
+  {
+    "id": "173142",
+    "label": "Bethany Lutheran College"
+  },
+  {
+    "id": "173452",
+    "label": "Martin Luther College"
+  },
+  {
+    "id": "174525",
+    "label": "Oak Hills Christian College"
+  },
+  {
+    "id": "175430",
+    "label": "Blue Mountain College"
+  },
+  {
+    "id": "176910",
+    "label": "Central Christian College of the Bible"
+  },
+  {
+    "id": "177083",
+    "label": "Conception Seminary College"
+  },
+  {
+    "id": "177816",
+    "label": "Kenrick Glennon Seminary"
+  },
+  {
+    "id": "179256",
+    "label": "Saint Louis Christian College"
+  },
+  {
+    "id": "182917",
+    "label": "Magdalen College"
+  },
+  {
+    "id": "183275",
+    "label": "Thomas More College of Liberal Arts"
+  },
+  {
+    "id": "186186",
+    "label": "Rabbinical College of America"
+  },
+  {
+    "id": "186900",
+    "label": "Talmudical Academy-New Jersey"
+  },
+  {
+    "id": "189857",
+    "label": "Central Yeshiva Tomchei Tmimim Lubavitz"
+  },
+  {
+    "id": "190752",
+    "label": "Yeshiva of Far Rockaway Derech Ayson Rabbinical Seminary"
+  },
+  {
+    "id": "192040",
+    "label": "Jewish Theological Seminary of America"
+  },
+  {
+    "id": "192110",
+    "label": "The Juilliard School"
+  },
+  {
+    "id": "192165",
+    "label": "Kehilath Yakov Rabbinical Seminary"
+  },
+  {
+    "id": "193052",
+    "label": "Mesivta Torah Vodaath Rabbinical Seminary"
+  },
+  {
+    "id": "193070",
+    "label": "Mesivtha Tifereth Jerusalem of America"
+  },
+  {
+    "id": "193247",
+    "label": "Mirrer Yeshiva Cent Institute"
+  },
+  {
+    "id": "194657",
+    "label": "Rabbinical Academy Mesivta Rabbi Chaim Berlin"
+  },
+  {
+    "id": "194763",
+    "label": "Rabbinical Seminary of America"
+  },
+  {
+    "id": "195438",
+    "label": "Sh'or Yoshuv Rabbinical College"
+  },
+  {
+    "id": "196431",
+    "label": "Talmudical Seminary Oholei Torah"
+  },
+  {
+    "id": "196440",
+    "label": "Talmudical Institute of Upstate New York"
+  },
+  {
+    "id": "196583",
+    "label": "Torah Temimah Talmudical Seminary"
+  },
+  {
+    "id": "197027",
+    "label": "United States Merchant Marine Academy"
+  },
+  {
+    "id": "197221",
+    "label": "Webb Institute"
+  },
+  {
+    "id": "197647",
+    "label": "Yeshiva Derech Chaim"
+  },
+  {
+    "id": "197674",
+    "label": "Yeshiva of Nitra Rabbinical College"
+  },
+  {
+    "id": "197692",
+    "label": "Yeshiva Shaar Hatorah"
+  },
+  {
+    "id": "197735",
+    "label": "Yeshivath Viznitz"
+  },
+  {
+    "id": "199458",
+    "label": "Mid-Atlantic Christian University"
+  },
+  {
+    "id": "200484",
+    "label": "Trinity Bible College and Graduate School"
+  },
+  {
+    "id": "200873",
+    "label": "Allegheny Wesleyan College"
+  },
+  {
+    "id": "205027",
+    "label": "Pontifical College Josephinum"
+  },
+  {
+    "id": "205124",
+    "label": "Rabbinical College Telshe"
+  },
+  {
+    "id": "207722",
+    "label": "University of Science and Arts of Oklahoma"
+  },
+  {
+    "id": "209241",
+    "label": "Mount Angel Seminary"
+  },
+  {
+    "id": "211893",
+    "label": "Curtis Institute of Music"
+  },
+  {
+    "id": "216311",
+    "label": "Talmudical Yeshiva of Philadelphia"
+  },
+  {
+    "id": "217040",
+    "label": "Yeshivath Beth Moshe"
+  },
+  {
+    "id": "217606",
+    "label": "Northpoint Bible College"
+  },
+  {
+    "id": "217891",
+    "label": "Clinton College"
+  },
+  {
+    "id": "217925",
+    "label": "Columbia International University"
+  },
+  {
+    "id": "220206",
+    "label": "Welch College"
+  },
+  {
+    "id": "222877",
+    "label": "Arlington Baptist University"
+  },
+  {
+    "id": "227429",
+    "label": "Paul Quinn College"
+  },
+  {
+    "id": "230940",
+    "label": "Marlboro College"
+  },
+  {
+    "id": "231077",
+    "label": "College of St Joseph"
+  },
+  {
+    "id": "231095",
+    "label": "Sterling College"
+  },
+  {
+    "id": "237136",
+    "label": "Appalachian Bible College"
+  },
+  {
+    "id": "239071",
+    "label": "Maranatha Baptist University"
+  },
+  {
+    "id": "239743",
+    "label": "Holy Family College"
+  },
+  {
+    "id": "245652",
+    "label": "St. John's College"
+  },
+  {
+    "id": "245777",
+    "label": "Bais Medrash Elyon"
+  },
+  {
+    "id": "247773",
+    "label": "Yeshiva Gedolah of Greater Detroit"
+  },
+  {
+    "id": "262129",
+    "label": "New College of Florida"
+  },
+  {
+    "id": "363712",
+    "label": "Yeshivah Gedolah Rabbinical College"
+  },
+  {
+    "id": "384421",
+    "label": "Rabbi Jacob Joseph School"
+  },
+  {
+    "id": "399911",
+    "label": "Soka University of America"
+  },
+  {
+    "id": "405058",
+    "label": "Yeshivas Novominsk"
+  },
+  {
+    "id": "417752",
+    "label": "Messenger College"
+  },
+  {
+    "id": "420325",
+    "label": "Yeshiva D'monsey Rabbinical College"
+  },
+  {
+    "id": "430810",
+    "label": "New Hampshire Institute of Art"
+  },
+  {
+    "id": "434937",
+    "label": "Yeshiva College of the Nations Capital"
+  },
+  {
+    "id": "441609",
+    "label": "Yeshiva Shaarei Torah of Rockland"
+  },
+  {
+    "id": "441982",
+    "label": "Franklin W Olin College of Engineering"
+  },
+  {
+    "id": "444413",
+    "label": "Beis Medrash Heichal Dovid"
+  },
+  {
+    "id": "446233",
+    "label": "Ecclesia College"
+  },
+  {
+    "id": "449658",
+    "label": "Bais Medrash Toras Chesed"
+  },
+  {
+    "id": "449764",
+    "label": "Visible Music College"
+  },
+  {
+    "id": "449870",
+    "label": "University of the West"
+  },
+  {
+    "id": "451398",
+    "label": "Yeshiva Toras Chaim"
+  },
+  {
+    "id": "455770",
+    "label": "Providence Christian College"
+  },
+  {
+    "id": "461795",
+    "label": "North American University"
+  },
+  {
+    "id": "462354",
+    "label": "John Paul the Great Catholic University"
+  },
+  {
+    "id": "476601",
+    "label": "Bais HaMedrash and Mesivta of Baltimore"
+  },
+  {
+    "id": "476692",
+    "label": "Yeshiva Gedolah Zichron Leyma"
+  },
+  {
+    "id": "481225",
+    "label": "Mid-South Christian College"
+  },
+  {
+    "id": "481410",
+    "label": "Yeshiva Gedolah Kesser Torah"
+  },
+  {
+    "id": "481438",
+    "label": "Yeshiva Yesodei Hatorah"
+  },
+  {
+    "id": "483018",
+    "label": "Antioch College"
+  },
+  {
+    "id": "486017",
+    "label": "Yeshiva Gedola Ohr Yisrael"
+  },
+  {
+    "id": "486026",
+    "label": "Yeshiva Sholom Shachna"
+  },
+  {
+    "id": "487746",
+    "label": "Yeshiva Zichron Aryeh"
+  },
+  {
+    "id": "488314",
+    "label": "Beth Medrash of Asbury Park"
+  },
+  {
+    "id": "490276",
+    "label": "Yeshiva Shaar Ephraim"
+  },
+  {
+    "id": "490319",
+    "label": "Yeshiva Bais Aharon"
+  },
+  {
+    "id": "490513",
+    "label": "Bais Medrash Mayan Hatorah"
+  },
+  {
+    "id": "100812",
+    "label": "Athens State University"
+  },
+  {
+    "id": "110316",
+    "label": "California Institute of Integral Studies"
+  },
+  {
+    "id": "115083",
+    "label": "Golden Gate University-San Francisco"
+  },
+  {
+    "id": "122296",
+    "label": "Samuel Merritt University"
+  },
+  {
+    "id": "131399",
+    "label": "University of the District of Columbia"
+  },
+  {
+    "id": "141981",
+    "label": "University of Hawaii-West Oahu"
+  },
+  {
+    "id": "148335",
+    "label": "Robert Morris University Illinois"
+  },
+  {
+    "id": "148511",
+    "label": "Rush University"
+  },
+  {
+    "id": "161217",
+    "label": "University of Maine at Augusta"
+  },
+  {
+    "id": "165167",
+    "label": "Cambridge College"
+  },
+  {
+    "id": "166869",
+    "label": "MGH Institute of Health Professions"
+  },
+  {
+    "id": "177986",
+    "label": "Logan University"
+  },
+  {
+    "id": "183257",
+    "label": "Granite State College"
+  },
+  {
+    "id": "190114",
+    "label": "Metropolitan College of New York"
+  },
+  {
+    "id": "197018",
+    "label": "United Talmudical Seminary"
+  },
+  {
+    "id": "200059",
+    "label": "Dickinson State University"
+  },
+  {
+    "id": "209490",
+    "label": "Oregon Health & Science University"
+  },
+  {
+    "id": "218335",
+    "label": "Medical University of South Carolina"
+  },
+  {
+    "id": "224545",
+    "label": "Texas A&M University-Texarkana"
+  },
+  {
+    "id": "228644",
+    "label": "The University of Texas Health Science Center at San Antonio"
+  },
+  {
+    "id": "234915",
+    "label": "City University of Seattle"
+  },
+  {
+    "id": "237215",
+    "label": "Bluefield State College"
+  },
+  {
+    "id": "241216",
+    "label": "Atlantic University College"
+  },
+  {
+    "id": "241225",
+    "label": "Universidad Central de Bayamon"
+  },
+  {
+    "id": "241331",
+    "label": "Carlos Albizu University-San Juan"
+  },
+  {
+    "id": "241377",
+    "label": "Caribbean University-Bayamon"
+  },
+  {
+    "id": "242644",
+    "label": "Inter American University of Puerto Rico-Barranquitas"
+  },
+  {
+    "id": "242680",
+    "label": "Inter American University of Puerto Rico-Fajardo"
+  },
+  {
+    "id": "242699",
+    "label": "Inter American University of Puerto Rico-Guayama"
+  },
+  {
+    "id": "243203",
+    "label": "University of Puerto Rico-Medical Sciences"
+  },
+  {
+    "id": "243577",
+    "label": "Universidad Politecnica de Puerto Rico"
+  },
+  {
+    "id": "243586",
+    "label": "Pontifical Catholic University of Puerto Rico-Mayaguez"
+  },
+  {
+    "id": "243665",
+    "label": "University of the Virgin Islands"
+  },
+  {
+    "id": "441900",
+    "label": "Nevada State College"
+  },
+  {
+    "id": "445735",
+    "label": "Roseman University of Health Sciences"
+  },
+  {
+    "id": "454829",
+    "label": "Aspen University"
+  },
+  {
+    "id": "459824",
+    "label": "Touro University Nevada"
+  },
+  {
+    "id": "460738",
+    "label": "American Sentinel University"
+  },
+  {
+    "id": "474863",
+    "label": "Los Angeles Pacific University"
+  },
+  {
+    "id": "482936",
+    "label": "Florida Polytechnic University"
+  },
+  {
+    "id": "483036",
+    "label": "Texas A&M University-Central Texas"
+  },
+  {
+    "id": "484905",
+    "label": "University of North Texas at Dallas"
+  },
+  {
+    "id": "490133",
+    "label": "Westcliff University"
+  },
+  {
+    "id": "106263",
+    "label": "University of Arkansas for Medical Sciences"
+  },
+  {
+    "id": "130989",
+    "label": "Goldey-Beacom College"
+  },
+  {
+    "id": "157748",
+    "label": "The Southern Baptist Theological Seminary"
+  },
+  {
+    "id": "159373",
+    "label": "Louisiana State University Health Sciences Center-New Orleans"
+  },
+  {
+    "id": "160630",
+    "label": "Southern University at New Orleans"
+  },
+  {
+    "id": "164368",
+    "label": "Hult International Business School"
+  },
+  {
+    "id": "178208",
+    "label": "Midwestern Baptist Theological Seminary"
+  },
+  {
+    "id": "187897",
+    "label": "New Mexico Highlands University"
+  },
+  {
+    "id": "196307",
+    "label": "Upstate Medical University"
+  },
+  {
+    "id": "199759",
+    "label": "Southeastern Baptist Theological Seminary"
+  },
+  {
+    "id": "200253",
+    "label": "Minot State University"
+  },
+  {
+    "id": "200572",
+    "label": "Valley City State University"
+  },
+  {
+    "id": "225575",
+    "label": "Huston-Tillotson University"
+  },
+  {
+    "id": "228653",
+    "label": "The University of Texas Medical Branch at Galveston"
+  },
+  {
+    "id": "241191",
+    "label": "Universidad Adventista de las Antillas"
+  },
+  {
+    "id": "446604",
+    "label": "Uta Mesivta of Kiryas Joel"
+  },
+  {
+    "id": "101675",
+    "label": "Miles College"
+  },
+  {
+    "id": "110404",
+    "label": "California Institute of Technology"
+  },
+  {
+    "id": "112260",
+    "label": "Claremont McKenna College"
+  },
+  {
+    "id": "121257",
+    "label": "Pitzer College"
+  },
+  {
+    "id": "121345",
+    "label": "Pomona College"
+  },
+  {
+    "id": "123165",
+    "label": "Scripps College"
+  },
+  {
+    "id": "126678",
+    "label": "Colorado College"
+  },
+  {
+    "id": "128902",
+    "label": "Connecticut College"
+  },
+  {
+    "id": "130590",
+    "label": "Trinity College"
+  },
+  {
+    "id": "130624",
+    "label": "United States Coast Guard Academy"
+  },
+  {
+    "id": "133526",
+    "label": "Edward Waters College"
+  },
+  {
+    "id": "147369",
+    "label": "Moody Bible Institute"
+  },
+  {
+    "id": "153384",
+    "label": "Grinnell College"
+  },
+  {
+    "id": "153861",
+    "label": "Maharishi University of Management"
+  },
+  {
+    "id": "154174",
+    "label": "Palmer College of Chiropractic"
+  },
+  {
+    "id": "156295",
+    "label": "Berea College"
+  },
+  {
+    "id": "156408",
+    "label": "Centre College"
+  },
+  {
+    "id": "160977",
+    "label": "Bates College"
+  },
+  {
+    "id": "161004",
+    "label": "Bowdoin College"
+  },
+  {
+    "id": "161086",
+    "label": "Colby College"
+  },
+  {
+    "id": "164465",
+    "label": "Amherst College"
+  },
+  {
+    "id": "164580",
+    "label": "Babson College"
+  },
+  {
+    "id": "166124",
+    "label": "College of the Holy Cross"
+  },
+  {
+    "id": "167835",
+    "label": "Smith College"
+  },
+  {
+    "id": "168218",
+    "label": "Wellesley College"
+  },
+  {
+    "id": "168342",
+    "label": "Williams College"
+  },
+  {
+    "id": "170286",
+    "label": "Hillsdale College"
+  },
+  {
+    "id": "173258",
+    "label": "Carleton College"
+  },
+  {
+    "id": "173902",
+    "label": "Macalester College"
+  },
+  {
+    "id": "178697",
+    "label": "College of the Ozarks"
+  },
+  {
+    "id": "187967",
+    "label": "New Mexico Institute of Mining and Technology"
+  },
+  {
+    "id": "190099",
+    "label": "Colgate University"
+  },
+  {
+    "id": "191515",
+    "label": "Hamilton College"
+  },
+  {
+    "id": "195526",
+    "label": "Skidmore College"
+  },
+  {
+    "id": "196255",
+    "label": "SUNY Downstate Health Sciences University"
+  },
+  {
+    "id": "196866",
+    "label": "Union College"
+  },
+  {
+    "id": "197133",
+    "label": "Vassar College"
+  },
+  {
+    "id": "198385",
+    "label": "Davidson College"
+  },
+  {
+    "id": "203535",
+    "label": "Kenyon College"
+  },
+  {
+    "id": "211273",
+    "label": "Bryn Mawr College"
+  },
+  {
+    "id": "212805",
+    "label": "Grove City College"
+  },
+  {
+    "id": "212911",
+    "label": "Haverford College"
+  },
+  {
+    "id": "213385",
+    "label": "Lafayette College"
+  },
+  {
+    "id": "216287",
+    "label": "Swarthmore College"
+  },
+  {
+    "id": "230047",
+    "label": "Brigham Young University-Hawaii"
+  },
+  {
+    "id": "230959",
+    "label": "Middlebury College"
+  },
+  {
+    "id": "234207",
+    "label": "Washington and Lee University"
+  },
+  {
+    "id": "235547",
+    "label": "Bastyr University"
+  },
+  {
+    "id": "237057",
+    "label": "Whitman College"
+  },
+  {
+    "id": "110486",
+    "label": "California State University-Bakersfield"
+  },
+  {
+    "id": "139463",
+    "label": "Dalton State College"
+  },
+  {
+    "id": "159416",
+    "label": "Louisiana State University-Shreveport"
+  },
+  {
+    "id": "174020",
+    "label": "Metropolitan State University"
+  },
+  {
+    "id": "181428",
+    "label": "University of Nebraska Medical Center"
+  },
+  {
+    "id": "187046",
+    "label": "Thomas Edison State University"
+  },
+  {
+    "id": "190576",
+    "label": "CUNY Graduate School and University Center"
+  },
+  {
+    "id": "190637",
+    "label": "CUNY Lehman College"
+  },
+  {
+    "id": "190646",
+    "label": "CUNY Medgar Evers College"
+  },
+  {
+    "id": "190691",
+    "label": "CUNY York College"
+  },
+  {
+    "id": "196264",
+    "label": "SUNY Empire State College"
+  },
+  {
+    "id": "206914",
+    "label": "Cameron University"
+  },
+  {
+    "id": "225414",
+    "label": "University of Houston-Clear Lake"
+  },
+  {
+    "id": "229300",
+    "label": "The University of Texas Health Science Center at Houston"
+  },
+  {
+    "id": "229337",
+    "label": "Texas Tech University Health Sciences Center"
+  },
+  {
+    "id": "240754",
+    "label": "University of Guam"
+  },
+  {
+    "id": "241410",
+    "label": "Pontifical Catholic University of Puerto Rico-Ponce"
+  },
+  {
+    "id": "242626",
+    "label": "Inter American University of Puerto Rico-Aguadilla"
+  },
+  {
+    "id": "242635",
+    "label": "Inter American University of Puerto Rico-Arecibo"
+  },
+  {
+    "id": "242653",
+    "label": "Inter American University of Puerto Rico-Metro"
+  },
+  {
+    "id": "243106",
+    "label": "University of Puerto Rico-Aguadilla"
+  },
+  {
+    "id": "243115",
+    "label": "University of Puerto Rico-Arecibo"
+  },
+  {
+    "id": "243133",
+    "label": "University of Puerto Rico-Bayamon"
+  },
+  {
+    "id": "243142",
+    "label": "University of Puerto Rico-Carolina"
+  },
+  {
+    "id": "243151",
+    "label": "University of Puerto Rico-Cayey"
+  },
+  {
+    "id": "243179",
+    "label": "University of Puerto Rico-Humacao"
+  },
+  {
+    "id": "243212",
+    "label": "University of Puerto Rico-Ponce"
+  },
+  {
+    "id": "243346",
+    "label": "Universidad Ana G. Mendez-Carolina Campus"
+  },
+  {
+    "id": "243443",
+    "label": "Universidad del Sagrado Corazon"
+  },
+  {
+    "id": "262086",
+    "label": "Brandman University"
+  },
+  {
+    "id": "444130",
+    "label": "Northcentral University"
+  },
+  {
+    "id": "450979",
+    "label": "Trident University International"
+  },
+  {
+    "id": "459949",
+    "label": "Texas A&M University-San Antonio"
+  },
+  {
+    "id": "476975",
+    "label": "Colorado State University-Global Campus"
+  },
+  {
+    "id": "487010",
+    "label": "The University of Tennessee Health Science Center"
+  },
+  {
+    "id": "117636",
+    "label": "Loma Linda University"
+  },
+  {
+    "id": "163259",
+    "label": "University of Maryland Baltimore"
+  },
+  {
+    "id": "229018",
+    "label": "The University of Texas of the Permian Basin"
+  },
+  {
+    "id": "128328",
+    "label": "United States Air Force Academy"
+  },
+  {
+    "id": "130697",
+    "label": "Wesleyan University"
+  },
+  {
+    "id": "164155",
+    "label": "United States Naval Academy"
+  },
+  {
+    "id": "183804",
+    "label": "Beth Medrash Govoha"
+  },
+  {
+    "id": "186131",
+    "label": "Princeton University"
+  },
+  {
+    "id": "197036",
+    "label": "United States Military Academy"
+  },
+  {
+    "id": "227757",
+    "label": "Rice University"
+  },
+  {
+    "id": "125231",
+    "label": "Walden University"
+  },
+  {
+    "id": "196680",
+    "label": "Excelsior College"
+  },
+  {
+    "id": "241739",
+    "label": "Universidad Ana G. Mendez-Cupey Campus"
+  },
+  {
+    "id": "243197",
+    "label": "University of Puerto Rico-Mayaguez"
+  },
+  {
+    "id": "243221",
+    "label": "University of Puerto Rico-Rio Piedras"
+  },
+  {
+    "id": "243601",
+    "label": "Universidad Ana G. Mendez-Gurabo Campus"
+  },
+  {
+    "id": "413413",
+    "label": "Capella University"
+  },
+  {
+    "id": "433387",
+    "label": "Western Governors University"
+  },
+  {
+    "id": "449339",
+    "label": "American Public University System"
+  },
+  {
+    "id": "450933",
+    "label": "Columbia Southern University"
+  },
+  {
+    "id": "166683",
+    "label": "Massachusetts Institute of Technology"
+  },
+  {
+    "id": "179867",
+    "label": "Washington University in St Louis"
+  },
+  {
+    "id": "167093",
+    "label": "New England College of Optometry"
+  },
+  {
+    "id": "491093",
+    "label": "National American University-Garden City"
+  },
+  {
+    "id": "160065",
+    "label": "University of Holy Cross"
+  },
+  {
+    "id": "219204",
+    "label": "National American University-Rapid City"
+  },
+  {
+    "id": "219213",
+    "label": "National American University-Sioux Falls"
+  },
+  {
+    "id": "440749",
+    "label": "National American University-Ellsworth AFB Extension"
+  },
+  {
+    "id": "440758",
+    "label": "National American University-Albuquerque West"
+  },
+  {
+    "id": "442718",
+    "label": "National American University-Overland Park"
+  },
+  {
+    "id": "220598",
+    "label": "Lane College"
+  },
+  {
+    "id": "108092",
+    "label": "University of Arkansas-Fort Smith"
+  },
+  {
+    "id": "145336",
+    "label": "Governors State University"
+  },
+  {
+    "id": "185129",
+    "label": "New Jersey City University"
+  },
+  {
+    "id": "196237",
+    "label": "SUNY College at Old Westbury"
+  },
+  {
+    "id": "226091",
+    "label": "Lamar University"
+  },
+  {
+    "id": "163204",
+    "label": "University of Maryland Global Campus"
+  },
+  {
+    "id": "174783",
+    "label": "Saint Cloud State University"
+  },
+  {
+    "id": "131803",
+    "label": "Strayer University-District of Columbia"
+  },
+  {
+    "id": "443766",
+    "label": "Strayer University-Tennessee"
+  },
+  {
+    "id": "443784",
+    "label": "Strayer University-Pennsylvania"
+  },
+  {
+    "id": "450298",
+    "label": "Strayer University-Delaware"
+  },
+  {
+    "id": "450377",
+    "label": "Strayer University-Alabama"
+  },
+  {
+    "id": "453215",
+    "label": "Strayer University-New Jersey"
+  },
+  {
+    "id": "456621",
+    "label": "Strayer University-West Virginia"
+  },
+  {
+    "id": "458885",
+    "label": "Strayer University-Arkansas"
+  },
+  {
+    "id": "458955",
+    "label": "Strayer University-Mississippi"
+  },
+  {
+    "id": "458964",
+    "label": "Strayer University-South Carolina"
+  },
+  {
+    "id": "458973",
+    "label": "Strayer University-Texas"
+  },
+  {
+    "id": "430184",
+    "label": "Strayer University-Maryland"
+  },
+  {
+    "id": "449038",
+    "label": "Strayer University-Florida"
+  },
+  {
+    "id": "453163",
+    "label": "Strayer University-North Carolina"
+  },
+  {
+    "id": "458919",
+    "label": "Strayer University-Georgia"
+  },
+  {
+    "id": "233684",
+    "label": "Strayer University-Virginia"
+  },
+  {
+    "id": "459994",
+    "label": "Strayer University-Global Region"
+  }
+]
