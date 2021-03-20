@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/viz-network.css">
     <title>Document</title>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -29,12 +30,13 @@
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
     </script>
+    <script type="text/javascript" src="pkg/vis-network.js"></script>
 
-    <script src="app.js" defer></script>
+    <script type="text/javascript" src="app.js" defer></script>
 </head>
 <body>
 
-    <h1>My App</h1>
+    <div id="graphContainer"></div>
     
 </body>
 </html>
