@@ -13902,6 +13902,7 @@ const getNeighborhoodNodes = (id) => {
     let neighbors = nodes.filter((el,i)=>{
         return neighbor_ids.includes(el.data.id) || el.data.id===id
     })
+    console.log(neighbor_ids);
     return neighbors;
 }
 
@@ -13939,15 +13940,31 @@ const cy = cytoscape({
     ]
 });
 
+document.addEventListener('click', function (event) {
+
+	// If the clicked element doesn't have the right selector, bail
+	if (!event.target.matches('#moveButton')) return;
+
+	// Don't follow the link
+	event.preventDefault();
+
+    moveButtonHandler(event);
+
+}, false);
+
+const moveButtonHandler = (event) => {
+    // cy.zoom({
+    //     level: 1,
+    //     position: cy.getElementById('704').position()
+    // });
+
+    cy.center(cy.getElementById('704'));
+
+    // cy.fit(cy.$('#704').neighborhood());
+}
 
 // cy.center(cy.$('#1260'))
-// cy.fit(cy.$('#1260').neighborhood());
+
 // console.log( cy.$('#1260, #1259') );
 
 // console.log(cy.$('#1260').neighborhood());
-
-
-// cy.zoom({
-//     level: 4,
-//     position: cy.getElementById('1260').position()
-//   });
