@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/viz-network.css">
-    <title>Document</title>
+    <title>College Seeker</title>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
@@ -31,13 +31,18 @@
     firebase.initializeApp(firebaseConfig);
     firebase.analytics();
     </script>
-    <script type="text/javascript" src="pkg/vis-network.js"></script>
+    <script type="text/javascript" src="pkg/cytoscape.min.js"></script>
 
     <script type="text/javascript" src="app.js" defer></script>
 </head>
 <body>
+<div style="max-width:1500px">
+    <header>
+        <h1>COLLEGE SEEKER</h1>
+    </header>
 
-    <div id="graphContainer"></div>
+    <div id="cy"></div>
+</div>
     
 </body>
 </html>
