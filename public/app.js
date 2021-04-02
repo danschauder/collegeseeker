@@ -13980,6 +13980,26 @@ document.addEventListener('input', function (event) {
     }
 }, false)
 
+const bindNodeClickActions = (cy) => {
+    cy.nodes().on('click',function(e){
+        //Expand neighborhood
+        const expandNodeId = parseInt(e.target.id());
+        let nodes = getNeighborhoodNodes(expandNodeId)
+        cy.add( {
+            nodes: nodes,
+            edges: getNeighborhoodEdges(expandNodeId)
+        });
+        cy.layout({name:'cose'}).run();
+        bindNodeClickActions(cy);
+        cy.zoom({
+            level: 5,
+            position: cy.getElementById(expandNodeId).position()
+        });
+    })
+}
+
+bindNodeClickActions(cy);
+
 const moveButtonHandler = (event) => {
     // cy.zoom({
     //     level: 1,
@@ -13999,4 +14019,5 @@ const collegePickerHandler = (event) => {
         edges: getNeighborhoodEdges(newRoot)
     });
     cy.layout({name:'cose'}).run();
+    bindNodeClickActions(cy);
 }
