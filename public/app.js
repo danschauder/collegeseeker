@@ -12610,7 +12610,7 @@ let edges = [{"source": 0, "target": 3, "distance": 0.2585478679084397},
     {"source": 1260, "target": 566, "distance": 2.0176857460962547}];
 
 edges = edges.map((el,i)=>{
-    return { data: { source: el.source, target: el.target, distance: el.distance, id: el.source.toString() + '_' + el.target.toString()}}
+    return { data: { source: el.source.toString(), target: el.target.toString(), distance: el.distance, id: el.source.toString() + '_' + el.target.toString()}}
 })
 
 // edges_copy = edges_copy.filter((el,i)=>{
@@ -13889,40 +13889,41 @@ nodes = nodes.sort((a,b)=>{
     }
 })
 
+nodes.forEach((el,i)=>{
+    el.data.id = el.data.id.toString();
+});
 
-const getNeighborhoodEdges = (id) => {
-    let neighbors = edges.filter((el,i)=>{
-        return el.data.source===id || el.data.target===id
+const getNeighborhoodData = (id) => {
+    const edgeSubset = edges.filter((el,i)=>{
+        return (el.data.source===id || el.data.target==id)
     });
-    return neighbors;
-}
 
-const getNeighborhoodNodes = (id) => {
+
+
     let neighbor_ids = []
-    
-    edges.map((el,i)=>{
+    edgeSubset.map((el,i)=>{
         if (el.data.source===id){
             neighbor_ids.push(el.data.target)
-        } else if (el.data.target===id) {
+        } else if (el.data.target==id) {
             neighbor_ids.push(el.data.source)
         }
     });
 
-    let neighbors = nodes.filter((el,i)=>{
-        return neighbor_ids.includes(el.data.id) || el.data.id===id
+    const nodeSubset = nodes.filter((el,i)=>{
+        return (neighbor_ids.includes(el.data.id) || el.data.id==id)
     })
-    // console.log(neighbor_ids);
-    return neighbors;
+
+    return {
+        nodes: nodeSubset,
+        edges: edgeSubset
+    }
 }
 
 let currentNode = 1260;
 
 const cy = cytoscape({
     container: document.getElementById('cy'),
-    elements: {
-        nodes: getNeighborhoodNodes(currentNode),
-        edges: getNeighborhoodEdges(currentNode)
-    },
+    elements: getNeighborhoodData(currentNode),
     layout: {
         name: 'cose'
     },
@@ -13983,17 +13984,24 @@ document.addEventListener('input', function (event) {
 const bindNodeClickActions = (cy) => {
     cy.nodes().on('click',function(e){
         //Expand neighborhood
-        const expandNodeId = parseInt(e.target.id());
-        let nodes = getNeighborhoodNodes(expandNodeId)
-        cy.add( {
-            nodes: nodes,
-            edges: getNeighborhoodEdges(expandNodeId)
-        });
-        cy.layout({name:'cose'}).run();
-        bindNodeClickActions(cy);
-        cy.zoom({
-            level: 5,
-            position: cy.getElementById(expandNodeId).position()
+        const expandNodeId = e.target.id();
+
+        const newDataPromise = new Promise((resolve, reject) => {
+            const newData = getNeighborhoodData(expandNodeId);
+            resolve(newData);
+        })
+        newDataPromise.then((newData)=>{
+            cy.add(newData)
+            const layout = cy.layout({name:'cose'})
+            layout.promiseOn('layoutstop').then(function(event){
+                cy.zoom({
+                    level: 3,
+                    position: cy.getElementById(expandNodeId).position()
+                });
+            })
+
+            layout.run();
+            bindNodeClickActions(cy);
         });
     })
 }
@@ -14012,12 +14020,16 @@ const moveButtonHandler = (event) => {
 }
 
 const collegePickerHandler = (event) => {
-    const newRoot = parseInt(event.target.options[event.target.selectedIndex].value);
+    const newRoot = event.target.options[event.target.selectedIndex].value;
     cy.remove('node');
-    cy.add( {
-        nodes: getNeighborhoodNodes(newRoot),
-        edges: getNeighborhoodEdges(newRoot)
+    const newDataPromise = new Promise((resolve, reject) => {
+        const newData = getNeighborhoodData(newRoot);
+        // console.log(newData);
+        resolve(newData);
+    })
+    newDataPromise.then((newData)=>{
+        cy.add(newData)
+        cy.layout({name:'cose'}).run();
+        bindNodeClickActions(cy);
     });
-    cy.layout({name:'cose'}).run();
-    bindNodeClickActions(cy);
 }
