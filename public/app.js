@@ -13931,11 +13931,21 @@ const cy = cytoscape({
         {
             selector: 'node',
             style: {
-                'background-color': "red",
+                'background-fit': "cover",
+                'border-color': '#000',
+                'border-width': 3,
+                'border-opacity': 0.5,
                 'label': 'data(School)',
-                'width': '4px',
-                'height': '4px',
-                'font-size': '4px'
+                'width': '80px',
+                'height': '80px',
+                'font-size': '12px',
+                'background-image': 'img/gt.gif'
+            }
+        },
+        {
+            selector: 'node:hover',
+            style: {
+                'background-color': 'green'
             }
         },
         {
@@ -13981,7 +13991,7 @@ document.addEventListener('input', function (event) {
     }
 }, false)
 
-const bindNodeClickActions = (cy) => {
+const bindNodeEvents = (cy) => {
     cy.nodes().on('click',function(e){
         //Expand neighborhood
         const expandNodeId = e.target.id();
@@ -13995,18 +14005,19 @@ const bindNodeClickActions = (cy) => {
             const layout = cy.layout({name:'cose'})
             layout.promiseOn('layoutstop').then(function(event){
                 cy.zoom({
-                    level: 3,
+                    level: 1,
                     position: cy.getElementById(expandNodeId).position()
                 });
             })
 
             layout.run();
-            bindNodeClickActions(cy);
+            bindNodeEvents(cy);
         });
     })
 }
 
-bindNodeClickActions(cy);
+bindNodeEvents(cy);
+
 
 const moveButtonHandler = (event) => {
     // cy.zoom({
@@ -14030,6 +14041,6 @@ const collegePickerHandler = (event) => {
     newDataPromise.then((newData)=>{
         cy.add(newData)
         cy.layout({name:'cose'}).run();
-        bindNodeClickActions(cy);
+        bindNodeEvents(cy);
     });
 }
