@@ -13943,9 +13943,15 @@ const cy = cytoscape({
             }
         },
         {
-            selector: 'node:hover',
+            selector: '.nodeHover',
             style: {
-                'background-color': 'green'
+                'border-color': 'green'
+            }
+        },
+        {
+            selector: '.centerNode',
+            style: {
+                'border-color': 'blue'
             }
         },
         {
@@ -14014,9 +14020,18 @@ const bindNodeEvents = (cy) => {
             bindNodeEvents(cy);
         });
     })
+
+    cy.nodes().on('mouseover', function(e){
+        cy.getElementById(e.target.id()).addClass('nodeHover');
+    })
+
+    cy.nodes().on('mouseout', function(e){
+        cy.getElementById(e.target.id()).removeClass('nodeHover');
+    })
 }
 
 bindNodeEvents(cy);
+cy.getElementById(currentNode).addClass('centerNode');
 
 
 const moveButtonHandler = (event) => {
