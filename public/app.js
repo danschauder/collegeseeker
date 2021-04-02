@@ -12617,7 +12617,7 @@ edges = edges.map((el,i)=>{
 //     return el.data.distance<=0.25;
 // })
 
-const nodes = [
+let nodes = [
     {data : {id: 0, School: "Alabama A & M University"}},
     {data : {id: 1, School: "University of Alabama at Birmingham"}},
     {data : {id: 2, School: "University of Alabama in Huntsville"}},
@@ -13880,6 +13880,15 @@ const nodes = [
     {data : {id: 1259, School: "Medical Prep Institute of Tampa Bay"}},
     {data : {id: 1260, School: "Purdue University Northwest"}}];
 
+/*Sort the nodes data*/
+nodes = nodes.sort((a,b)=>{
+    if (a.data.School.toLowerCase()>b.data.School.toLowerCase()){
+        return 1;
+    } else {
+        return -1;
+    }
+})
+
 
 const getNeighborhoodEdges = (id) => {
     let neighbors = edges.filter((el,i)=>{
@@ -13902,17 +13911,17 @@ const getNeighborhoodNodes = (id) => {
     let neighbors = nodes.filter((el,i)=>{
         return neighbor_ids.includes(el.data.id) || el.data.id===id
     })
-    console.log(neighbor_ids);
+    // console.log(neighbor_ids);
     return neighbors;
 }
 
-const startingNode = 1260;
+let currentNode = 1260;
 
 const cy = cytoscape({
     container: document.getElementById('cy'),
     elements: {
-        nodes: getNeighborhoodNodes(startingNode),
-        edges: getNeighborhoodEdges(startingNode)
+        nodes: getNeighborhoodNodes(currentNode),
+        edges: getNeighborhoodEdges(currentNode)
     },
     layout: {
         name: 'cose'
@@ -13922,9 +13931,10 @@ const cy = cytoscape({
             selector: 'node',
             style: {
                 'background-color': "red",
-                // 'label': 'data(School)',
+                'label': 'data(School)',
                 'width': '4px',
-                'height': '4px'
+                'height': '4px',
+                'font-size': '4px'
             }
         },
         {
@@ -13940,6 +13950,18 @@ const cy = cytoscape({
     ]
 });
 
+const populateUniversityDropdown = (nodes) => {
+    const dropdown = document.getElementById("collegePicker");
+    nodes.forEach((el,i)=>{
+        let option = document.createElement("option");
+        option.text = el.data.School;
+        option.value = el.data.id;
+        dropdown.add(option);
+    })
+}
+
+populateUniversityDropdown(nodes);
+
 document.addEventListener('click', function (event) {
 
 	// If the clicked element doesn't have the right selector, bail
@@ -13952,6 +13974,12 @@ document.addEventListener('click', function (event) {
 
 }, false);
 
+document.addEventListener('input', function (event) {
+    if (event.target.id==='collegePicker'){
+        collegePickerHandler(event);
+    }
+}, false)
+
 const moveButtonHandler = (event) => {
     // cy.zoom({
     //     level: 1,
@@ -13963,8 +13991,12 @@ const moveButtonHandler = (event) => {
     // cy.fit(cy.$('#704').neighborhood());
 }
 
-// cy.center(cy.$('#1260'))
-
-// console.log( cy.$('#1260, #1259') );
-
-// console.log(cy.$('#1260').neighborhood());
+const collegePickerHandler = (event) => {
+    const newRoot = parseInt(event.target.options[event.target.selectedIndex].value);
+    cy.remove('node');
+    cy.add( {
+        nodes: getNeighborhoodNodes(newRoot),
+        edges: getNeighborhoodEdges(newRoot)
+    });
+    cy.layout({name:'cose'}).run();
+}
