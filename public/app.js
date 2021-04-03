@@ -13925,7 +13925,8 @@ const cy = cytoscape({
     container: document.getElementById('cy'),
     elements: getNeighborhoodData(currentNode),
     layout: {
-        name: 'cose'
+        name: 'cose',
+        animate: false
     },
     style: [
         {
@@ -13945,7 +13946,8 @@ const cy = cytoscape({
         {
             selector: '.nodeHover',
             style: {
-                'border-color': 'green'
+                'border-color': 'green',
+                'border-width': 5
             }
         },
         {
@@ -13957,7 +13959,7 @@ const cy = cytoscape({
         {
             selector: 'edge',
             style: {
-                'width': 1,
+                'width': 3,
                 'line-color': '#ccc'
                 // 'target-arrow-color': '#ccc'
                 // 'target-arrow-shape': 'triangle',
@@ -14001,32 +14003,68 @@ const bindNodeEvents = (cy) => {
     cy.nodes().on('click',function(e){
         //Expand neighborhood
         const expandNodeId = e.target.id();
+        cy.getElementById(currentNode).removeClass('centerNode');
+        currentNode = expandNodeId;
 
         const newDataPromise = new Promise((resolve, reject) => {
             const newData = getNeighborhoodData(expandNodeId);
             resolve(newData);
         })
         newDataPromise.then((newData)=>{
-            cy.add(newData)
-            const layout = cy.layout({name:'cose'})
+            cy.nodes().lock();
+            cy.add(newData);
+            console.log('seting up layout')
+            const layout = cy.layout(
+                {name:'cose', 
+                animate:false,
+                animateFilter: function (node, i) {
+                    let returnVal=false;
+                    newData.nodes.map((el,ind)=>{
+                        if (node.data.id===el.data.id){
+                            returnVal = true;
+                        }
+                    })
+                    return returnVal;
+                },
+                fit: false
+                })
             layout.promiseOn('layoutstop').then(function(event){
-                cy.zoom({
-                    level: 1,
-                    position: cy.getElementById(expandNodeId).position()
-                });
+                // cy.zoom({
+                //     level: 1,
+                //     position: cy.getElementById(expandNodeId).position()
+                // });
+                // cy.fit(cy.getElementById(expandNodeId).neighborhood())
+                // cy.center(cy.getElementById(expandNodeId).position());
             })
 
             layout.run();
             bindNodeEvents(cy);
+            cy.getElementById(currentNode).addClass('centerNode');
         });
     })
 
     cy.nodes().on('mouseover', function(e){
-        cy.getElementById(e.target.id()).addClass('nodeHover');
+        // cy.getElementById(e.target.id()).addClass('nodeHover');
+        cy.getElementById(e.target.id()).animate({
+            style: {
+                'border-color': 'green',
+                // 'border-width': 6
+            },
+            duration: 25,
+            easing: 'linear'
+        })
     })
 
     cy.nodes().on('mouseout', function(e){
-        cy.getElementById(e.target.id()).removeClass('nodeHover');
+        // cy.getElementById(e.target.id()).addClass('nodeHover');
+        cy.getElementById(e.target.id()).animate({
+            style: {
+                'border-color': '#000',
+                // 'border-width': 3,
+            },
+            duration: 25,
+            easing: 'linear'
+        })
     })
 }
 
@@ -14046,10 +14084,10 @@ const moveButtonHandler = (event) => {
 }
 
 const collegePickerHandler = (event) => {
-    const newRoot = event.target.options[event.target.selectedIndex].value;
+    currentNode = event.target.options[event.target.selectedIndex].value;
     cy.remove('node');
     const newDataPromise = new Promise((resolve, reject) => {
-        const newData = getNeighborhoodData(newRoot);
+        const newData = getNeighborhoodData(currentNode);
         // console.log(newData);
         resolve(newData);
     })
@@ -14057,5 +14095,6 @@ const collegePickerHandler = (event) => {
         cy.add(newData)
         cy.layout({name:'cose'}).run();
         bindNodeEvents(cy);
+        cy.getElementById(currentNode).addClass('centerNode');
     });
 }
