@@ -14013,7 +14013,6 @@ const bindNodeEvents = (cy) => {
         newDataPromise.then((newData)=>{
             cy.nodes().lock();
             cy.add(newData);
-            console.log('seting up layout')
             const layout = cy.layout(
                 {name:'cose', 
                 animate:false,
@@ -14035,11 +14034,11 @@ const bindNodeEvents = (cy) => {
                 // });
                 // cy.fit(cy.getElementById(expandNodeId).neighborhood())
                 // cy.center(cy.getElementById(expandNodeId).position());
+                bindNodeEvents(cy);
+                cy.getElementById(currentNode).addClass('centerNode');
             })
 
             layout.run();
-            bindNodeEvents(cy);
-            cy.getElementById(currentNode).addClass('centerNode');
         });
     })
 
@@ -14057,14 +14056,16 @@ const bindNodeEvents = (cy) => {
 
     cy.nodes().on('mouseout', function(e){
         // cy.getElementById(e.target.id()).addClass('nodeHover');
-        cy.getElementById(e.target.id()).animate({
-            style: {
-                'border-color': '#000',
-                // 'border-width': 3,
-            },
-            duration: 25,
-            easing: 'linear'
-        })
+        if (e.target.id()!=currentNode){
+            cy.getElementById(e.target.id()).animate({
+                style: {
+                    'border-color': '#000',
+                    // 'border-width': 3,
+                },
+                duration: 25,
+                easing: 'linear'
+            })
+        }
     })
 }
 
