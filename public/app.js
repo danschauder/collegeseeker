@@ -13925,7 +13925,7 @@ const cy = cytoscape({
     container: document.getElementById('cy'),
     elements: getNeighborhoodData(currentNode),
     layout: {
-        name: 'cose',
+        name: 'fcose',
         animate: false
     },
     style: [
@@ -13999,62 +13999,74 @@ document.addEventListener('input', function (event) {
     }
 }, false)
 
-const bindNodeEvents = (cy) => {
-    cy.nodes().on('click',function(e){
-        //Expand neighborhood
+
+
+
+const bindNodeEvents = (nodes) => {
+    nodes.on('click',function(e){
+        // Update the current node id and class
         const expandNodeId = e.target.id();
         cy.getElementById(currentNode).removeClass('centerNode');
         currentNode = expandNodeId;
+        cy.getElementById(currentNode).addClass('centerNode');
 
+        //Get data on the neighborhood of the clicked node
         const newDataPromise = new Promise((resolve, reject) => {
             const newData = getNeighborhoodData(expandNodeId);
             resolve(newData);
         })
-        newDataPromise.then((newData)=>{
-            cy.nodes().lock();
-            cy.add(newData);
-            const layout = cy.layout(
-                {name:'cose', 
-                animate:false,
-                animateFilter: function (node, i) {
-                    let returnVal=false;
-                    newData.nodes.map((el,ind)=>{
-                        if (node.data.id===el.data.id){
-                            returnVal = true;
-                        }
-                    })
-                    return returnVal;
-                },
-                fit: false
-                })
-            layout.promiseOn('layoutstop').then(function(event){
-                // cy.zoom({
-                //     level: 1,
-                //     position: cy.getElementById(expandNodeId).position()
-                // });
-                // cy.fit(cy.getElementById(expandNodeId).neighborhood())
-                // cy.center(cy.getElementById(expandNodeId).position());
-                bindNodeEvents(cy);
-                cy.getElementById(currentNode).addClass('centerNode');
-            })
 
+        //Add the new neighborhood data to the cytoscape Graph class
+        //trigger a pan/zoom animation to focus on the new neighborhood
+        //bind click events to the new nodes that were added
+        newDataPromise.then((newData)=>{
+            const fixedNodes = cy.nodes().map((el,i)=>{
+                return {
+                    nodeId: el.id(),
+                    position: {x: el.position().x,
+                                y: el.position().y}
+                }
+            })
+            const newNodes = cy.add(newData);
+            const layout = cy.layout(
+                {name:'fcose', 
+                animate:true,
+                animationDuration: 2000,
+                nodeSeparation:2000,
+                fixedNodeConstraint: fixedNodes,
+                nodeRepulsion: node => 8000,
+                nodeDimensionsIncludeLabels:true,
+                stop: () => {
+                    console.log('stop callback firing')
+                    cy.animate({
+                        zoom: {
+                            level: 1.5,
+                            position: cy.getElementById(expandNodeId).position()
+                            },
+                        duration: 2000
+                        })
+                    bindNodeEvents(newNodes);
+                    }
+                })
             layout.run();
         });
     })
 
-    cy.nodes().on('mouseover', function(e){
+    nodes.on('mouseover', function(e){
         // cy.getElementById(e.target.id()).addClass('nodeHover');
-        cy.getElementById(e.target.id()).animate({
-            style: {
-                'border-color': 'green',
-                // 'border-width': 6
-            },
-            duration: 25,
-            easing: 'linear'
-        })
+        if (e.target.id()!=currentNode){
+            cy.getElementById(e.target.id()).animate({
+                style: {
+                    'border-color': 'green',
+                    // 'border-width': 6
+                },
+                duration: 25,
+                easing: 'linear'
+            })
+        }
     })
 
-    cy.nodes().on('mouseout', function(e){
+    nodes.on('mouseout', function(e){
         // cy.getElementById(e.target.id()).addClass('nodeHover');
         if (e.target.id()!=currentNode){
             cy.getElementById(e.target.id()).animate({
@@ -14069,19 +14081,12 @@ const bindNodeEvents = (cy) => {
     })
 }
 
-bindNodeEvents(cy);
+bindNodeEvents(cy.nodes());
 cy.getElementById(currentNode).addClass('centerNode');
 
 
 const moveButtonHandler = (event) => {
-    // cy.zoom({
-    //     level: 1,
-    //     position: cy.getElementById('704').position()
-    // });
-
     cy.center(cy.getElementById('704'));
-
-    // cy.fit(cy.$('#704').neighborhood());
 }
 
 const collegePickerHandler = (event) => {
@@ -14089,13 +14094,12 @@ const collegePickerHandler = (event) => {
     cy.remove('node');
     const newDataPromise = new Promise((resolve, reject) => {
         const newData = getNeighborhoodData(currentNode);
-        // console.log(newData);
         resolve(newData);
     })
     newDataPromise.then((newData)=>{
-        cy.add(newData)
-        cy.layout({name:'cose'}).run();
-        bindNodeEvents(cy);
+        const newNodes = cy.add(newData)
+        cy.layout({name:'fcose'}).run();
+        bindNodeEvents(newNodes);
         cy.getElementById(currentNode).addClass('centerNode');
     });
 }
