@@ -13893,6 +13893,25 @@ nodes.forEach((el,i)=>{
     el.data.id = el.data.id.toString();
 });
 
+const db = firebase.firestore();
+let nodesRef = db.collection('nodes');
+let unsubscribe;
+
+const populateUniversityDropdown = (nodesRef) => {
+
+    const dropdown = document.getElementById("collegePicker");
+    nodesRef.orderBy("School").get().then((querySnapshot) => {
+        querySnapshot.forEach((el) => {
+            let option = document.createElement("option");
+            option.text = el.data().School;
+            option.value = el.data().id;
+            dropdown.add(option);
+        });
+    });
+}
+
+populateUniversityDropdown(nodesRef);
+
 const getNeighborhoodData = (id) => {
     const edgeSubset = edges.filter((el,i)=>{
         return (el.data.source===id || el.data.target==id)
@@ -13968,18 +13987,6 @@ const cy = cytoscape({
         }
     ]
 });
-
-const populateUniversityDropdown = (nodes) => {
-    const dropdown = document.getElementById("collegePicker");
-    nodes.forEach((el,i)=>{
-        let option = document.createElement("option");
-        option.text = el.data.School;
-        option.value = el.data.id;
-        dropdown.add(option);
-    })
-}
-
-populateUniversityDropdown(nodes);
 
 document.addEventListener('click', function (event) {
 
@@ -14103,16 +14110,3 @@ const collegePickerHandler = (event) => {
         cy.getElementById(currentNode).addClass('centerNode');
     });
 }
-
-const db = firebase.firestore();
-
-let nodesRef = db.collection('nodes');
-
-nodesRef.get().then((querySnapshot) => {
-    querySnapshot.forEach((doc) => {
-        // console.log(`${doc.id} => ${doc.data()}`);
-        console.log(doc.data());
-    });
-});
-
-let unsubscribe;
