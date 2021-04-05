@@ -14103,3 +14103,16 @@ const collegePickerHandler = (event) => {
         cy.getElementById(currentNode).addClass('centerNode');
     });
 }
+
+const db = firebase.firestore();
+
+let nodesRef = db.collection('nodes');
+
+nodesRef.get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+        // console.log(`${doc.id} => ${doc.data()}`);
+        console.log(doc.data());
+    });
+});
+
+let unsubscribe;
