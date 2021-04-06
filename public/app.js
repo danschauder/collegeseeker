@@ -1,16 +1,38 @@
 //instantiate a firestore instance
 const db = firebase.firestore();
 
+//Define selected states
+let selectedStates = ['TX']
+
 //Define a function to populate the university name dropdown with college names and id's
 const populateUniversityDropdown = (db) => {
     const dropdown = document.getElementById("collegePicker");
+    const stateDropdown = document.getElementById("statePicker");
     let nodesRef = db.collection('nodes');
+    let stateSet = new Set();
     nodesRef.orderBy("School").get().then((querySnapshot) => {
+        let j=querySnapshot.size-1
+        let i =0;
         querySnapshot.forEach((el) => {
             let option = document.createElement("option");
             option.text = el.data().School;
             option.value = el.data().id;
             dropdown.add(option);
+            stateSet.add(el.data().State)
+            if (i===j){
+                let stateList = Array.from(stateSet)
+                let k=stateList.length-1
+                stateList.sort().forEach((el, l)=>{
+                    let stateOption = document.createElement("option");
+                    stateOption.text = el;
+                    stateOption.value = el;
+                    stateDropdown.add(stateOption)
+                    if (l===k){
+                        document.multiselect('#statePicker').selectAll();
+                    }
+                })
+            }
+            i+=1
         });
     });
 }
@@ -40,7 +62,8 @@ const nodeConverter = {
             data: {id: snapshot.id.toString(),
                     School: data.School,
                 "5YearRepaymentRate": data["5YearRepaymentRate"],
-                    PercentageDegreesAwarded: data.PercentageDegreesAwarded}
+                    PercentageDegreesAwarded: data.PercentageDegreesAwarded,
+                State: data.State}
         })
     }
 }
@@ -161,6 +184,12 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                     // 'target-arrow-color': '#ccc'
                     // 'target-arrow-shape': 'triangle',
                     // 'curve-style': 'bezier'
+                }
+            },
+            {
+                selector: '.hiddenNode',
+                style: {
+                    'display': 'none'
                 }
             }
         ]
@@ -296,5 +325,25 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             cy.getElementById(currentNode).addClass('centerNode');
         });
     }
+
+    //Filter Nodes By State
+    const filterNodesByState = (selectedStates)=>{
+        cy.nodes().forEach((el)=>{
+            if (!selectedStates.includes(el.data().State)){
+                el.addClass('hiddenNode')
+            } else if (el.hasClass('hiddenNode')){
+                el.removeClass('hiddenNode')
+            }            
+        })
+    }
+
+    //Bind an event listener to the filter states button
+    document.addEventListener('click', function (event) {
+        if (event.target.id==='filterStates'){
+            filterNodesByState(selectedStates);
+        }
+    }, false)
+
+
 
 })

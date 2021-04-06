@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/multiselect.css" >
     <title>College Seeker</title>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -38,6 +39,9 @@
     <script type="text/javascript" src="pkg/layout-base.js"></script>
     <script type="text/javascript" src="pkg/cose-base.js"></script>
     <script type="text/javascript" src="pkg/cytoscape-fcose.js"></script>
+    <script type="text/javascript" src="pkg/multiselect.core.js"></script>
+    <script type="text/javascript" src="pkg/helper.js"></script>
+    <script type="text/javascript" src="pkg/multiselect.js"></script>
 
     <script type="text/javascript" src="app.js" defer></script>
 </head>
@@ -46,8 +50,12 @@
     <header>
         <h1>COLLEGE SEEKER</h1>
     </header>
-    <!-- <button id="moveButton">Move</button> -->
-    <select id="collegePicker"></select>
+    <!-- <button id="filterStates">Filter States</button> -->
+    <div>
+        <select id="collegePicker"></select>
+        <select id="statePicker" multiple>
+        </select>
+    </div>
     <div id="cy"></div>
 </div>
     
