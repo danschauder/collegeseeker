@@ -320,6 +320,9 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
         })
         newDataPromise.then((newData)=>{
             const newNodes = cy.add(newData)
+            const selectedStatesOptions = document.querySelectorAll('#statePicker option:checked');
+            const selectedStates = Array.from(selectedStatesOptions).map(el => el.value);
+            filterNodesByState(selectedStates);
             cy.layout({name:'fcose'}).run();
             bindNodeEvents(newNodes, nodes, edges);
             cy.getElementById(currentNode).addClass('centerNode').addClass('expanded');
@@ -342,9 +345,6 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
         if (event.target.id==='updateFiltersButton'){
             collegePickerHandler(event);
             // console.log(document.getElementById('statePicker').value)
-            const selectedStatesOptions = document.querySelectorAll('#statePicker option:checked');
-            const selectedStates = Array.from(selectedStatesOptions).map(el => el.value);
-            filterNodesByState(selectedStates);
         }
     }, false)
 
