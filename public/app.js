@@ -204,6 +204,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                     stop: () => {
                         // console.log('stop callback firing')
                         cy.animate({
+                            center: cy.getElementById(expandNodeId),
                             zoom: {
                                 level: 1.5,
                                 position: cy.getElementById(expandNodeId).position()
