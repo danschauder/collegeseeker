@@ -174,48 +174,68 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             cy.getElementById(currentNode).removeClass('centerNode');
             currentNode = expandNodeId;
             cy.getElementById(currentNode).addClass('centerNode');
-    
-            //Get data on the neighborhood of the clicked node
-            const newDataPromise = new Promise((resolve, reject) => {
-                const newData = getNeighborhoodData(expandNodeId,nodeData,edges);
-                resolve(newData);
-            })
-    
-            //Add the new neighborhood data to the cytoscape Graph class
-            //trigger a pan/zoom animation to focus on the new neighborhood
-            //bind click events to the new nodes that were added
-            newDataPromise.then((newData)=>{
-                const fixedNodes = cy.nodes().map((el,i)=>{
-                    return {
-                        nodeId: el.id(),
-                        position: {x: el.position().x,
-                                    y: el.position().y}
+
+            if (cy.getElementById(currentNode).hasClass('expanded')){
+                // If the clicked node has already been expanded
+                // collapse its child nodes
+                const currentNodePosition = cy.getElementById(currentNode).position()
+                let neighbors = cy.getElementById(currentNode).neighborhood()
+                neighbors = neighbors.filter((el)=>{
+                    return el.is('node') && !el.hasClass('expanded')
+                })
+                neighbors.animate({
+                    position: currentNodePosition,
+                    duration: 2000,
+                    complete: ()=>{
+                        cy.remove(neighbors);
+                        cy.getElementById(currentNode).toggleClass('expanded')
                     }
                 })
-                const newNodes = cy.add(newData);
-                const layout = cy.layout(
-                    {name:'fcose', 
-                    animate:true,
-                    animationDuration: 2000,
-                    nodeSeparation:2000,
-                    fixedNodeConstraint: fixedNodes,
-                    nodeRepulsion: node => 8000,
-                    nodeDimensionsIncludeLabels:true,
-                    stop: () => {
-                        // console.log('stop callback firing')
-                        cy.animate({
-                            center: cy.getElementById(expandNodeId),
-                            zoom: {
-                                level: 1.5,
-                                position: cy.getElementById(expandNodeId).position()
-                                },
-                            duration: 2000
-                            })
-                        bindNodeEvents(newNodes,nodeData,edges);
+            } else {
+                //If the node is not already expanded, get its neighborhood and expand it
+                //Get data on the neighborhood of the clicked node
+                const newDataPromise = new Promise((resolve, reject) => {
+                    const newData = getNeighborhoodData(expandNodeId,nodeData,edges);
+                    resolve(newData);
+                })
+        
+                //Add the new neighborhood data to the cytoscape Graph class
+                //trigger a pan/zoom animation to focus on the new neighborhood
+                //bind click events to the new nodes that were added
+                newDataPromise.then((newData)=>{
+                    const fixedNodes = cy.nodes().map((el,i)=>{
+                        return {
+                            nodeId: el.id(),
+                            position: {x: el.position().x,
+                                        y: el.position().y}
                         }
                     })
-                layout.run();
-            });
+                    const newNodes = cy.add(newData);
+                    const layout = cy.layout(
+                        {name:'fcose', 
+                        animate:true,
+                        animationDuration: 2000,
+                        nodeSeparation:2000,
+                        fixedNodeConstraint: fixedNodes,
+                        nodeRepulsion: node => 8000,
+                        nodeDimensionsIncludeLabels:true,
+                        stop: () => {
+                            // console.log('stop callback firing')
+                            cy.animate({
+                                center: cy.getElementById(expandNodeId),
+                                zoom: {
+                                    level: 1.5,
+                                    position: cy.getElementById(expandNodeId).position()
+                                    },
+                                duration: 2000
+                                })
+                            bindNodeEvents(newNodes,nodeData,edges);
+                            cy.getElementById(currentNode).toggleClass('expanded')
+                            }
+                        })
+                    layout.run();
+                });
+            }
         })
     
         nodes.on('mouseover', function(e){
@@ -251,7 +271,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
     bindNodeEvents(cy.nodes(), nodes, edges);
 
     //Assign a class to the currently "focused" node so it can be styled
-    cy.getElementById(currentNode).addClass('centerNode');
+    cy.getElementById(currentNode).addClass('centerNode').addClass('expanded');
     
     //Bind an event listener to the dropdown
     document.addEventListener('input', function (event) {
