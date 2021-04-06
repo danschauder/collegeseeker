@@ -1,9 +1,6 @@
 //instantiate a firestore instance
 const db = firebase.firestore();
 
-//Define selected states
-let selectedStates = ['TX']
-
 //Define a function to populate the university name dropdown with college names and id's
 const populateUniversityDropdown = (db) => {
     const dropdown = document.getElementById("collegePicker");
@@ -123,7 +120,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
         })
         let neighbor_ids = []
         edgeSubset.map((el,i)=>{
-            if (el.data.source===id){
+            if (el.data.source==id){
                 neighbor_ids.push(el.data.target)
             } else if (el.data.target==id) {
                 neighbor_ids.push(el.data.source)
@@ -217,7 +214,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                     duration: 2000,
                     complete: ()=>{
                         cy.remove(neighbors);
-                        cy.getElementById(currentNode).toggleClass('expanded')
+                        cy.getElementById(currentNode).removeClass('expanded')
                     }
                 })
             } else {
@@ -259,7 +256,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                                 duration: 2000
                                 })
                             bindNodeEvents(newNodes,nodeData,edges);
-                            cy.getElementById(currentNode).toggleClass('expanded')
+                            cy.getElementById(currentNode).addClass('expanded')
                             }
                         })
                     layout.run();
@@ -303,16 +300,19 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
     cy.getElementById(currentNode).addClass('centerNode').addClass('expanded');
     
     //Bind an event listener to the dropdown
-    document.addEventListener('input', function (event) {
-        if (event.target.id==='collegePicker'){
-            collegePickerHandler(event);
-        }
-    }, false)
+    // document.addEventListener('input', function (event) {
+    //     if (event.target.id==='collegePicker'){
+    //         collegePickerHandler(event);
+    //     }
+    // }, false)
 
     //When the dropdown value changes, clear the graph and initialize
     //with the new target node's neighborhood
     const collegePickerHandler = (event) => {
-        currentNode = event.target.options[event.target.selectedIndex].value;
+        // currentNode = event.target.options[event.target.selectedIndex].value;
+
+        const selectedCollegeElement = document.getElementById('collegePicker')
+        currentNode = selectedCollegeElement.options[selectedCollegeElement.selectedIndex].value;
         cy.remove('node');
         const newDataPromise = new Promise((resolve, reject) => {
             const newData = getNeighborhoodData(currentNode, nodes, edges);
@@ -322,7 +322,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             const newNodes = cy.add(newData)
             cy.layout({name:'fcose'}).run();
             bindNodeEvents(newNodes, nodes, edges);
-            cy.getElementById(currentNode).addClass('centerNode');
+            cy.getElementById(currentNode).addClass('centerNode').addClass('expanded');
         });
     }
 
@@ -339,7 +339,11 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
 
     //Bind an event listener to the filter states button
     document.addEventListener('click', function (event) {
-        if (event.target.id==='filterStates'){
+        if (event.target.id==='updateFiltersButton'){
+            collegePickerHandler(event);
+            // console.log(document.getElementById('statePicker').value)
+            const selectedStatesOptions = document.querySelectorAll('#statePicker option:checked');
+            const selectedStates = Array.from(selectedStatesOptions).map(el => el.value);
             filterNodesByState(selectedStates);
         }
     }, false)
