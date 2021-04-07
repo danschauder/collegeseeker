@@ -154,6 +154,13 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
         }
     }
 
+    const makeSvg = (ele)=>{
+        const s = 'img/gt.gif'
+        const w = ele.data()['5YearRepaymentRate']*100
+        const h = w
+        return { svg: s, width: w, height: h };
+    };
+
     // Initialize the core cytoscape graph instance    
     const cy = cytoscape({
         container: document.getElementById('cy'),
@@ -168,13 +175,16 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                 style: {
                     'background-fit': "cover",
                     'border-color': '#000',
-                    'border-width': 3,
+                    'border-width': 2,
                     'border-opacity': 0.5,
                     'label': 'data(School)',
-                    'width': '80px',
-                    'height': '80px',
+                    // 'width': 'data("5YearRepaymentRate")*50',
+                    // 'height': 'data("5YearRepaymentRate")*50',
                     'font-size': '12px',
-                    'background-image': 'img/gt.gif'
+                    // 'background-image': 'img/gt.gif'
+                    'background-image': function(ele){ return makeSvg(ele).svg; },
+                    'width': function(ele){ return makeSvg(ele).width; },
+                    'height': function(ele){ return makeSvg(ele).height; }
                 }
             },
             {
