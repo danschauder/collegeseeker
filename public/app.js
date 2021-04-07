@@ -5,8 +5,10 @@ const db = firebase.firestore();
 const populateUniversityDropdown = (db) => {
     const dropdown = document.getElementById("collegePicker");
     const stateDropdown = document.getElementById("statePicker");
+    const programDropdown = document.getElementById("programPicker")
     let nodesRef = db.collection('nodes');
     let stateSet = new Set();
+    let programSet = new Set();
     nodesRef.orderBy("School").get().then((querySnapshot) => {
         let j=querySnapshot.size-1
         let i =0;
@@ -16,6 +18,9 @@ const populateUniversityDropdown = (db) => {
             option.value = el.data().id;
             dropdown.add(option);
             stateSet.add(el.data().State)
+            Object.keys(el.data().PercentageDegreesAwarded).forEach((el)=>{
+                programSet.add(el)
+            })
             if (i===j){
                 let stateList = Array.from(stateSet)
                 let k=stateList.length-1
@@ -26,6 +31,18 @@ const populateUniversityDropdown = (db) => {
                     stateDropdown.add(stateOption)
                     if (l===k){
                         document.multiselect('#statePicker').selectAll();
+                    }
+                })
+
+                let programList = Array.from(programSet)
+                let p=programList.length-1
+                programList.sort().forEach((el, q)=>{
+                    let programOption = document.createElement("option");
+                    programOption.text = el
+                    programOption.value = el;
+                    programDropdown.add(programOption)
+                    if (p===q){
+                        document.multiselect('#programPicker').selectAll();
                     }
                 })
             }
@@ -308,6 +325,9 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
 
     //When the dropdown value changes, clear the graph and initialize
     //with the new target node's neighborhood
+
+
+    /*TO DO: REFACTOR THESE FILTERS WITH BETTER PROMISES*/
     const collegePickerHandler = (event) => {
         // currentNode = event.target.options[event.target.selectedIndex].value;
 
@@ -322,7 +342,10 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             const newNodes = cy.add(newData)
             const selectedStatesOptions = document.querySelectorAll('#statePicker option:checked');
             const selectedStates = Array.from(selectedStatesOptions).map(el => el.value);
+            const selectedProgramsOptions = document.querySelectorAll('#programPicker option:checked');
+            const selectedPrograms = Array.from(selectedProgramsOptions).map(el => el.value);
             filterNodesByState(selectedStates);
+            filterNodesByProgram(selectedPrograms)
             cy.layout({name:'fcose'}).run();
             bindNodeEvents(newNodes, nodes, edges);
             cy.getElementById(currentNode).addClass('centerNode').addClass('expanded');
@@ -337,6 +360,26 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             } else if (el.hasClass('hiddenNode')){
                 el.removeClass('hiddenNode')
             }            
+        })
+    }
+
+    //Filter Nodes By Program
+    const filterNodesByProgram = (selectedPrograms)=>{
+        let j=selectedPrograms.length-1
+        cy.nodes().forEach((node)=>{
+            let showNode=false
+            selectedPrograms.forEach((prg,i)=>{
+                if (node.data().PercentageDegreesAwarded.hasOwnProperty(prg)){
+                    showNode=true
+                }
+                if (i===j){
+                    if (showNode && node.hasClass('hiddenNode')){
+                        node.removeClass('hiddenNode')
+                    } else if (!showNode && !node.hasClass('hiddenNode')){
+                        node.addClass('hiddenNode')
+                    }
+                }
+            })       
         })
     }
 
