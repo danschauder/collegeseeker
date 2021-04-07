@@ -23,3 +23,7 @@ header {
     margin-right: auto;
     /* display: block; */
   }
+
+.filterBox {
+    margin-left:60px;
+}
