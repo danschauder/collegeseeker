@@ -276,6 +276,20 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                             cy.getElementById(currentNode).addClass('expanded')
                             }
                         })
+                    const selectedStatesOptions = document.querySelectorAll('#statePicker option:checked');
+                    const selectedStates = Array.from(selectedStatesOptions).map(el => el.value);
+                    const selectedProgramsOptions = document.querySelectorAll('#programPicker option:checked');
+                    const selectedPrograms = Array.from(selectedProgramsOptions).map(el => el.value);
+                    let showNodes = cy.filter((el)=>{
+                        return filterNodeByState(el,selectedStates)
+                    })
+        
+                    showNodes = showNodes.filter((el)=>{
+                        return filterNodeByProgram(el,selectedPrograms)
+                    })
+        
+                    showNodes.toggleClass('hiddenNode',false)
+                    showNodes.absoluteComplement().toggleClass('hiddenNode',true)
                     layout.run();
                 });
             }
@@ -327,7 +341,6 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
     //with the new target node's neighborhood
 
 
-    /*TO DO: REFACTOR THESE FILTERS WITH BETTER PROMISES*/
     const collegePickerHandler = (event) => {
         // currentNode = event.target.options[event.target.selectedIndex].value;
 
@@ -344,49 +357,71 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             const selectedStates = Array.from(selectedStatesOptions).map(el => el.value);
             const selectedProgramsOptions = document.querySelectorAll('#programPicker option:checked');
             const selectedPrograms = Array.from(selectedProgramsOptions).map(el => el.value);
-            filterNodesByState(selectedStates);
-            filterNodesByProgram(selectedPrograms)
+            let showNodes = cy.filter((el)=>{
+                return filterNodeByState(el,selectedStates)
+            })
+
+            showNodes = showNodes.filter((el)=>{
+                return filterNodeByProgram(el,selectedPrograms)
+            })
+
+            showNodes.toggleClass('hiddenNode',false)
+            showNodes.absoluteComplement().toggleClass('hiddenNode',true)
             cy.layout({name:'fcose'}).run();
             bindNodeEvents(newNodes, nodes, edges);
             cy.getElementById(currentNode).addClass('centerNode').addClass('expanded');
+
         });
     }
 
-    //Filter Nodes By State
-    const filterNodesByState = (selectedStates)=>{
-        cy.nodes().forEach((el)=>{
-            if (!selectedStates.includes(el.data().State)){
-                el.addClass('hiddenNode')
-            } else if (el.hasClass('hiddenNode')){
-                el.removeClass('hiddenNode')
-            }            
+    const updateFiltersHandler = (event) => {
+        // currentNode = event.target.options[event.target.selectedIndex].value;
+        const selectedStatesOptions = document.querySelectorAll('#statePicker option:checked');
+        const selectedStates = Array.from(selectedStatesOptions).map(el => el.value);
+        const selectedProgramsOptions = document.querySelectorAll('#programPicker option:checked');
+        const selectedPrograms = Array.from(selectedProgramsOptions).map(el => el.value);
+        let showNodes = cy.filter((el)=>{
+            return filterNodeByState(el,selectedStates)
         })
+
+        showNodes = showNodes.filter((el)=>{
+            return filterNodeByProgram(el,selectedPrograms)
+        })
+
+        showNodes.toggleClass('hiddenNode',false)
+        showNodes.absoluteComplement().toggleClass('hiddenNode',true)
+    }
+
+    //Filter Nodes By State
+    const filterNodeByState = (node, selectedStates)=>{
+        return (true ? (!node.isNode() || selectedStates.includes(node.data().State)) : false)
+        // })
     }
 
     //Filter Nodes By Program
-    const filterNodesByProgram = (selectedPrograms)=>{
-        let j=selectedPrograms.length-1
-        cy.nodes().forEach((node)=>{
-            let showNode=false
-            selectedPrograms.forEach((prg,i)=>{
-                if (node.data().PercentageDegreesAwarded.hasOwnProperty(prg)){
-                    showNode=true
-                }
-                if (i===j){
-                    if (showNode && node.hasClass('hiddenNode')){
-                        node.removeClass('hiddenNode')
-                    } else if (!showNode && !node.hasClass('hiddenNode')){
-                        node.addClass('hiddenNode')
-                    }
-                }
-            })       
+    const filterNodeByProgram = (node, selectedPrograms)=>{
+        let includeNode = false
+        selectedPrograms.forEach((prg,i)=>{
+            if (!node.isNode() || node.data().PercentageDegreesAwarded.hasOwnProperty(prg)){
+                // console.log('good node')
+                includeNode = true
+            }
         })
+        return includeNode  
     }
 
-    //Bind an event listener to the filter states button
+    //Bind an event listener to the college picker button
+    document.addEventListener('click', function (event) {
+        if (event.target.id==='changeCollegeButton'){
+            collegePickerHandler(event);
+            // console.log(document.getElementById('statePicker').value)
+        }
+    }, false)
+
+    //Bind an event listener to the update filters  button
     document.addEventListener('click', function (event) {
         if (event.target.id==='updateFiltersButton'){
-            collegePickerHandler(event);
+            updateFiltersHandler(event);
             // console.log(document.getElementById('statePicker').value)
         }
     }, false)
