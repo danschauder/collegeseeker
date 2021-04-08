@@ -1,63 +1,10 @@
 //instantiate a firestore instance
 const db = firebase.firestore();
 
+//Dynamically set the graph container's height property based on width
 let canvas = document.getElementById('cy');
 const heightRatio = 0.5;
 canvas.style.height = (canvas.clientWidth * heightRatio).toString() + 'px';
-console.log(canvas.clientWidth);
-
-//Define a function to populate the university name dropdown with college names and id's
-const populateUniversityDropdown = (db) => {
-    const dropdown = document.getElementById("collegePicker");
-    const stateDropdown = document.getElementById("statePicker");
-    const programDropdown = document.getElementById("programPicker")
-    let nodesRef = db.collection('nodes');
-    let stateSet = new Set();
-    let programSet = new Set();
-    nodesRef.orderBy("School").get().then((querySnapshot) => {
-        let j=querySnapshot.size-1
-        let i =0;
-        querySnapshot.forEach((el) => {
-            let option = document.createElement("option");
-            option.text = el.data().School;
-            option.value = el.data().id;
-            dropdown.add(option);
-            stateSet.add(el.data().State)
-            Object.keys(el.data().PercentageDegreesAwarded).forEach((el)=>{
-                programSet.add(el)
-            })
-            if (i===j){
-                let stateList = Array.from(stateSet)
-                let k=stateList.length-1
-                stateList.sort().forEach((el, l)=>{
-                    let stateOption = document.createElement("option");
-                    stateOption.text = el;
-                    stateOption.value = el;
-                    stateDropdown.add(stateOption)
-                    if (l===k){
-                        document.multiselect('#statePicker').selectAll();
-                    }
-                })
-
-                let programList = Array.from(programSet)
-                let p=programList.length-1
-                programList.sort().forEach((el, q)=>{
-                    let programOption = document.createElement("option");
-                    programOption.text = el
-                    programOption.value = el;
-                    programDropdown.add(programOption)
-                    if (p===q){
-                        document.multiselect('#programPicker').selectAll();
-                    }
-                })
-            }
-            i+=1
-        });
-    });
-}
-
-//populate the dropdown
-populateUniversityDropdown(db);
 
 
 // Converter function to conform firestore edge data to taxonomy needed for cytoscape
@@ -133,6 +80,86 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
 
     // Define the default node as the first one in the query results
     let currentNode = nodes[0].data.id
+
+
+    //Define a function to populate the university name dropdown with college names and id's
+    const populateUniversityDropdown = (nodes) => {
+        const stateDropdown = document.getElementById("statePicker");
+        const programDropdown = document.getElementById("programPicker")
+        let stateSet = new Set();
+        let programSet = new Set();
+        let universityList = [];
+        let j=nodes.length-1
+        nodes.forEach((el, i) => {
+            stateSet.add(el.data.State)
+            Object.keys(el.data.PercentageDegreesAwarded).forEach((el)=>{
+                programSet.add(el)
+            })
+            universityList.push({id: el.data.id, School: el.data.School})
+            if (i===j){
+                let stateList = Array.from(stateSet)
+                let k=stateList.length-1
+                stateList.sort().forEach((el, l)=>{
+                    let stateOption = document.createElement("option");
+                    stateOption.text = el;
+                    stateOption.value = el;
+                    stateDropdown.add(stateOption)
+                    if (l===k){
+                        document.multiselect('#statePicker').selectAll();
+                    }
+                })
+
+                let programList = Array.from(programSet)
+                let p=programList.length-1
+                programList.sort().forEach((el, q)=>{
+                    let programOption = document.createElement("option");
+                    programOption.text = el
+                    programOption.value = el;
+                    programDropdown.add(programOption)
+                    if (p===q){
+                        document.multiselect('#programPicker').selectAll();
+                    }
+                })
+                
+                const autoCompleteJS = new autoComplete({
+                    name: "universityAutoComplete",
+                    data: {
+                        src: universityList,
+                        key: ["School"]
+                    },
+                    resultsList: {
+                        container: source => {
+                            source.setAttribute("id", "id");
+                        },
+                        destination: "#autoComplete",
+                        position: "afterend",
+                        element: "ul",
+                        idName: "id",
+                        className: "autoCompleteList"
+                    },
+                    maxResults: 2000,
+                    placeHolder: "Search for a specific college",
+                    noResults: (dataFeedback, generateList) => {
+                        // Generate autoComplete List
+                        generateList(autoCompleteJS, dataFeedback, dataFeedback.results);
+                        // No Results List Item
+                        const result = document.createElement("li");
+                        result.setAttribute("class", "no_result");
+                        result.setAttribute("tabindex", "1");
+                        result.innerHTML = `<span style="display: flex; align-items: center; font-weight: 100; color: rgba(0,0,0,.2);">Found No Results for "${dataFeedback.query}"</span>`;
+                        document.querySelector(`#${autoCompleteJS.resultsList.idName}`).appendChild(result);
+                    },
+                    onSelection: feedback => {             // Action script onSelection event | (Optional)
+                        collegePickerHandler(feedback.selection.value.id);
+                    }
+                })
+
+            }
+        });
+    }
+
+    //populate the dropdown
+    populateUniversityDropdown(nodes);
 
     // IMPORTANT FUNCTION
     // Given a node id, filters the nodes and edges within the node's neighborhood
@@ -356,11 +383,12 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
     //with the new target node's neighborhood
 
 
-    const collegePickerHandler = (event) => {
+    const collegePickerHandler = (targetId) => {
         // currentNode = event.target.options[event.target.selectedIndex].value;
 
-        const selectedCollegeElement = document.getElementById('collegePicker')
-        currentNode = selectedCollegeElement.options[selectedCollegeElement.selectedIndex].value;
+        // const selectedCollegeElement = document.getElementById('collegePicker')
+        // currentNode = selectedCollegeElement.options[selectedCollegeElement.selectedIndex].value;
+        currentNode = targetId
         cy.remove('node');
         const newDataPromise = new Promise((resolve, reject) => {
             const newData = getNeighborhoodData(currentNode, nodes, edges);
@@ -425,14 +453,6 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
         return includeNode  
     }
 
-    //Bind an event listener to the college picker button
-    document.addEventListener('click', function (event) {
-        if (event.target.id==='changeCollegeButton'){
-            collegePickerHandler(event);
-            // console.log(document.getElementById('statePicker').value)
-        }
-    }, false)
-
     //Bind an event listener to the update filters  button
     document.addEventListener('click', function (event) {
         if (event.target.id==='updateFiltersButton'){
@@ -440,7 +460,5 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             // console.log(document.getElementById('statePicker').value)
         }
     }, false)
-
-
 
 })
