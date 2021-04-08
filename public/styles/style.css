@@ -23,6 +23,33 @@ h3, h5 {
     width: 100%;
 }
 
+#autoComplete {
+    border: 1px solid #023d7b;
+    color: #023d7b;
+    height: 2em;
+    /* padding: 1em; */
+    margin-top: 2px;
+    background-position: 3% 50%;
+    background-image: url(../img/search.svg);
+}
+
+#autoComplete::placeholder {
+    color: rgba(#023d7b,0.5);
+}
+
+#autoComplete:hover::placeholder {
+    color: rgba(#023d7b,0.6);
+}
+
+#autoComplete:focus::placeholder {
+    color: rgba(#023d7b,0.7);
+}
+
+#autoComplete:focus {
+    color: #023d7b;
+    border: 1px solid #023d7b;
+}
+
 .active {
     font-weight: 900;
 }
@@ -54,3 +81,16 @@ h3, h5 {
 .filterBox {
     margin-left:60px;
 }
+
+.autoCompleteList {
+    position: absolute;
+    z-index: 2;
+    background: rgba(2, 61, 123,0.9);
+    width: 20%;
+    padding-left:0.5em;
+}
+
+.autoComplete_result:hover {
+    cursor: pointer;
+    background-color: rgba(255,122,122, 0.7);
+  }
