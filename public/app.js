@@ -2,7 +2,7 @@
 const db = firebase.firestore();
 
 let canvas = document.getElementById('cy');
-const heightRatio = 0.6;
+const heightRatio = 0.5;
 canvas.style.height = (canvas.clientWidth * heightRatio).toString() + 'px';
 console.log(canvas.clientWidth);
 
