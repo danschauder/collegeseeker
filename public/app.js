@@ -1,6 +1,11 @@
 //instantiate a firestore instance
 const db = firebase.firestore();
 
+let canvas = document.getElementById('cy');
+const heightRatio = 0.6;
+canvas.style.height = (canvas.clientWidth * heightRatio).toString() + 'px';
+console.log(canvas.clientWidth);
+
 //Define a function to populate the university name dropdown with college names and id's
 const populateUniversityDropdown = (db) => {
     const dropdown = document.getElementById("collegePicker");
