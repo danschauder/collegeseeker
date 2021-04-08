@@ -1,27 +1,54 @@
-/* #graphContainer {
-    width: 800px;
-    height: 600px;
-    border: 1px solid lightgray;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
 body {
-    font-family: "Raleway", Arial, sans-serif
+    /* font-family: 'New Tegomin', serif; */
+    font-family: "Roboto","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #023d7b;
 }
 
-header {
-    width: 290px;
-    margin-left: auto;
-    margin-right: auto;
+a {
+    color: #023d7b;
+}
+
+h1 {
+    text-shadow: 2px 2px hsl(211, 97%, 25%);
+    font-weight:900;
+    letter-spacing: 0.2em;
+}
+
+h3, h5 {
+    font-weight: 900;
 }
 
 #cy {
-    width: 1100px;
-    height: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    /* display: block; */
+    border: 1px solid #023d7b;
+    width: 100%;
+}
+
+.active {
+    font-weight: 900;
+}
+
+.centered {
+    margin:auto;
+    display:block;
+    text-align:center;
+}
+
+.centered h1, h2 {
+    color:white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    /* rtl:raw:
+    right: 0;
+    */
+    bottom: 0;
+    /* rtl:remove */
+    right: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 68px 10px 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
   }
 
 .filterBox {
