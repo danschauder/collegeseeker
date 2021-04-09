@@ -98,10 +98,23 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
 
     const generateDescriptionText = (node) => {
         const nodeData = node.data();
-        const descriptionText = `${nodeData.School} is a ${nodeData.control} institution. It has a total undergraduate enrollment of ${nodeData.undergrad_size}, its setting is ${nodeData.residential}, and the campus size is classified as a ${nodeData.size}. Its in-state tuition and fees are $${nodeData.in_state_tuition}; out-of-state tuition and fees are $${nodeData.out_state_tuition}. <a target="_blank" href="https://${nodeData.url}">Learn more at their website</a>`
+        let url = node.data().url.toLowerCase();
+        if (url.substring(0,4)!='http'){
+            url = 'https://' + url
+        }
+        const descriptionText = `${nodeData.School} is a ${nodeData.control} institution. It has a total undergraduate enrollment of ${nodeData.undergrad_size.toLocaleString()}, its setting is ${nodeData.residential}, and the campus size is classified as a ${nodeData.size}. Its in-state tuition and fees are $${nodeData.in_state_tuition.toLocaleString()}; out-of-state tuition and fees are $${nodeData.out_state_tuition.toLocaleString()}. <a target="_blank" href="${url}">Learn more at their website</a>`
         return descriptionText
     }
 
+    // const storage = firebase.storage();
+    // const storageRef = storage.ref();
+
+    // const getLogoSVG = async (ele)=>{
+    //     const s = await storageRef.child(`img/logo/${ele.data.UNITID}.jpg`).getDownloadURL().then(url=>url);
+    //     console.log(s)
+    //     return s
+    // };
+    // let logos={}
 
     //Define a function to populate the university name dropdown with college names and id's
     const populateUniversityDropdown = (nodes) => {
@@ -116,6 +129,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             Object.keys(el.data.PercentageDegreesAwarded).forEach((el)=>{
                 programSet.add(el)
             })
+            // logos[el.data.UNITID]=getLogoSVG(el)
             universityList.push({id: el.data.id, School: el.data.School})
             if (i===j){
                 let stateList = Array.from(stateSet)
@@ -141,6 +155,8 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                         document.multiselect('#programPicker').selectAll();
                     }
                 })
+
+
                 
                 const autoCompleteJS = new autoComplete({
                     name: "universityAutoComplete",
@@ -182,6 +198,13 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
     //populate the dropdown
     populateUniversityDropdown(nodes);
 
+    const getSVG= (ele) => {
+        const s = `https://firebasestorage.googleapis.com/v0/b/dvaspring2021madss.appspot.com/o/img%2Flogo%2F${ele.data().UNITID}.jpg?alt=media`
+        const w = ele.data()['5YearRepaymentRate']*100
+        const h = w
+        return { svg: s, width: w, height: h };
+    }
+
     // IMPORTANT FUNCTION
     // Given a node id, filters the nodes and edges within the node's neighborhood
     const getNeighborhoodData = (id, nodes, edges) => {
@@ -207,13 +230,6 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
         }
     }
 
-    const makeSvg = (ele)=>{
-        const s = 'img/gt.gif'
-        const w = ele.data()['5YearRepaymentRate']*100
-        const h = w
-        return { svg: s, width: w, height: h };
-    };
-
     // Initialize the core cytoscape graph instance    
     const cy = cytoscape({
         container: document.getElementById('cy'),
@@ -230,14 +246,14 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                     'border-color': '#000',
                     'border-width': 2,
                     'border-opacity': 0.5,
-                    'label': 'data(School)',
+                    // 'label': 'data(School)',
                     // 'width': 'data("5YearRepaymentRate")*50',
                     // 'height': 'data("5YearRepaymentRate")*50',
                     'font-size': '12px',
                     // 'background-image': 'img/gt.gif'
-                    'background-image': function(ele){ return makeSvg(ele).svg; },
-                    'width': function(ele){ return makeSvg(ele).width; },
-                    'height': function(ele){ return makeSvg(ele).height; }
+                    'background-image': function(ele){ return getSVG(ele).svg; },
+                    'width': function(ele){ return getSVG(ele).width; },
+                    'height': function(ele){ return getSVG(ele).height; }
                 }
             },
             {
@@ -422,6 +438,8 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
         })
         newDataPromise.then((newData)=>{
             const newNodes = cy.add(newData)
+            document.getElementById('selectedUniversityName').innerHTML=cy.getElementById(currentNode).data().School
+            document.getElementById('selectedUniversityDetails').innerHTML=generateDescriptionText(cy.getElementById(currentNode))
             const selectedStatesOptions = document.querySelectorAll('#statePicker option:checked');
             const selectedStates = Array.from(selectedStatesOptions).map(el => el.value);
             const selectedProgramsOptions = document.querySelectorAll('#programPicker option:checked');
