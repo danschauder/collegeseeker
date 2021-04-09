@@ -26,10 +26,23 @@ const nodeConverter = {
         const data = snapshot.data(options);
         return ({
             data: {id: snapshot.id.toString(),
-                    School: data.School,
+                School: data.School,
                 "5YearRepaymentRate": data["5YearRepaymentRate"],
-                    PercentageDegreesAwarded: data.PercentageDegreesAwarded,
-                State: data.State}
+                PercentageDegreesAwarded: data.PercentageDegreesAwarded,
+                State: data.State,
+                UNITID: data.UNITID,
+                control: data.control,
+                in_state_tuition: data.in_state_tuition,
+                locale: data.locale,
+                out_state_tuition: data.out_state_tuition,
+                region: data.region,
+                residential: data.residential,
+                sat: data.sat,
+                selectivity: data.selectivity,
+                size: data.size,
+                undergrad_size: data.undergrad_size,
+                url: data.url    
+            }
         })
     }
 }
@@ -80,6 +93,14 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
 
     // Define the default node as the first one in the query results
     let currentNode = nodes[0].data.id
+    let currentNodeDetails = nodes[0].data
+    document.getElementById('selectedUniversityName').innerHTML=currentNodeDetails.School
+
+    const generateDescriptionText = (node) => {
+        const nodeData = node.data();
+        const descriptionText = `${nodeData.School} is a ${nodeData.control} institution. It has a total undergraduate enrollment of ${nodeData.undergrad_size}, its setting is ${nodeData.residential}, and the campus size is classified as a ${nodeData.size}. Its in-state tuition and fees are $${nodeData.in_state_tuition}; out-of-state tuition and fees are $${nodeData.out_state_tuition}. <a target="_blank" href="https://${nodeData.url}">Learn more at their website</a>`
+        return descriptionText
+    }
 
 
     //Define a function to populate the university name dropdown with college names and id's
@@ -251,6 +272,9 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
         ]
     });
 
+    // console.log(generateDescriptionText(cy.getElementById(currentNode)))
+    document.getElementById('selectedUniversityDetails').innerHTML=generateDescriptionText(cy.getElementById(currentNode))
+
     // Define function to bind click events to the nodes
     const bindNodeEvents = (nodes,nodeData,edges) => {
         nodes.on('click',function(e){
@@ -259,6 +283,8 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             cy.getElementById(currentNode).removeClass('centerNode');
             currentNode = expandNodeId;
             cy.getElementById(currentNode).addClass('centerNode');
+            document.getElementById('selectedUniversityDetails').innerHTML=generateDescriptionText(cy.getElementById(currentNode))
+            document.getElementById('selectedUniversityName').innerHTML=cy.getElementById(currentNode).data().School
 
             if (cy.getElementById(currentNode).hasClass('expanded')){
                 // If the clicked node has already been expanded
