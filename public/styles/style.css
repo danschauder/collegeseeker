@@ -94,3 +94,7 @@ h3, h5 {
     cursor: pointer;
     background-color: rgba(255,122,122, 0.7);
   }
+
+.no_result {
+    list-style-type: none;
+}

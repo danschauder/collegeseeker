@@ -183,7 +183,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                         const result = document.createElement("li");
                         result.setAttribute("class", "no_result");
                         result.setAttribute("tabindex", "1");
-                        result.innerHTML = `<span style="display: flex; align-items: center; font-weight: 100; color: rgba(0,0,0,.2);">Found No Results for "${dataFeedback.query}"</span>`;
+                        result.innerHTML = `<span style="display: flex; align-items: center; font-weight: 100; color: white;">Found No Results for "${dataFeedback.query}"</span>`;
                         document.querySelector(`#${autoCompleteJS.resultsList.idName}`).appendChild(result);
                     },
                     onSelection: feedback => {             // Action script onSelection event | (Optional)
@@ -290,6 +290,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
 
     // console.log(generateDescriptionText(cy.getElementById(currentNode)))
     document.getElementById('selectedUniversityDetails').innerHTML=generateDescriptionText(cy.getElementById(currentNode))
+    document.getElementById('wordCloudElement').src=`https://firebasestorage.googleapis.com/v0/b/dvaspring2021madss.appspot.com/o/img%2Fwordcloud%2F${cy.getElementById(currentNode).data().UNITID}-WC.png?alt=media`
 
     // Define function to bind click events to the nodes
     const bindNodeEvents = (nodes,nodeData,edges) => {
@@ -301,6 +302,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             cy.getElementById(currentNode).addClass('centerNode');
             document.getElementById('selectedUniversityDetails').innerHTML=generateDescriptionText(cy.getElementById(currentNode))
             document.getElementById('selectedUniversityName').innerHTML=cy.getElementById(currentNode).data().School
+            document.getElementById('wordCloudElement').src=`https://firebasestorage.googleapis.com/v0/b/dvaspring2021madss.appspot.com/o/img%2Fwordcloud%2F${cy.getElementById(currentNode).data().UNITID}-WC.png?alt=media`
 
             if (cy.getElementById(currentNode).hasClass('expanded')){
                 // If the clicked node has already been expanded
@@ -440,6 +442,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             const newNodes = cy.add(newData)
             document.getElementById('selectedUniversityName').innerHTML=cy.getElementById(currentNode).data().School
             document.getElementById('selectedUniversityDetails').innerHTML=generateDescriptionText(cy.getElementById(currentNode))
+            document.getElementById('wordCloudElement').src=`https://firebasestorage.googleapis.com/v0/b/dvaspring2021madss.appspot.com/o/img%2Fwordcloud%2F${cy.getElementById(currentNode).data().UNITID}-WC.png?alt=media`
             const selectedStatesOptions = document.querySelectorAll('#statePicker option:checked');
             const selectedStates = Array.from(selectedStatesOptions).map(el => el.value);
             const selectedProgramsOptions = document.querySelectorAll('#programPicker option:checked');
