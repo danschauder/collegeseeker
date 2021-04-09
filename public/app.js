@@ -98,7 +98,11 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
 
     const generateDescriptionText = (node) => {
         const nodeData = node.data();
-        const descriptionText = `${nodeData.School} is a ${nodeData.control} institution. It has a total undergraduate enrollment of ${nodeData.undergrad_size.toLocaleString()}, its setting is ${nodeData.residential}, and the campus size is classified as a ${nodeData.size}. Its in-state tuition and fees are $${nodeData.in_state_tuition.toLocaleString()}; out-of-state tuition and fees are $${nodeData.out_state_tuition.toLocaleString()}. <a target="_blank" href="https://${nodeData.url}">Learn more at their website</a>`
+        let url = node.data().url.toLowerCase();
+        if (url.substring(0,4)!='http'){
+            url = 'https://' + url
+        }
+        const descriptionText = `${nodeData.School} is a ${nodeData.control} institution. It has a total undergraduate enrollment of ${nodeData.undergrad_size.toLocaleString()}, its setting is ${nodeData.residential}, and the campus size is classified as a ${nodeData.size}. Its in-state tuition and fees are $${nodeData.in_state_tuition.toLocaleString()}; out-of-state tuition and fees are $${nodeData.out_state_tuition.toLocaleString()}. <a target="_blank" href="${url}">Learn more at their website</a>`
         return descriptionText
     }
 
