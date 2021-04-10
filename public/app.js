@@ -94,7 +94,6 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
     // Define the default node as the first one in the query results
     let currentNode = nodes[0].data.id
     let currentNodeDetails = nodes[0].data
-    document.getElementById('selectedUniversityName').innerHTML=currentNodeDetails.School
 
     const generateDescriptionText = (node) => {
         const nodeData = node.data();
@@ -289,7 +288,9 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
     });
 
     // console.log(generateDescriptionText(cy.getElementById(currentNode)))
+    document.getElementById('selectedUniversityName').innerHTML=currentNodeDetails.School
     document.getElementById('selectedUniversityDetails').innerHTML=generateDescriptionText(cy.getElementById(currentNode))
+    document.getElementById('fiveYearSpan').innerHTML=`${(cy.getElementById(currentNode).data()["5YearRepaymentRate"]*100).toFixed(2)}%`
     document.getElementById('wordCloudElement').src=`https://firebasestorage.googleapis.com/v0/b/dvaspring2021madss.appspot.com/o/img%2Fwordcloud%2F${cy.getElementById(currentNode).data().UNITID}-WC.png?alt=media`
 
     // Define function to bind click events to the nodes
@@ -302,6 +303,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             cy.getElementById(currentNode).addClass('centerNode');
             document.getElementById('selectedUniversityDetails').innerHTML=generateDescriptionText(cy.getElementById(currentNode))
             document.getElementById('selectedUniversityName').innerHTML=cy.getElementById(currentNode).data().School
+            document.getElementById('fiveYearSpan').innerHTML=`${(cy.getElementById(currentNode).data()["5YearRepaymentRate"]*100).toFixed(2)}%`
             document.getElementById('wordCloudElement').src=`https://firebasestorage.googleapis.com/v0/b/dvaspring2021madss.appspot.com/o/img%2Fwordcloud%2F${cy.getElementById(currentNode).data().UNITID}-WC.png?alt=media`
 
             if (cy.getElementById(currentNode).hasClass('expanded')){
@@ -442,6 +444,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             const newNodes = cy.add(newData)
             document.getElementById('selectedUniversityName').innerHTML=cy.getElementById(currentNode).data().School
             document.getElementById('selectedUniversityDetails').innerHTML=generateDescriptionText(cy.getElementById(currentNode))
+            document.getElementById('fiveYearSpan').innerHTML=`${(cy.getElementById(currentNode).data()["5YearRepaymentRate"]*100).toFixed(2)}%`
             document.getElementById('wordCloudElement').src=`https://firebasestorage.googleapis.com/v0/b/dvaspring2021madss.appspot.com/o/img%2Fwordcloud%2F${cy.getElementById(currentNode).data().UNITID}-WC.png?alt=media`
             const selectedStatesOptions = document.querySelectorAll('#statePicker option:checked');
             const selectedStates = Array.from(selectedStatesOptions).map(el => el.value);
