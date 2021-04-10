@@ -98,3 +98,7 @@ h3, h5 {
 .no_result {
     list-style-type: none;
 }
+
+.debtDescription {
+    font-size: 80%;
+}
