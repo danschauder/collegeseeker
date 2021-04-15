@@ -287,6 +287,8 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
         ]
     });
 
+    cy.dblclick();
+
     // console.log(generateDescriptionText(cy.getElementById(currentNode)))
     document.getElementById('selectedUniversityName').innerHTML=currentNodeDetails.School
     document.getElementById('selectedUniversityDetails').innerHTML=generateDescriptionText(cy.getElementById(currentNode))
@@ -295,7 +297,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
 
     // Define function to bind click events to the nodes
     const bindNodeEvents = (nodes,nodeData,edges) => {
-        nodes.on('click',function(e){
+        nodes.on('dblclick',function(e){
             // Update the current node id and class
             const expandNodeId = e.target.id();
             cy.getElementById(currentNode).removeClass('centerNode');
@@ -381,6 +383,18 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                     layout.run();
                 });
             }
+        })
+
+        nodes.on('click',function(e){
+            // Update the current node id and class
+            const expandNodeId = e.target.id();
+            cy.getElementById(currentNode).removeClass('centerNode');
+            currentNode = expandNodeId;
+            cy.getElementById(currentNode).addClass('centerNode');
+            document.getElementById('selectedUniversityDetails').innerHTML=generateDescriptionText(cy.getElementById(currentNode))
+            document.getElementById('selectedUniversityName').innerHTML=cy.getElementById(currentNode).data().School
+            document.getElementById('fiveYearSpan').innerHTML=`${(cy.getElementById(currentNode).data()["5YearRepaymentRate"]*100).toFixed(2)}%`
+            document.getElementById('wordCloudElement').src=`https://firebasestorage.googleapis.com/v0/b/dvaspring2021madss.appspot.com/o/img%2Fwordcloud%2F${cy.getElementById(currentNode).data().UNITID}-WC.png?alt=media`
         })
     
         nodes.on('mouseover', function(e){
