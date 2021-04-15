@@ -91,9 +91,9 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
     const nodes = data[0]
     const edges = data[1]
 
-    // Define the default node as the first one in the query results
-    let currentNode = nodes[0].data.id
-    let currentNodeDetails = nodes[0].data
+    // Define the default node as Georgia Tech
+    let currentNode = 183; //Georgia Tech
+    let currentNodeDetails = nodes[324].data
 
     const generateDescriptionText = (node) => {
         const nodeData = node.data();
@@ -208,7 +208,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
     // Given a node id, filters the nodes and edges within the node's neighborhood
     const getNeighborhoodData = (id, nodes, edges) => {
         const edgeSubset = edges.filter((el,i)=>{
-            return (el.data.source===id || el.data.target==id)
+            return (el.data.source==id || el.data.target==id)
         })
         let neighbor_ids = []
         edgeSubset.map((el,i)=>{
