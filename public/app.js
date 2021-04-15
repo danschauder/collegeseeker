@@ -314,7 +314,19 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                 const currentNodePosition = cy.getElementById(currentNode).position()
                 let neighbors = cy.getElementById(currentNode).neighborhood()
                 neighbors = neighbors.filter((el)=>{
-                    return el.is('node') && !el.hasClass('expanded')
+                    let degreeFilter=false;
+                    if (el.is('node')){
+                        if (el.degree()===1){
+                            degreeFilter=true;
+                        } else if (el.degree()==2){
+                            const outgoer = el.outgoers('node');
+                            const incomer = el.incomers('node');
+                            if (outgoer.id()===incomer.id()){
+                                degreeFilter=true;
+                            }
+                        }
+                    }
+                    return el.is('node') && !el.hasClass('expanded') && degreeFilter
                 })
                 neighbors.animate({
                     position: currentNodePosition,
