@@ -134,3 +134,14 @@ button.openFilter {
 /* .filterDropdownContainer {
     visibility:hidden;
 } */
+#updateFiltersButton {
+    position: absolute;
+    bottom: 2px;
+    border: 2px solid rgba(2,61,123,.4);
+    font-size: 1.2em;
+    color: white;
+    /* box-shadow: 1px 1px blue; */
+    border-radius: 5px;
+    background-color: #B3A369;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 19%);
+}

@@ -147,24 +147,30 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                         let stateSelectBox = new vanillaSelectBox("#statePicker",{
                             "maxHeight":200,
                             "placeHolder":"State",
-                            "search":false
+                            "search":true
                             // "title":"State"
-                        })
+                        }).setValue('all');
                         // document.querySelector("#btn-group-#statePicker span.title").innerHTML="State"
                     }
                 })
 
-                // let programList = Array.from(programSet)
-                // let p=programList.length-1
-                // programList.sort().forEach((el, q)=>{
-                //     let programOption = document.createElement("option");
-                //     programOption.text = el
-                //     programOption.value = el;
-                //     programDropdown.add(programOption)
-                //     if (p===q){
-                //         document.multiselect('#programPicker').selectAll();
-                //     }
-                // })
+                let programList = Array.from(programSet)
+                let p=programList.length-1
+                programList.sort().forEach((el, q)=>{
+                    let programOption = document.createElement("option");
+                    programOption.text = el
+                    programOption.value = el;
+                    programDropdown.add(programOption)
+                    if (p===q){
+                        // document.multiselect('#programPicker').selectAll();
+                        let programSelectBox = new vanillaSelectBox("#programPicker",{
+                            "maxHeight":200,
+                            "placeHolder":"Programs",
+                            "search":true
+                            // "title":"State"
+                        }).setValue('all');
+                    }
+                })
 
 
                 
@@ -507,6 +513,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
     const updateFiltersHandler = (event) => {
         // currentNode = event.target.options[event.target.selectedIndex].value;
         const selectedStatesOptions = document.querySelectorAll('#statePicker option:checked');
+        // console.log(document.getElementById('statePicker').value);
         const selectedStates = Array.from(selectedStatesOptions).map(el => el.value);
         const selectedProgramsOptions = document.querySelectorAll('#programPicker option:checked');
         const selectedPrograms = Array.from(selectedProgramsOptions).map(el => el.value);
