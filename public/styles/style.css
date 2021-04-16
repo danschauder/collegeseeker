@@ -28,7 +28,7 @@ h3, h5 {
     color: #023d7b;
     height: 2em;
     /* padding: 1em; */
-    margin-top: 2px;
+    margin-top: 38px;
     background-position: 3% 50%;
     background-image: url(../img/search.svg);
 }
@@ -64,6 +64,15 @@ h3, h5 {
     color:white;
 }
 
+.headerTitle {
+    color:white;
+}
+
+.universityTitleContainer {
+    color: white;
+    background-color: rgba(2, 61, 123,1);
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -74,12 +83,24 @@ h3, h5 {
     /* rtl:remove */
     right: 0;
     z-index: 100; /* Behind the navbar */
-    padding: 68px 10px 0; /* Height of navbar */
+    padding: 150px 10px 0; /* Height of navbar */
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
   }
 
-.filterBox {
+/* .filterBox {
     margin-left:60px;
+} */
+
+.multiselect-input {
+    background-color: #B3A369;
+    font-family: "Roboto","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color:white;
+    font-size:1.4em;
+    border:none;
+}
+
+.multiselect-input-div {
+    border:none;
 }
 
 .autoCompleteList {
@@ -92,7 +113,7 @@ h3, h5 {
 
 .autoComplete_result:hover {
     cursor: pointer;
-    background-color: rgba(255,122,122, 0.7);
+    background-color: rgba(2, 61, 123,0.4);
   }
 
 .no_result {

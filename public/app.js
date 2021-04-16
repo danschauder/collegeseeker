@@ -132,28 +132,36 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             universityList.push({id: el.data.id, School: el.data.School})
             if (i===j){
                 let stateList = Array.from(stateSet)
+                // let stateSelectBox = new vanillaSelectBox("#statePicker",{
+                //     "maxHeight":200,
+                //     "search":false
+                // })
                 let k=stateList.length-1
                 stateList.sort().forEach((el, l)=>{
                     let stateOption = document.createElement("option");
                     stateOption.text = el;
                     stateOption.value = el;
-                    stateDropdown.add(stateOption)
+                    stateDropdown.appendChild(stateOption)
                     if (l===k){
-                        document.multiselect('#statePicker').selectAll();
+                        // document.multiselect('#statePicker').selectAll();
+                        let stateSelectBox = new vanillaSelectBox("#statePicker",{
+                            "maxHeight":200,
+                            "search":true
+                        })
                     }
                 })
 
-                let programList = Array.from(programSet)
-                let p=programList.length-1
-                programList.sort().forEach((el, q)=>{
-                    let programOption = document.createElement("option");
-                    programOption.text = el
-                    programOption.value = el;
-                    programDropdown.add(programOption)
-                    if (p===q){
-                        document.multiselect('#programPicker').selectAll();
-                    }
-                })
+                // let programList = Array.from(programSet)
+                // let p=programList.length-1
+                // programList.sort().forEach((el, q)=>{
+                //     let programOption = document.createElement("option");
+                //     programOption.text = el
+                //     programOption.value = el;
+                //     programDropdown.add(programOption)
+                //     if (p===q){
+                //         document.multiselect('#programPicker').selectAll();
+                //     }
+                // })
 
 
                 
