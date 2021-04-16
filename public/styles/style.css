@@ -19,7 +19,7 @@ h3, h5 {
 }
 
 #cy {
-    border: 1px solid #023d7b;
+    /* border: 1px solid #023d7b; */
     width: 100%;
 }
 
@@ -27,8 +27,11 @@ h3, h5 {
     border: 1px solid #023d7b;
     color: #023d7b;
     height: 2em;
+    /* position:absolute; */
+    bottom:2px;
+    max-width:250px;
     /* padding: 1em; */
-    margin-top: 38px;
+    margin-top: 33px;
     background-position: 3% 50%;
     background-image: url(../img/search.svg);
 }
@@ -122,6 +125,10 @@ h3, h5 {
 
 .debtDescription {
     font-size: 80%;
+}
+
+button.openFilter {
+    background: rgb(2,61,123);
 }
 
 /* .filterDropdownContainer {

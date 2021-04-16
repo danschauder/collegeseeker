@@ -147,7 +147,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                         let stateSelectBox = new vanillaSelectBox("#statePicker",{
                             "maxHeight":200,
                             "placeHolder":"State",
-                            "search":true
+                            "search":false
                             // "title":"State"
                         })
                         // document.querySelector("#btn-group-#statePicker span.title").innerHTML="State"
@@ -185,7 +185,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                         className: "autoCompleteList"
                     },
                     maxResults: 2000,
-                    placeHolder: "Search for a specific college",
+                    placeHolder: "Search for a college",
                     noResults: (dataFeedback, generateList) => {
                         // Generate autoComplete List
                         generateList(autoCompleteJS, dataFeedback, dataFeedback.results);

@@ -119,6 +119,7 @@ function vanillaSelectBox(domSelector, options) {
         let self = this;
         if(!self.userOptions.stayOpen){
             self.drop.style.visibility = "hidden";
+            self.button.classList.remove('openFilter');
             if(self.search){
                 self.inputBox.value = "";
                 Array.prototype.slice.call(self.listElements).forEach(function (x) {
@@ -137,11 +138,11 @@ function vanillaSelectBox(domSelector, options) {
                 {"key":"width","value":"100%"},
                 {"key":"text-align","value":"left"},
                 {"key":"z-index","value":"1"},
-                {"key":"color","value":"#333"},
-                {"key":"background","value":"white !important"},
-                {"key":"border","value":"1px solid #999 !important"},
+                // {"key":"color","value":"#333"},
+                // {"key":"background","value":"white !important"},
+                // {"key":"border","value":"1px solid #999 !important"},
                 {"key":"line-height","value":"20px"},
-                {"key":"font-size","value":"14px"},
+                {"key":"font-size","value":"1.4em"},
                 {"key":"padding","value":"6px 12px"}
                 ]
         }
@@ -431,6 +432,7 @@ function vanillaSelectBox(domSelector, options) {
 
 		if(self.userOptions.stayOpen){
             self.drop.style.visibility = "visible";
+            self.button.classList.add('openFilter');
 			self.drop.style.boxShadow = "none";
 			self.drop.style.minHeight =  (this.userOptions.maxHeight+10) + "px";
 			self.drop.style.position = "relative";
@@ -443,6 +445,7 @@ function vanillaSelectBox(domSelector, options) {
                     self.drop.style.left = self.left + "px";
                     self.drop.style.top = self.top + "px";
                     self.drop.style.visibility = "visible";
+                    self.button.classList.add('openFilter');
                     document.addEventListener("click", docListener);
                     e.preventDefault();
                     e.stopPropagation();
@@ -543,6 +546,7 @@ function vanillaSelectBox(domSelector, options) {
         function docListener() {
             document.removeEventListener("click", docListener);
             self.drop.style.visibility = "hidden";
+            self.button.classList.remove('openFilter');
             if(self.search){
                 self.inputBox.value = "";
                 Array.prototype.slice.call(self.listElements).forEach(function (x) {
