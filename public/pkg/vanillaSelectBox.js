@@ -298,7 +298,7 @@ function vanillaSelectBox(domSelector, options) {
                 sep = ",";
                 li.classList.add("active");
                 if (!self.isMultiple) {
-                    self.title.textContent = text;
+                    // self.title.textContent = text;
                     if (classes.length != 0) {
                         classes.forEach(function(x){
                             self.title.classList.add(x);
@@ -351,7 +351,7 @@ function vanillaSelectBox(domSelector, options) {
                         sep = ",";
                         li.classList.add("active");
                         if (!self.isMultiple) {
-                            self.title.textContent = text;
+                            // self.title.textContent = text;
                             if (classes.length != 0) {
                                 classes.forEach(function(x){
                                     self.title.classList.add(x);
@@ -370,9 +370,9 @@ function vanillaSelectBox(domSelector, options) {
                 selectedTexts = nrActives + " " + wordForItems;
             }
         }
-        if (self.isMultiple) {
-            self.title.innerHTML = selectedTexts;
-        }
+        // if (self.isMultiple) {
+            // self.title.innerHTML = selectedTexts;
+        // }
         if (self.userOptions.placeHolder != "" && self.title.textContent == "") {
             self.title.textContent = self.userOptions.placeHolder;
         }
@@ -479,7 +479,7 @@ function vanillaSelectBox(domSelector, options) {
 
             if (!self.isMultiple) {
                 self.root.value = choiceValue;
-                self.title.textContent = choiceText;
+                // self.title.textContent = choiceText;
                 if (className) {
                     self.title.setAttribute("class", className + " title");
                 } else {
@@ -529,7 +529,7 @@ function vanillaSelectBox(domSelector, options) {
                         selectedTexts = nrActives + " " + wordForItems;
                     }
                 }
-                self.title.textContent = selectedTexts;
+                // self.title.textContent = selectedTexts;
 
                 self.checkUncheckAll();
                 self.privateSendChange();
@@ -716,7 +716,7 @@ vanillaSelectBox.prototype.setValue = function (values) {
                         selectedTexts = nrActives + " " + wordForItems;
                     }
                 }
-                self.title.textContent = selectedTexts;
+                // self.title.textContent = selectedTexts;
                 self.privateSendChange();
             }
             self.checkUncheckAll();
@@ -743,7 +743,7 @@ vanillaSelectBox.prototype.setValue = function (values) {
                 }
             });
             if (found) {
-                self.title.textContent = text;
+                // self.title.textContent = text;
                 if (self.userOptions.placeHolder != "" && self.title.textContent == "") {
                     self.title.textContent = self.userOptions.placeHolder;
                 }
