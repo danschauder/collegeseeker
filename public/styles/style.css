@@ -147,3 +147,8 @@ button.openFilter {
     background-color: #B3A369;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 19%);
 }
+
+.videoIcon {
+    width: 70px;
+    margin-top: 10px;
+}
