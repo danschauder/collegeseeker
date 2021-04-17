@@ -93,8 +93,11 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
     let edges = data[1]
 
     // Define the default node as Georgia Tech
-    let currentNode = 183; //Georgia Tech
-    let currentNodeDetails = nodes[324].data
+    // let currentNode = 183; //Georgia Tech
+    // let currentNodeDetails = nodes[324].data
+    const georgiaTech = nodes.filter(el=>el.data.School==='Georgia Institute of Technology-Main Campus')[0]
+    let currentNode = georgiaTech.data.id
+    let currentNodeDetails = georgiaTech.data
     let currentEdgeType = 'Balanced'
 
     const edgeLookup = {
