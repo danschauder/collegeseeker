@@ -77,6 +77,11 @@
                         <select id="programPicker" multiple size="0" style="display:none;"></select>
                     </div>
                 </div>
+                <div class="col-md-2">
+                    <div class="h-100 filterDropdownContainer">
+                        <select id="priorityPicker" style="display:none;"></select>
+                    </div>
+                </div>
                 <div class="col-md-3">
                     <span class="filterBox">
                         <button id="updateFiltersButton">Update Filters</button>
@@ -86,7 +91,7 @@
         </div>
         <div class="col-md-3 universityTitleContainer">
             <!-- <h1 class="mb-0 h1">COLLEGE SEEKER</h1> -->
-            <h3 id="selectedUniversityName" class="universityName px-1"></h3>
+            <h3 id="selectedUniversityName" class="universityName d-flex justify-content-center px-2"></h3>
         </div>
     </header>
     <div class="container-fluid">
@@ -101,19 +106,17 @@
                     <div id="selectedUniversityDetails" class="nav flex-column justify-content-left mb-4">
                     </div>
                     <hr/>
-                    <h4 class="sidebar-heading d-flex justify-content-center align-top mb-1">Student Debt</h4>
-                    <br/>
+                    <h4 class="sidebar-heading d-flex justify-content-center align-top mb-1" style="text-decoration:underline;">Student Debt</h4>
                     <h5 class="d-flex justify-content-center">Median Debt:</h5>
-                    <div class="d-flex justify-content-center" style="font-weight:900;">$99,999</div>
-                    <br/>
+                    <div class="d-flex justify-content-center" id="medianDebt" style="font-weight:900;"></div>
                     <h5 class="d-flex justify-content-center">Success Rate:</h5>
                     <div class="d-flex justify-content-center" style="font-weight:900;" id="fiveYearSpan"></div>
                     <hr/>
                     <br/>
-                    <h4 class="sidebar-heading d-flex justify-content-center align-top mb-1">Popular Degrees</h4>
+                    <h4 class="sidebar-heading d-flex justify-content-center align-top mb-1" style="text-decoration:underline;">Popular Degrees</h4>
                     <div class="justify-content-center">
                         <img id="wordCloudElement" src="" width="100%"/>
-                    </div>    
+                    </div>
                 </div>
             </nav>
         </div>

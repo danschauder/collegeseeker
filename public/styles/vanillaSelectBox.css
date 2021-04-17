@@ -114,6 +114,7 @@ li.disabled{
 	font-size: 14px;
 	/* background-color: #fff; */
 	min-height:1.4em;
+	color:white;
 	padding: 0.2em 2em 0.2em 1em;
 }
 
@@ -132,8 +133,8 @@ li.disabled{
 	transform: rotate(45deg);
 	height: 10px;
 	width:  5px;
-	border-bottom:  3px solid black;
-	border-right:  3px solid black;
+	border-bottom:  3px solid white;
+	border-right:  3px solid white;
 	border-radius:2px;
 }
 
