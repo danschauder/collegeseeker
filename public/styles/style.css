@@ -8,18 +8,19 @@ a {
     color: #023d7b;
 }
 
-h1 {
+h1.h1 {
     text-shadow: 2px 2px hsl(211, 97%, 25%);
     font-weight:900;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.3em;
+    font-size:3em;
 }
 
-h3, h5 {
+h3, h4, h5 {
     font-weight: 900;
 }
 
 #cy {
-    border: 1px solid #023d7b;
+    /* border: 1px solid #023d7b; */
     width: 100%;
 }
 
@@ -27,8 +28,11 @@ h3, h5 {
     border: 1px solid #023d7b;
     color: #023d7b;
     height: 2em;
+    /* position:absolute; */
+    bottom:2px;
+    max-width:250px;
     /* padding: 1em; */
-    margin-top: 2px;
+    margin-top: 33px;
     background-position: 3% 50%;
     background-image: url(../img/search.svg);
 }
@@ -64,6 +68,15 @@ h3, h5 {
     color:white;
 }
 
+.headerTitle {
+    color:white;
+}
+
+.universityTitleContainer {
+    color: white;
+    background-color: rgba(2, 61, 123,1);
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -72,14 +85,27 @@ h3, h5 {
     */
     bottom: 0;
     /* rtl:remove */
+    border-left: 1px solid rgb(2,61,123);
     right: 0;
     z-index: 100; /* Behind the navbar */
-    padding: 68px 10px 0; /* Height of navbar */
+    padding: 110px 10px 0; /* Height of navbar */
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
   }
 
-.filterBox {
+/* .filterBox {
     margin-left:60px;
+} */
+
+.multiselect-input {
+    background-color: #B3A369;
+    font-family: "Roboto","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color:white;
+    font-size:1.4em;
+    border:none;
+}
+
+.multiselect-input-div {
+    border:none;
 }
 
 .autoCompleteList {
@@ -92,7 +118,7 @@ h3, h5 {
 
 .autoComplete_result:hover {
     cursor: pointer;
-    background-color: rgba(255,122,122, 0.7);
+    background-color: rgba(2, 61, 123,0.4);
   }
 
 .no_result {
@@ -101,4 +127,23 @@ h3, h5 {
 
 .debtDescription {
     font-size: 80%;
+}
+
+button.openFilter {
+    background: rgb(2,61,123);
+}
+
+/* .filterDropdownContainer {
+    visibility:hidden;
+} */
+#updateFiltersButton {
+    position: absolute;
+    bottom: 2px;
+    border: 2px solid rgba(2,61,123,.4);
+    font-size: 1.2em;
+    color: white;
+    /* box-shadow: 1px 1px blue; */
+    border-radius: 5px;
+    background-color: #B3A369;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 19%);
 }

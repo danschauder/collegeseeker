@@ -28,6 +28,7 @@ const nodeConverter = {
             data: {id: snapshot.id.toString(),
                 School: data.School,
                 "5YearRepaymentRate": data["5YearRepaymentRate"],
+                "MDN_GRAD_DEBT": data["MDN_GRAD_DEBT"],
                 PercentageDegreesAwarded: data.PercentageDegreesAwarded,
                 State: data.State,
                 UNITID: data.UNITID,
@@ -48,9 +49,9 @@ const nodeConverter = {
 }
 
 // Returns a Promise with all the edges data
-const getEdges = (db, edgeConverter) => {
+const getEdges = (db, edgeConverter, edgeType='default_edges') => {
     return new Promise((resolve, reject)=>{
-        db.collection('default_edges')
+        db.collection(edgeType)
         .withConverter(edgeConverter)
         .get()
         .then((querySnapshot)=>{
@@ -69,7 +70,7 @@ const getEdges = (db, edgeConverter) => {
 //Returns a promise with all the nodes data
 const getNodes = (db, nodeConverter) => {
     return new Promise((resolve, reject)=>{
-        db.collection('nodes')
+        db.collection('nodesV2')
         .withConverter(nodeConverter)
         .orderBy("School")
         .get()
@@ -89,11 +90,22 @@ const getNodes = (db, nodeConverter) => {
 //Wait for the nodes and edges queries to complete, then proceed
 Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((data)=>{
     const nodes = data[0]
-    const edges = data[1]
+    let edges = data[1]
 
     // Define the default node as Georgia Tech
-    let currentNode = 183; //Georgia Tech
-    let currentNodeDetails = nodes[324].data
+    // let currentNode = 183; //Georgia Tech
+    // let currentNodeDetails = nodes[324].data
+    const georgiaTech = nodes.filter(el=>el.data.School==='Georgia Institute of Technology-Main Campus')[0]
+    let currentNode = georgiaTech.data.id
+    let currentNodeDetails = georgiaTech.data
+    let currentEdgeType = 'Balanced'
+
+    const edgeLookup = {
+        'Balanced':'default_edges15',
+        'Campus Experience':'campus_experience_edges15',
+        'Location':'location_edges15',
+        'Selectivity':'selectivity_edges15'
+    }
 
     const generateDescriptionText = (node) => {
         const nodeData = node.data();
@@ -101,7 +113,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
         if (url.substring(0,4)!='http'){
             url = 'https://' + url
         }
-        const descriptionText = `${nodeData.School} is a ${nodeData.control} institution. It has a total undergraduate enrollment of ${nodeData.undergrad_size.toLocaleString()}, its setting is ${nodeData.residential}, and the campus size is classified as a ${nodeData.size}. Its in-state tuition and fees are $${nodeData.in_state_tuition.toLocaleString()}; out-of-state tuition and fees are $${nodeData.out_state_tuition.toLocaleString()}. <a target="_blank" href="${url}">Learn more at their website</a>`
+        const descriptionText = `${nodeData.School} is a ${nodeData.control} institution. It has a total undergraduate enrollment of ${nodeData.undergrad_size.toLocaleString()}, its setting is ${nodeData.residential}, and the campus size is classified as a ${nodeData.size}. Its in-state tuition and fees are $${nodeData.in_state_tuition.toLocaleString()}; out-of-state tuition and fees are $${nodeData.out_state_tuition.toLocaleString()}. <br /><br/><a target="_blank" href="${url}">Learn more at their website</a>`
         return descriptionText
     }
 
@@ -119,6 +131,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
     const populateUniversityDropdown = (nodes) => {
         const stateDropdown = document.getElementById("statePicker");
         const programDropdown = document.getElementById("programPicker")
+        const priorityDropdown = document.getElementById("priorityPicker")
         let stateSet = new Set();
         let programSet = new Set();
         let universityList = [];
@@ -132,14 +145,25 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             universityList.push({id: el.data.id, School: el.data.School})
             if (i===j){
                 let stateList = Array.from(stateSet)
+                // let stateSelectBox = new vanillaSelectBox("#statePicker",{
+                //     "maxHeight":200,
+                //     "search":false
+                // })
                 let k=stateList.length-1
                 stateList.sort().forEach((el, l)=>{
                     let stateOption = document.createElement("option");
                     stateOption.text = el;
                     stateOption.value = el;
-                    stateDropdown.add(stateOption)
+                    stateDropdown.appendChild(stateOption)
                     if (l===k){
-                        document.multiselect('#statePicker').selectAll();
+                        // document.multiselect('#statePicker').selectAll();
+                        let stateSelectBox = new vanillaSelectBox("#statePicker",{
+                            "maxHeight":200,
+                            "placeHolder":"State",
+                            "search":true
+                            // "title":"State"
+                        }).setValue('all');
+                        // document.querySelector("#btn-group-#statePicker span.title").innerHTML="State"
                     }
                 })
 
@@ -151,9 +175,31 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                     programOption.value = el;
                     programDropdown.add(programOption)
                     if (p===q){
-                        document.multiselect('#programPicker').selectAll();
+                        // document.multiselect('#programPicker').selectAll();
+                        let programSelectBox = new vanillaSelectBox("#programPicker",{
+                            "maxHeight":200,
+                            "placeHolder":"Programs",
+                            "search":true
+                            // "title":"State"
+                        }).setValue('all');
                     }
                 })
+
+                const priorityList = ['Balanced','Campus Experience', 'Location', 'Selectivity'];
+                priorityList.forEach((el,b)=>{
+                    let priorityOption = document.createElement("option");
+                    priorityOption.text=el;
+                    priorityOption.value=el;
+                    priorityDropdown.add(priorityOption)
+                    if (b===3){
+                        let prioritySelectBox = new vanillaSelectBox("#priorityPicker",{
+                            "maxHeight":200,
+                            "placeHolder":"Priority",
+                            "search":false
+                            // "title":"State"
+                        }).setValue('Balanced');
+                    }
+                });
 
 
                 
@@ -174,7 +220,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                         className: "autoCompleteList"
                     },
                     maxResults: 2000,
-                    placeHolder: "Search for a specific college",
+                    placeHolder: "Search for a college",
                     noResults: (dataFeedback, generateList) => {
                         // Generate autoComplete List
                         generateList(autoCompleteJS, dataFeedback, dataFeedback.results);
@@ -227,6 +273,14 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             nodes: nodeSubset,
             edges: edgeSubset
         }
+    }
+
+    const updateGraphData = (edgeType) => {
+        currentEdgeType=edgeType;
+        getEdges(db,edgeConverter,edgeType).then((data)=>{
+            edges=data;
+            collegePickerHandler(currentNode);
+        })
     }
 
     // Initialize the core cytoscape graph instance    
@@ -289,10 +343,17 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
 
     cy.dblclick();
 
+    const currencyFormatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        maximumFractionDigits: 0
+    })
+
     // console.log(generateDescriptionText(cy.getElementById(currentNode)))
     document.getElementById('selectedUniversityName').innerHTML=currentNodeDetails.School
     document.getElementById('selectedUniversityDetails').innerHTML=generateDescriptionText(cy.getElementById(currentNode))
     document.getElementById('fiveYearSpan').innerHTML=`${(cy.getElementById(currentNode).data()["5YearRepaymentRate"]*100).toFixed(2)}%`
+    document.getElementById('medianDebt').innerHTML=`${currencyFormatter.format(cy.getElementById(currentNode).data()["MDN_GRAD_DEBT"])}`
     document.getElementById('wordCloudElement').src=`https://firebasestorage.googleapis.com/v0/b/dvaspring2021madss.appspot.com/o/img%2Fwordcloud%2F${cy.getElementById(currentNode).data().UNITID}-WC.png?alt=media`
 
     // Define function to bind click events to the nodes
@@ -306,6 +367,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             document.getElementById('selectedUniversityDetails').innerHTML=generateDescriptionText(cy.getElementById(currentNode))
             document.getElementById('selectedUniversityName').innerHTML=cy.getElementById(currentNode).data().School
             document.getElementById('fiveYearSpan').innerHTML=`${(cy.getElementById(currentNode).data()["5YearRepaymentRate"]*100).toFixed(2)}%`
+            document.getElementById('medianDebt').innerHTML=`${currencyFormatter.format(cy.getElementById(currentNode).data()["MDN_GRAD_DEBT"])}`
             document.getElementById('wordCloudElement').src=`https://firebasestorage.googleapis.com/v0/b/dvaspring2021madss.appspot.com/o/img%2Fwordcloud%2F${cy.getElementById(currentNode).data().UNITID}-WC.png?alt=media`
 
             if (cy.getElementById(currentNode).hasClass('expanded')){
@@ -406,6 +468,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             document.getElementById('selectedUniversityDetails').innerHTML=generateDescriptionText(cy.getElementById(currentNode))
             document.getElementById('selectedUniversityName').innerHTML=cy.getElementById(currentNode).data().School
             document.getElementById('fiveYearSpan').innerHTML=`${(cy.getElementById(currentNode).data()["5YearRepaymentRate"]*100).toFixed(2)}%`
+            document.getElementById('medianDebt').innerHTML=`${currencyFormatter.format(cy.getElementById(currentNode).data()["MDN_GRAD_DEBT"])}`
             document.getElementById('wordCloudElement').src=`https://firebasestorage.googleapis.com/v0/b/dvaspring2021madss.appspot.com/o/img%2Fwordcloud%2F${cy.getElementById(currentNode).data().UNITID}-WC.png?alt=media`
         })
     
@@ -471,6 +534,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             document.getElementById('selectedUniversityName').innerHTML=cy.getElementById(currentNode).data().School
             document.getElementById('selectedUniversityDetails').innerHTML=generateDescriptionText(cy.getElementById(currentNode))
             document.getElementById('fiveYearSpan').innerHTML=`${(cy.getElementById(currentNode).data()["5YearRepaymentRate"]*100).toFixed(2)}%`
+            document.getElementById('medianDebt').innerHTML=`${currencyFormatter.format(cy.getElementById(currentNode).data()["MDN_GRAD_DEBT"])}`
             document.getElementById('wordCloudElement').src=`https://firebasestorage.googleapis.com/v0/b/dvaspring2021madss.appspot.com/o/img%2Fwordcloud%2F${cy.getElementById(currentNode).data().UNITID}-WC.png?alt=media`
             const selectedStatesOptions = document.querySelectorAll('#statePicker option:checked');
             const selectedStates = Array.from(selectedStatesOptions).map(el => el.value);
@@ -494,21 +558,28 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
     }
 
     const updateFiltersHandler = (event) => {
-        // currentNode = event.target.options[event.target.selectedIndex].value;
-        const selectedStatesOptions = document.querySelectorAll('#statePicker option:checked');
-        const selectedStates = Array.from(selectedStatesOptions).map(el => el.value);
-        const selectedProgramsOptions = document.querySelectorAll('#programPicker option:checked');
-        const selectedPrograms = Array.from(selectedProgramsOptions).map(el => el.value);
-        let showNodes = cy.filter((el)=>{
-            return filterNodeByState(el,selectedStates)
-        })
+        const selectedPriorityOption = document.querySelector('#priorityPicker option:checked');
+        const selectedPriority = selectedPriorityOption.value;
+        if (selectedPriority!=currentEdgeType){
+            updateGraphData(edgeLookup[selectedPriority]);
+        } else {
+            // currentNode = event.target.options[event.target.selectedIndex].value;
+            const selectedStatesOptions = document.querySelectorAll('#statePicker option:checked');
+            // console.log(document.getElementById('statePicker').value);
+            const selectedStates = Array.from(selectedStatesOptions).map(el => el.value);
+            const selectedProgramsOptions = document.querySelectorAll('#programPicker option:checked');
+            const selectedPrograms = Array.from(selectedProgramsOptions).map(el => el.value);
+            let showNodes = cy.filter((el)=>{
+                return filterNodeByState(el,selectedStates)
+            })
 
-        showNodes = showNodes.filter((el)=>{
-            return filterNodeByProgram(el,selectedPrograms)
-        })
+            showNodes = showNodes.filter((el)=>{
+                return filterNodeByProgram(el,selectedPrograms)
+            })
 
-        showNodes.toggleClass('hiddenNode',false)
-        showNodes.absoluteComplement().toggleClass('hiddenNode',true)
+            showNodes.toggleClass('hiddenNode',false)
+            showNodes.absoluteComplement().toggleClass('hiddenNode',true)
+        }
     }
 
     //Filter Nodes By State
