@@ -401,61 +401,81 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             } else {
                 //If the node is not already expanded, get its neighborhood and expand it
                 //Get data on the neighborhood of the clicked node
-                const newDataPromise = new Promise((resolve, reject) => {
-                    const newData = getNeighborhoodData(expandNodeId,nodeData,edges);
-                    resolve(newData);
+                // cy.fit();
+                let maxPos=0;
+                cy.nodes().forEach((el)=>{
+                    if (el.position().x>maxPos){
+                        maxPos=el.position().x
+                    }
                 })
-        
-                //Add the new neighborhood data to the cytoscape Graph class
-                //trigger a pan/zoom animation to focus on the new neighborhood
-                //bind click events to the new nodes that were added
-                newDataPromise.then((newData)=>{
-                    const fixedNodes = cy.nodes().map((el,i)=>{
-                        return {
-                            nodeId: el.id(),
-                            position: {x: el.position().x,
-                                        y: el.position().y}
-                        }
-                    })
-                    const newNodes = cy.add(newData);
-                    const layout = cy.layout(
-                        {name:'fcose', 
-                        animate:true,
-                        animationDuration: 2000,
-                        nodeSeparation:2000,
-                        fixedNodeConstraint: fixedNodes,
-                        nodeRepulsion: node => 8000,
-                        nodeDimensionsIncludeLabels:true,
-                        stop: () => {
-                            // console.log('stop callback firing')
-                            cy.animate({
-                                center: cy.getElementById(expandNodeId),
-                                zoom: {
-                                    level: 1.5,
-                                    position: cy.getElementById(expandNodeId).position()
-                                    },
-                                duration: 2000
-                                })
-                            bindNodeEvents(newNodes,nodeData,edges);
-                            cy.getElementById(currentNode).addClass('expanded')
-                            }
+                const newCenter=maxPos+350;
+                cy.getElementById(expandNodeId).animate({
+                    'position': { 'x': newCenter,/*cy.getElementById(expandNodeId).position()['x']+400,*/
+                                    'y':0
+                                },
+                    'complete': function(){
+                        const newDataPromise = new Promise((resolve, reject) => {
+                            const newData = getNeighborhoodData(expandNodeId,nodeData,edges);
+                            resolve(newData);
                         })
-                    const selectedStatesOptions = document.querySelectorAll('#statePicker option:checked');
-                    const selectedStates = Array.from(selectedStatesOptions).map(el => el.value);
-                    const selectedProgramsOptions = document.querySelectorAll('#programPicker option:checked');
-                    const selectedPrograms = Array.from(selectedProgramsOptions).map(el => el.value);
-                    let showNodes = cy.filter((el)=>{
-                        return filterNodeByState(el,selectedStates)
-                    })
-        
-                    showNodes = showNodes.filter((el)=>{
-                        return filterNodeByProgram(el,selectedPrograms)
-                    })
-        
-                    showNodes.toggleClass('hiddenNode',false)
-                    showNodes.absoluteComplement().toggleClass('hiddenNode',true)
-                    layout.run();
-                });
+                
+                        //Add the new neighborhood data to the cytoscape Graph class
+                        //trigger a pan/zoom animation to focus on the new neighborhood
+                        //bind click events to the new nodes that were added
+                        newDataPromise.then((newData)=>{
+                            const fixedNodes = cy.nodes().map((el,i)=>{
+                                return {
+                                    nodeId: el.id(),
+                                    position: {x: el.position().x,
+                                                y: el.position().y}
+                                }
+                            })
+                            const newNodes = cy.add(newData);
+                            const layout = cy.layout(
+                                {name:'fcose', 
+                                animate:true,
+                                animationDuration: 2000,
+                                nodeSeparation:2000,
+                                fixedNodeConstraint: fixedNodes,
+                                nodeRepulsion: node => 8000,
+                                nodeDimensionsIncludeLabels:true,
+                                fit: true,
+                                stop: () => {
+                                    // console.log('stop callback firing')
+                                    // cy.center(cy.getElementById(expandNodeId));
+                                    cy.animate({
+                                        // center: cy.getElementById(expandNodeId).neighborhood(),
+                                    //     // pan: cy.getElementById(expandNodeId).position(),
+                                        // panBy:{'x':150,'y':0},
+                                        zoom: {
+                                            level: 1.1,
+                                            position: {'x': cy.getElementById(expandNodeId).position().x+50,
+                                                        'y':0}
+                                            },
+                                        duration: 2000
+                                        })
+                                    bindNodeEvents(newNodes,nodeData,edges);
+                                    cy.getElementById(currentNode).addClass('expanded')
+                                    }
+                                })
+                            const selectedStatesOptions = document.querySelectorAll('#statePicker option:checked');
+                            const selectedStates = Array.from(selectedStatesOptions).map(el => el.value);
+                            const selectedProgramsOptions = document.querySelectorAll('#programPicker option:checked');
+                            const selectedPrograms = Array.from(selectedProgramsOptions).map(el => el.value);
+                            let showNodes = cy.filter((el)=>{
+                                return filterNodeByState(el,selectedStates)
+                            })
+                
+                            showNodes = showNodes.filter((el)=>{
+                                return filterNodeByProgram(el,selectedPrograms)
+                            })
+                
+                            showNodes.toggleClass('hiddenNode',false)
+                            showNodes.absoluteComplement().toggleClass('hiddenNode',true)
+                            layout.run();
+                        });
+                    }
+                })
             }
         })
 
