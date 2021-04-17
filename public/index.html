@@ -51,6 +51,7 @@
     <script type="text/javascript" src="pkg/cytoscape-dblclick.js"></script>
     <script type="text/javascript" src="pkg/vanillaSelectBox.js"></script>
     <script type="text/javascript" src="pkg/autoComplete.min.js"></script>
+    <script type="text/javascript" src="pkg/popper.min.js"></script>
 
 
     <script type="text/javascript" src="app.js" defer></script>
@@ -108,6 +109,11 @@
                 <div class="position-sticky pt-3">
                     <!-- <h3 id="selectedUniversityName" class="sidebar-heading d-flex justify-content-left align-items-center mt-4 mb-1"></h3> -->
                     <div id="selectedUniversityDetails" class="nav flex-column justify-content-left mb-4">
+                    </div>
+                    <span id="infoTest" aria-describedby="tooltip">Info</span>
+                    <div id="tooltip" role="tooltip">
+                        <div id="arrow" data-popper-arrow></div>
+                        I'm a tooltip
                     </div>
                     <hr/>
                     <h4 class="sidebar-heading d-flex justify-content-center align-top mb-1" style="text-decoration:underline;">Student Debt</h4>

@@ -6,6 +6,44 @@ let canvas = document.getElementById('cy');
 const heightRatio = 0.5;
 canvas.style.height = (canvas.clientWidth * heightRatio).toString() + 'px';
 
+const infoTest=document.querySelector('#infoTest');
+const infoTooltip=document.querySelector('#tooltip');
+
+const popperInstance = Popper.createPopper(infoTest,infoTooltip,{
+    placement: 'bottom',
+    modifiers: [
+        {
+          name: 'offset',
+          options: {
+            offset: [0, 8],
+          },
+        },
+      ]
+});
+
+function show() {
+    infoTooltip.setAttribute('data-show', '');
+  
+    // We need to tell Popper to update the tooltip position
+    // after we show the tooltip, otherwise it will be incorrect
+    popperInstance.update();
+}
+  
+function hide() {
+    infoTooltip.removeAttribute('data-show');
+}
+  
+const showEvents = ['mouseenter', 'focus'];
+const hideEvents = ['mouseleave', 'blur'];
+  
+showEvents.forEach(event => {
+    infoTest.addEventListener(event, show);
+});
+
+hideEvents.forEach(event => {
+    infoTest.addEventListener(event, hide);
+});
+
 
 // Converter function to conform firestore edge data to taxonomy needed for cytoscape
 const edgeConverter = {
