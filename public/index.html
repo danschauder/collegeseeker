@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="styles/multiselect.css" > -->
     <link rel="stylesheet" href="styles/vanillaSelectBox.css">
     <link rel="stylesheet" href="styles/autoComplete.min.css">
     <link href="styles/style.css" rel="stylesheet" />
@@ -50,9 +49,6 @@
     <script type="text/javascript" src="pkg/cose-base.js"></script>
     <script type="text/javascript" src="pkg/cytoscape-fcose.js"></script>
     <script type="text/javascript" src="pkg/cytoscape-dblclick.js"></script>
-    <!-- <script type="text/javascript" src="pkg/multiselect.core.js"></script> -->
-    <!-- <script type="text/javascript" src="pkg/helper.js"></script> -->
-    <!-- <script type="text/javascript" src="pkg/multiselect.js"></script> -->
     <script type="text/javascript" src="pkg/vanillaSelectBox.js"></script>
     <script type="text/javascript" src="pkg/autoComplete.min.js"></script>
 
@@ -61,73 +57,41 @@
   </head>
   <body>
     <header class="navbar navbar-dark sticky-top py-0" style="background-color: rgba(2, 61, 123,1); height:110px;">
-            <div class="col-md-3 headerTitle h-100" style="background-color: #B3A369;">
-                <h1 class="mb-0 px-1 h1">COLLEGE <br/>SEEKER</h1>
-            </div>
-            <div class="col-md-6 h-100" style="background-color: #B3A369;">
-                <div class="row h-50">
-                    <div class="col-md-5">
-                        <input class="align-middle" id="autoComplete" tabindex="1" />
-                    </div>
-                </div>
-                <div class="row h-50">
-                    <div class="col-md-2">
-                        <div class="h-100 filterDropdownContainer">
-                            <select id="statePicker" multiple size="0" style="display:none;"></select>
-                        </div>
-                        <!-- <span class="filterBox">
-                            <select id="statePicker" multiple></select>
-                        </span>
-                        <span class="filterBox">
-                            <select id="programPicker" multiple></select>
-                        </span> -->
-                    </div>
-                    <div class="col-md-2">
-                        <div class="h-100 filterDropdownContainer">
-                            <select id="programPicker" multiple size="0" style="display:none;"></select>
-                        </div>
-                        <!-- <span class="filterBox">
-                            <select id="statePicker" multiple></select>
-                        </span>
-                        <span class="filterBox">
-                            <select id="programPicker" multiple></select>
-                        </span> -->
-                    </div>
-                    <div class="col-md-3">
-                        <span class="filterBox">
-                            <button id="updateFiltersButton">Update Filters</button>
-                        </span>
-                    </div>
+        <div class="col-md-3 headerTitle h-100" style="background-color: #B3A369;">
+            <h1 class="mb-0 px-1 h1">COLLEGE <br/>SEEKER</h1>
+        </div>
+        <div class="col-md-6 h-100" style="background-color: #B3A369;">
+            <div class="row h-50">
+                <div class="col-md-5">
+                    <input class="align-middle" id="autoComplete" tabindex="1" />
                 </div>
             </div>
-            <div class="col-md-3 universityTitleContainer">
-                <!-- <h1 class="mb-0 h1">COLLEGE SEEKER</h1> -->
-                <h3 id="selectedUniversityName" class="universityName px-1"></h3>
+            <div class="row h-50">
+                <div class="col-md-2">
+                    <div class="h-100 filterDropdownContainer">
+                        <select id="statePicker" multiple size="0" style="display:none;"></select>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="h-100 filterDropdownContainer">
+                        <select id="programPicker" multiple size="0" style="display:none;"></select>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <span class="filterBox">
+                        <button id="updateFiltersButton">Update Filters</button>
+                    </span>
+                </div>
             </div>
-        <!-- <div class="container-fluid">
-            <div class="centered">
-               <h1 class="mb-0 h1">COLLEGE SEEKER</h1>
-               <h2 class="mb-0 h3">explore the university universe</h2>
-            </div>
-        </div> -->
+        </div>
+        <div class="col-md-3 universityTitleContainer">
+            <!-- <h1 class="mb-0 h1">COLLEGE SEEKER</h1> -->
+            <h3 id="selectedUniversityName" class="universityName px-1"></h3>
+        </div>
     </header>
     <div class="container-fluid">
         <div class="row">
             <main class="col-md-9 col-lg-9">
-                <!-- <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">campus experience</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">location</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">selectivity</a>
-                    </li>
-                    <li class="nav-item">
-                        <input id="autoComplete" tabindex="1" />
-                    </li> 
-                </ul> -->
                 <div id="cy">
                 </div>
             </main>
@@ -136,23 +100,20 @@
                     <!-- <h3 id="selectedUniversityName" class="sidebar-heading d-flex justify-content-left align-items-center mt-4 mb-1"></h3> -->
                     <div id="selectedUniversityDetails" class="nav flex-column justify-content-left mb-4">
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 ms-sm-auto col-lg-6 px-md-2">
-                            <h5 class="sidebar-heading d-flex justify-content-left align-top mb-1">Student Debt</h5>
-                            <div>5 Year Successful Repayment Rate: <span id="fiveYearSpan"></span></div>
-                            <br/>
-                            <div class="debtDescription">
-                                5 Year repayment rate represents the percentage of students that are successfully paying down their loans 5 years 
-                                after graduation. A school with a high repayment rate may represent a good value choice, where the investment in 
-                                education leads to successful jobs that result in the ability to pay off loans. A low repayment rate means students 
-                                are defaulting or deferring payment after graduation. While there are various reasons for deferments, such as military
-                                service or grad school, a low repayment rate may indicate that students are struggling to pay back their loans.
-                            </div>
-                        </div>
-                        <div class="col-md-6 ms-sm-auto col-lg-6 px-md-2">
-                            <img id="wordCloudElement" src="" width="100%"/>
-                        </div>
-                    </div>
+                    <hr/>
+                    <h4 class="sidebar-heading d-flex justify-content-center align-top mb-1">Student Debt</h4>
+                    <br/>
+                    <h5 class="d-flex justify-content-center">Median Debt:</h5>
+                    <div class="d-flex justify-content-center" style="font-weight:900;">$99,999</div>
+                    <br/>
+                    <h5 class="d-flex justify-content-center">Success Rate:</h5>
+                    <div class="d-flex justify-content-center" style="font-weight:900;" id="fiveYearSpan"></div>
+                    <hr/>
+                    <br/>
+                    <h4 class="sidebar-heading d-flex justify-content-center align-top mb-1">Popular Degrees</h4>
+                    <div style="position:fixed; bottom:0;">
+                        <img id="wordCloudElement" src="" width="100%"/>
+                    </div>    
                 </div>
             </nav>
         </div>

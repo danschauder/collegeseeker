@@ -8,13 +8,14 @@ a {
     color: #023d7b;
 }
 
-h1 {
+h1.h1 {
     text-shadow: 2px 2px hsl(211, 97%, 25%);
     font-weight:900;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.3em;
+    font-size:3em;
 }
 
-h3, h5 {
+h3, h4, h5 {
     font-weight: 900;
 }
 
@@ -84,6 +85,7 @@ h3, h5 {
     */
     bottom: 0;
     /* rtl:remove */
+    border-left: 1px solid rgb(2,61,123);
     right: 0;
     z-index: 100; /* Behind the navbar */
     padding: 150px 10px 0; /* Height of navbar */
