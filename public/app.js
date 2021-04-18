@@ -341,6 +341,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
 
     const updateGraphData = (edgeType) => {
         currentEdgeType=edgeType;
+        document.getElementById('loader').classList.add('is-active');
         getEdges(db,edgeConverter,edgeType).then((data)=>{
             edges=data;
             collegePickerHandler(currentNode);
@@ -404,6 +405,8 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             }
         ]
     });
+
+    document.getElementById('loader').classList.remove('is-active');
 
     cy.dblclick();
 
@@ -637,7 +640,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
             cy.layout({name:'fcose'}).run();
             bindNodeEvents(newNodes, nodes, edges);
             cy.getElementById(currentNode).addClass('centerNode').addClass('expanded');
-
+            document.getElementById('loader').classList.remove('is-active');
         });
     }
 
