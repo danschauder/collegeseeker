@@ -133,7 +133,7 @@ function vanillaSelectBox(domSelector, options) {
         let cssArray = [];
     if(selector === ".vsb-main button"){
        cssArray= [
-                {"key":"min-width","value":"120px"},
+                {"key":"min-width","value":"50px"},
                 {"key":"border-radius","value":"0"},
                 {"key":"width","value":"100%"},
                 {"key":"text-align","value":"left"},
@@ -142,8 +142,8 @@ function vanillaSelectBox(domSelector, options) {
                 // {"key":"background","value":"white !important"},
                 // {"key":"border","value":"1px solid #999 !important"},
                 {"key":"line-height","value":"20px"},
-                {"key":"font-size","value":"1.4em"},
-                {"key":"padding","value":"6px 12px"}
+                {"key":"font-size","value":"1.2em"},
+                {"key":"padding","value":"6px 0px"}
                 ]
         }
     

@@ -69,9 +69,9 @@
         </div>
         <div class="col-md-5 h-100" style="background-color: #B3A369;">
             <div class="row h-50">
-                <div class="col-md-5">
-                    <input class="align-middle" id="autoComplete" tabindex="1" />
-                </div>
+                <!-- <div class="col-md-5"> -->
+                <input class="align-middle" id="autoComplete" tabindex="1" />
+                <!-- </div> -->
             </div>
             <div class="row h-50">
                 <div class="col-md-2">
@@ -79,7 +79,7 @@
                         <select id="statePicker" multiple size="0" style="display:none;"></select>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-4">
                     <div class="h-100 filterDropdownContainer">
                         <select id="programPicker" multiple size="0" style="display:none;"></select>
                     </div>
@@ -98,7 +98,7 @@
                             </div>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-1">
                     <button id="updateFiltersButton">Update Filters</button>
                 </div>
             </div>
@@ -121,8 +121,7 @@
                     </div>
                     <hr/>
                     <h4 class="sidebar-heading d-flex justify-content-center align-top mb-1" style="text-decoration:underline;">Student Debt</h4>
-                    <h5 class="d-flex justify-content-center">Median Debt:</h5>
-                    <div class="d-flex justify-content-center" id="medianDebt" style="font-weight:900;"></div>
+                    <h5 class="d-flex justify-content-center">Median Debt:&nbsp;&nbsp;<span class="d-flex justify-content-center" id="medianDebt" style="font-weight:900;"></span></h5>
                     <h5 class="d-flex justify-content-center">
                         <span id="repaymentPopup" aria-describedby="repaymentTooltip"><img width="15px" src="img/info-circle-blue.svg" /></span>
                         <div id="repaymentTooltip" class="popperTooltip" role="tooltip">
@@ -130,13 +129,11 @@
                             5 Year repayment rate represents the percentage of students that are successfully paying down their loans 5 years after graduation. A school with a high repayment rate may represent a good value choice, where the investment in education leads to successful jobs that result in the ability to pay off loans. A low repayment rate means students are defaulting or deferring payment after graduation. While there are various reasons for deferments, such as military service or grad school, a low repayment rate may indicate that students are struggling to pay back their loans.
                         </div>
 
-                    Success Rate:</h5>
-                    <div class="d-flex justify-content-center" style="font-weight:900;" id="fiveYearSpan"></div>
+                    Success Rate:&nbsp;&nbsp;<span class="d-flex justify-content-center" style="font-weight:900;" id="fiveYearSpan"></span></h5>
                     <hr/>
-                    <br/>
                     <h4 class="sidebar-heading d-flex justify-content-center align-top mb-1" style="text-decoration:underline;">Popular Degrees</h4>
-                    <div class="justify-content-center">
-                        <img id="wordCloudElement" src="" width="100%"/>
+                    <div class="wordCloudContainer">
+                        <img id="wordCloudElement" src=""/>
                     </div>
                 </div>
             </nav>

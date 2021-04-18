@@ -77,7 +77,7 @@ li.disabled{
 }
 
 .vsb-main button{
-	min-width: 120px;
+	min-width: 50px;
 	border-radius: 0;
 	width: 100%;
 	text-align: left;
@@ -88,8 +88,8 @@ li.disabled{
 	background: #B3A369;
 	border: none;
 	line-height:20px;
-	font-size:1.4em;
-	padding:6px 12px;
+	font-size:1.2em;
+	padding:6px 0px;
 }
 
 .vsb-main button.disabled{
@@ -98,7 +98,7 @@ li.disabled{
 }
 
 .vsb-main .title {
-	margin-right: 6px;
+	margin-right: 20px;
 	user-select:none;
 }
 

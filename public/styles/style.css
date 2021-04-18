@@ -30,7 +30,8 @@ h3, h4, h5 {
     height: 2em;
     /* position:absolute; */
     bottom:2px;
-    max-width:250px;
+    width:62%;
+    /* max-width:250px; */
     /* padding: 1em; */
     margin-top: 33px;
     background-position: 3% 50%;
@@ -138,7 +139,8 @@ button.openFilter {
 } */
 #updateFiltersButton {
     position: absolute;
-    bottom: 2px;
+    width:80px;
+    bottom: 15px;
     border: 2px solid rgba(0,48,87,.4);
     font-size: 1.2em;
     color: white;
@@ -172,6 +174,18 @@ button.openFilter {
   .popperTooltip[data-show] {
     display: block;
   }
+
+.wordCloudContainer {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.wordCloudContainer img {
+  max-height: 90%;
+  max-width: 90%;
+}
 /*
 #arrow,
 #arrow::before {
