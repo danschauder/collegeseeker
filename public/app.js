@@ -102,7 +102,8 @@ const nodeConverter = {
                 locale: data.locale,
                 out_state_tuition: data.out_state_tuition,
                 region: data.region,
-                residential: data.residential,
+                // residential: data.residential,
+                locale: data.locale,
                 sat: data.sat,
                 selectivity: data.selectivity,
                 size: data.size,
@@ -114,7 +115,7 @@ const nodeConverter = {
 }
 
 // Returns a Promise with all the edges data
-const getEdges = (db, edgeConverter, edgeType='default_edges') => {
+const getEdges = (db, edgeConverter, edgeType='default_edges15') => {
     return new Promise((resolve, reject)=>{
         db.collection(edgeType)
         .withConverter(edgeConverter)
@@ -178,7 +179,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
         if (url.substring(0,4)!='http'){
             url = 'https://' + url
         }
-        const descriptionText = `${nodeData.School} is a ${nodeData.control} institution in the state of ${nodeData.state_name}. It has a total undergraduate enrollment of ${nodeData.undergrad_size.toLocaleString()}, its setting is ${nodeData.residential}, and the campus size is classified as a ${nodeData.size}. Its in-state tuition and fees are $${nodeData.in_state_tuition.toLocaleString()}; out-of-state tuition and fees are $${nodeData.out_state_tuition.toLocaleString()}. <br /><a target="_blank" href="${url}">Learn more at their website</a>`
+        const descriptionText = `${nodeData.School} is a ${nodeData.control} institution in the state of ${nodeData.state_name}. It has a total undergraduate enrollment of ${nodeData.undergrad_size.toLocaleString()}, it's located in a ${nodeData.locale}, and the campus size is classified as a ${nodeData.size}. Its in-state tuition and fees are $${nodeData.in_state_tuition.toLocaleString()}; out-of-state tuition and fees are $${nodeData.out_state_tuition.toLocaleString()}. <br /><a target="_blank" href="${url}">Learn more at their website</a>`
         return descriptionText
     }
 

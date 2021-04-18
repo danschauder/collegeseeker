@@ -15,7 +15,7 @@ h1.h1 {
     font-size:3em;
 }
 
-h3, h4, h5 {
+h3, h4 {
     font-weight: 900;
 }
 
@@ -151,8 +151,8 @@ button.openFilter {
 }
 
 .videoIcon {
-    width: 70px;
-    margin-top: 10px;
+    width: 30px;
+    margin-top: 50px;
 }
 
 .infoCircle {
