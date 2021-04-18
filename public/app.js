@@ -95,6 +95,7 @@ const nodeConverter = {
                 "MDN_GRAD_DEBT": data["MDN_GRAD_DEBT"],
                 PercentageDegreesAwarded: data.PercentageDegreesAwarded,
                 State: data.State,
+                state_name: data.state_name,
                 UNITID: data.UNITID,
                 control: data.control,
                 in_state_tuition: data.in_state_tuition,
@@ -177,7 +178,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
         if (url.substring(0,4)!='http'){
             url = 'https://' + url
         }
-        const descriptionText = `${nodeData.School} is a ${nodeData.control} institution. It has a total undergraduate enrollment of ${nodeData.undergrad_size.toLocaleString()}, its setting is ${nodeData.residential}, and the campus size is classified as a ${nodeData.size}. Its in-state tuition and fees are $${nodeData.in_state_tuition.toLocaleString()}; out-of-state tuition and fees are $${nodeData.out_state_tuition.toLocaleString()}. <br /><br/><a target="_blank" href="${url}">Learn more at their website</a>`
+        const descriptionText = `${nodeData.School} is a ${nodeData.control} institution in the state of ${nodeData.state_name}. It has a total undergraduate enrollment of ${nodeData.undergrad_size.toLocaleString()}, its setting is ${nodeData.residential}, and the campus size is classified as a ${nodeData.size}. Its in-state tuition and fees are $${nodeData.in_state_tuition.toLocaleString()}; out-of-state tuition and fees are $${nodeData.out_state_tuition.toLocaleString()}. <br /><a target="_blank" href="${url}">Learn more at their website</a>`
         return descriptionText
     }
 
