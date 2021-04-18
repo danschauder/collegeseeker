@@ -92,9 +92,9 @@ h3, h4, h5 {
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
   }
 
-/* .filterBox {
-    margin-left:60px;
-} */
+.filterBox {
+    text-align:center;
+}
 
 .multiselect-input {
     background-color: #B3A369;
@@ -153,19 +153,26 @@ button.openFilter {
     margin-top: 10px;
 }
 
-#tooltip {
-    background-color: #333;
+.infoCircle {
+    width: 20px;
+    margin-top: 30px;
+    margin-left:6px;
+}
+
+.popperTooltip {
+    background-color: rgba(2,61,123,.95);
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
     font-size: 13px;
+    max-width:350px;
     display:none;
   }
 
-  #tooltip[data-show] {
+  .popperTooltip[data-show] {
     display: block;
   }
-
+/*
 #arrow,
 #arrow::before {
   position: absolute;
@@ -184,18 +191,53 @@ button.openFilter {
   transform: rotate(45deg);
 }
 
-#tooltip[data-popper-placement^='top'] > #arrow {
+#arrow[data-popper-placement^='top'] > #arrow {
     bottom: -4px;
   }
   
-  #tooltip[data-popper-placement^='bottom'] > #arrow {
+  #arrow[data-popper-placement^='bottom'] > #arrow {
     top: -4px;
   }
   
-  #tooltip[data-popper-placement^='left'] > #arrow {
+  #arrow[data-popper-placement^='left'] > #arrow {
     right: -4px;
   }
   
-  #tooltip[data-popper-placement^='right'] > #arrow {
+  #arrow[data-popper-placement^='right'] > #arrow {
     left: -4px;
   }
+
+ 
+#repaymentArrow,
+#repaymentArrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+
+#repaymentArrow {
+  visibility: hidden;
+}
+
+#repaymentArrow::before {
+  visibility: visible;
+  content: '';
+  transform: rotate(45deg);
+}
+
+#repaymentArrow[data-popper-placement^='top'] > #repaymentArrow {
+    bottom: -4px;
+  }
+  
+  #repaymentArrow[data-popper-placement^='bottom'] > #repaymentArrow {
+    top: -4px;
+  }
+  
+  #repaymentArrow[data-popper-placement^='left'] > #repaymentArrow {
+    right: -4px;
+  }
+  
+  #repaymentArrow[data-popper-placement^='right'] > #repaymentArrow {
+    left: -4px;
+  } */

@@ -8,8 +8,22 @@ canvas.style.height = (canvas.clientWidth * heightRatio).toString() + 'px';
 
 const infoTest=document.querySelector('#infoTest');
 const infoTooltip=document.querySelector('#tooltip');
+const repaymentPopup=document.querySelector('#repaymentPopup');
+const repaymentTooltip=document.querySelector('#repaymentTooltip');
 
 const popperInstance = Popper.createPopper(infoTest,infoTooltip,{
+    placement: 'bottom',
+    modifiers: [
+        {
+          name: 'offset',
+          options: {
+            offset: [0, 8],
+          },
+        },
+      ]
+});
+
+const repaymentPopper = Popper.createPopper(repaymentPopup,repaymentTooltip,{
     placement: 'bottom',
     modifiers: [
         {
@@ -28,9 +42,18 @@ function show() {
     // after we show the tooltip, otherwise it will be incorrect
     popperInstance.update();
 }
+
+function repaymentShow() {
+    repaymentTooltip.setAttribute('data-show','');
+    repaymentPopper.update();
+}
   
 function hide() {
     infoTooltip.removeAttribute('data-show');
+}
+
+function repaymentHide() {
+    repaymentTooltip.removeAttribute('data-show');
 }
   
 const showEvents = ['mouseenter', 'focus'];
@@ -38,11 +61,14 @@ const hideEvents = ['mouseleave', 'blur'];
   
 showEvents.forEach(event => {
     infoTest.addEventListener(event, show);
+    repaymentPopup.addEventListener(event, repaymentShow);
 });
 
 hideEvents.forEach(event => {
     infoTest.addEventListener(event, hide);
+    repaymentPopup.addEventListener(event, repaymentHide);
 });
+
 
 
 // Converter function to conform firestore edge data to taxonomy needed for cytoscape

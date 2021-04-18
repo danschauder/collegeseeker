@@ -87,10 +87,17 @@
                         <select id="priorityPicker" style="display:none;"></select>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <span class="filterBox">
-                        <button id="updateFiltersButton">Update Filters</button>
-                    </span>
+                <div class="col-md-1">
+                    <div id="infoTest" aria-describedby="tooltip" class="filterBox">
+                        <span><img class="infoCircle" src="img/info-circle.svg" /></span>
+                            <div id="tooltip" class="popperTooltip" role="tooltip">
+                                <div id="arrow" class="popperArrow" data-popper-arrow></div>
+                                This visualization highlights connections between similar universities. Use the "Priority" option to determine whether special weight should be given to the campus experience, location, or selectivity in determining how similar one university is to another.
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button id="updateFiltersButton">Update Filters</button>
                 </div>
             </div>
         </div>
@@ -110,16 +117,18 @@
                     <!-- <h3 id="selectedUniversityName" class="sidebar-heading d-flex justify-content-left align-items-center mt-4 mb-1"></h3> -->
                     <div id="selectedUniversityDetails" class="nav flex-column justify-content-left mb-4">
                     </div>
-                    <span id="infoTest" aria-describedby="tooltip">Info</span>
-                    <div id="tooltip" role="tooltip">
-                        <div id="arrow" data-popper-arrow></div>
-                        I'm a tooltip
-                    </div>
                     <hr/>
                     <h4 class="sidebar-heading d-flex justify-content-center align-top mb-1" style="text-decoration:underline;">Student Debt</h4>
                     <h5 class="d-flex justify-content-center">Median Debt:</h5>
                     <div class="d-flex justify-content-center" id="medianDebt" style="font-weight:900;"></div>
-                    <h5 class="d-flex justify-content-center">Success Rate:</h5>
+                    <h5 class="d-flex justify-content-center">
+                        <span id="repaymentPopup" aria-describedby="repaymentTooltip"><img width="15px" src="img/info-circle-blue.svg" /></span>
+                        <div id="repaymentTooltip" class="popperTooltip" role="tooltip">
+                            <div id="repaymentArrow" class="popperArrow" data-popper-arrow></div>
+                            5 Year repayment rate represents the percentage of students that are successfully paying down their loans 5 years after graduation. A school with a high repayment rate may represent a good value choice, where the investment in education leads to successful jobs that result in the ability to pay off loans. A low repayment rate means students are defaulting or deferring payment after graduation. While there are various reasons for deferments, such as military service or grad school, a low repayment rate may indicate that students are struggling to pay back their loans.
+                        </div>
+
+                    Success Rate:</h5>
                     <div class="d-flex justify-content-center" style="font-weight:900;" id="fiveYearSpan"></div>
                     <hr/>
                     <br/>
