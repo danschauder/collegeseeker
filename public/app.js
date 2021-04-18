@@ -340,8 +340,9 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
         }
     }
 
-    const updateGraphData = (edgeType) => {
-        currentEdgeType=edgeType;
+    const updateGraphData = (selectedPriority) => {        
+        const edgeType = edgeLookup[selectedPriority];
+        currentEdgeType=selectedPriority;
         document.getElementById('loader').classList.add('is-active');
         getEdges(db,edgeConverter,edgeType).then((data)=>{
             edges=data;
@@ -649,7 +650,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
         const selectedPriorityOption = document.querySelector('#priorityPicker option:checked');
         const selectedPriority = selectedPriorityOption.value;
         if (selectedPriority!=currentEdgeType){
-            updateGraphData(edgeLookup[selectedPriority]);
+            updateGraphData(selectedPriority);
         } else {
             // currentNode = event.target.options[event.target.selectedIndex].value;
             const selectedStatesOptions = document.querySelectorAll('#statePicker option:checked');
