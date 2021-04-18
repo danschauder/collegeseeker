@@ -1,11 +1,11 @@
 body {
     /* font-family: 'New Tegomin', serif; */
     font-family: "Roboto","Helvetica Neue","Helvetica","Arial",sans-serif;
-    color: #023d7b;
+    color: #003057;
 }
 
 a {
-    color: #023d7b;
+    color: #003057;
 }
 
 h1.h1 {
@@ -20,13 +20,13 @@ h3, h4, h5 {
 }
 
 #cy {
-    /* border: 1px solid #023d7b; */
+    /* border: 1px solid #003057; */
     width: 100%;
 }
 
 #autoComplete {
-    border: 1px solid #023d7b;
-    color: #023d7b;
+    border: 1px solid #003057;
+    color: #003057;
     height: 2em;
     /* position:absolute; */
     bottom:2px;
@@ -38,20 +38,20 @@ h3, h4, h5 {
 }
 
 #autoComplete::placeholder {
-    color: rgba(#023d7b,0.5);
+    color: rgba(#003057,0.5);
 }
 
 #autoComplete:hover::placeholder {
-    color: rgba(#023d7b,0.6);
+    color: rgba(#003057,0.6);
 }
 
 #autoComplete:focus::placeholder {
-    color: rgba(#023d7b,0.7);
+    color: rgba(#003057,0.7);
 }
 
 #autoComplete:focus {
-    color: #023d7b;
-    border: 1px solid #023d7b;
+    color: #003057;
+    border: 1px solid #003057;
 }
 
 .active {
@@ -74,7 +74,7 @@ h3, h4, h5 {
 
 .universityTitleContainer {
     color: white;
-    background-color: rgba(2, 61, 123,1);
+    background-color: rgba(0,48,87,1);
 }
 
 .sidebar {
@@ -85,7 +85,7 @@ h3, h4, h5 {
     */
     bottom: 0;
     /* rtl:remove */
-    border-left: 1px solid rgb(2,61,123);
+    border-left: 1px solid rgb(0,48,87);
     right: 0;
     z-index: 100; /* Behind the navbar */
     padding: 110px 10px 0; /* Height of navbar */
@@ -111,14 +111,14 @@ h3, h4, h5 {
 .autoCompleteList {
     position: absolute;
     z-index: 2;
-    background: rgba(2, 61, 123,0.9);
+    background: rgba(0,48,87,0.9);
     width: 20%;
     padding-left:0.5em;
 }
 
 .autoComplete_result:hover {
     cursor: pointer;
-    background-color: rgba(2, 61, 123,0.4);
+    background-color: rgba(0,48,87,0.4);
   }
 
 .no_result {
@@ -130,7 +130,7 @@ h3, h4, h5 {
 }
 
 button.openFilter {
-    background: rgb(2,61,123);
+    background: rgb(0,48,87);
 }
 
 /* .filterDropdownContainer {
@@ -139,7 +139,7 @@ button.openFilter {
 #updateFiltersButton {
     position: absolute;
     bottom: 2px;
-    border: 2px solid rgba(2,61,123,.4);
+    border: 2px solid rgba(0,48,87,.4);
     font-size: 1.2em;
     color: white;
     /* box-shadow: 1px 1px blue; */
@@ -160,7 +160,7 @@ button.openFilter {
 }
 
 .popperTooltip {
-    background-color: rgba(2,61,123,.95);
+    background-color: rgba(0,48,87,.95);
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
