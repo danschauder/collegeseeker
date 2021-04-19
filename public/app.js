@@ -3,8 +3,9 @@ const db = firebase.firestore();
 
 //Dynamically set the graph container's height property based on width
 let canvas = document.getElementById('cy');
-const heightRatio = 0.5;
-canvas.style.height = (canvas.clientWidth * heightRatio).toString() + 'px';
+// const heightRatio = 0.5;
+// canvas.style.height = (canvas.clientWidth * heightRatio).toString() + 'px';
+canvas.style.height = (window.innerHeight-180).toString()+'px';
 
 const infoTest=document.querySelector('#infoTest');
 const infoTooltip=document.querySelector('#tooltip');
