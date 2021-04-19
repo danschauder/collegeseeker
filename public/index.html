@@ -3,7 +3,8 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=1024">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -53,12 +54,31 @@
     <script type="text/javascript" src="pkg/vanillaSelectBox.js"></script>
     <script type="text/javascript" src="pkg/autoComplete.min.js"></script>
     <script type="text/javascript" src="pkg/popper.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="app.js" defer></script>
   </head>
   <body class="d-flex flex-column h-100">
-    <div id="loader" class="loader loader-default is-active" data-text="Mapping the University Universe"></div>
+    <div class="modal fade" id="mobileWarningModal" tabindex="-1" aria-labelledby="mobileWarningModal" aria-modal="true" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header alert alert-danger">
+                    <h5 class="modal-title" id="mobileWarningLabel">Mobile Device Warning</h5>
+                    <button type="button" class="close" aria-label="Close" onclick="closeModal()">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    We've detected that you may be accessing College Seeker with a mobile device. Unfortunately this tool is not currently compatible with mobile devices. Please enjoy College Seeker with a desktop or laptop computer.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="closeModal()">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show" id="backdrop" style="display: none;"></div>
+    <div id="loader" class="loader loader-default" data-text="Mapping the University Universe"></div>
     <header class="navbar navbar-dark sticky-top py-0" style="background-color: rgba(0,48,87,1); height:110px;">
         <div class="col-md-3 headerTitle h-100" style="background-color: #B3A369;">
             <h1 class="mb-0 px-1 h1">COLLEGE <br/>SEEKER</h1>
@@ -163,6 +183,5 @@
             </div>
           </nav>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   </body>
 </html>
