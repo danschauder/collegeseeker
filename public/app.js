@@ -30,10 +30,8 @@ window.onclick = function (event) {
 }
 
 if (isMobile()){
-    console.log('this is mobile');
     openModal();
 } else {
-    console.log('not mobile');
     document.getElementById('loader').classList.add('is-active');
 }
 

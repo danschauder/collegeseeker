@@ -444,8 +444,13 @@ function vanillaSelectBox(domSelector, options) {
 				if (self.isDisabled) return;
                     self.drop.style.left = self.left + "px";
                     self.drop.style.top = self.top + "px";
-                    self.drop.style.visibility = "visible";
-                    self.button.classList.add('openFilter');
+                    if (self.drop.style.visibility==='visible' && (e.target==self.button || e.target==self.title)){
+                        self.drop.style.visibility='hidden';
+                        self.button.classList.remove('openFilter');
+                    } else {
+                        self.drop.style.visibility = "visible";
+                        self.button.classList.add('openFilter');
+                    }
                     document.addEventListener("click", docListener);
                     e.preventDefault();
                     e.stopPropagation();
