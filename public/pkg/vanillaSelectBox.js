@@ -444,7 +444,7 @@ function vanillaSelectBox(domSelector, options) {
 				if (self.isDisabled) return;
                     self.drop.style.left = self.left + "px";
                     self.drop.style.top = self.top + "px";
-                    if (self.drop.style.visibility==='visible'){
+                    if (self.drop.style.visibility==='visible' && (e.target==self.button || e.target==self.title)){
                         self.drop.style.visibility='hidden';
                         self.button.classList.remove('openFilter');
                     } else {
