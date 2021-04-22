@@ -84,9 +84,9 @@
             <h1 class="mb-0 px-1 h1">COLLEGE <br/>SEEKER</h1>
         </div>
         <div class="col-md-1 h-100" style="background-color: #B3A369; text-align:center;">
-            <a href="https://www.youtube.com/watch?v=gfugRNkvraU" target="_blank"><img class="videoIcon" src="img/social_youtube_video_icon.svg" /></a>
+            <a href="https://youtu.be/CeZtI7K--VE" target="_blank"><img class="videoIcon" src="img/social_youtube_video_icon.svg" /></a>
             <div>
-                <a href="https://www.youtube.com/watch?v=gfugRNkvraU" target="_blank" style="text-decoration:none;font-size:1.2em;">Tutorial</a>
+                <a href="https://youtu.be/CeZtI7K--VE" target="_blank" style="text-decoration:none;font-size:1.2em;">Tutorial</a>
             </div>
         </div>
         <div class="col-md-5 h-100" style="background-color: #B3A369;">
@@ -111,22 +111,23 @@
                         <select id="priorityPicker" style="display:none;"></select>
                     </div>
                 </div>
+                <div class="col-md-2">
+                    <button id="updateFiltersButton">Apply Filters</button>
+                </div>
                 <div class="col-md-1">
                     <div id="infoTest" aria-describedby="tooltip" class="filterBox">
                         <span><img class="infoCircle" src="img/info-circle.svg" /></span>
                             <div id="tooltip" class="popperTooltip" role="tooltip">
                                 <div id="arrow" class="popperArrow" data-popper-arrow></div>
-                                College Seeker compares schools by measuring how similar or different they are across many characteristics such as cost, average SAT, geographic location, and school size. By default, all of these characteristics have equal importance in our algorithm, but if you would like to put an emphasis on a certain feature you may do so under the priority tab. The priorities include:
+                                College Seeker compares four-year universities by measuring how similar they are across many characteristics like size, geographic area, cost, and average SAT. All of these factors have equal importance by default.<br/><br/>Select your <span style="font-weight:900;">Priority</span> to significantly increase the importance:
                                 <ul style="padding:10px;">
-                                    <li><span style="font-weight:900;">Campus Experience</span>, which will prioritize schools with a similar campus sizes and residential characteristics </li>
-                                    <li><span style="font-weight:900;">Location</span>, which will prioritize schools located in the same geographic area and urban setting</li>
-                                    <li><span style="font-weight:900;">Selectivity</span>, which will prioritize schools with similar acceptance rates and SAT scores</li>
+                                    <li><span style="font-weight:900;">Campus Experience</span> prioritizes colleges with similar size and residential characteristics.</li>
+                                    <li><span style="font-weight:900;">Location</span> prioritizes colleges in the same geographic area and similar community type (urban, suburban, rural, etc).</li>
+                                    <li><span style="font-weight:900;">Selectivity</span> prioritizes colleges with similar acceptance rates and SAT scores.</li>
                                 </ul>
+                                Note: If you filter by <span style="font-weight:900;">State</span>, then please use the search bar to find a college inside that state and begin your exploration.
                             </div>
                     </div>
-                </div>
-                <div class="col-md-1">
-                    <button id="updateFiltersButton">Apply Filters</button>
                 </div>
             </div>
         </div>
@@ -170,14 +171,14 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://docs.google.com/document/d/1yptrE4lExBeFyWSfwDGuaG8ZF5PlJ2cNVyyuAFMrgaw/preview">About This Project</a>
+                    <li class="nav-item" style="border-right:1px solid rgba(0,0,0,0.2);">
+                        <a class="nav-link footerLink" style="color:#003057;" target="_blank" href="https://docs.google.com/document/d/1yptrE4lExBeFyWSfwDGuaG8ZF5PlJ2cNVyyuAFMrgaw/preview">About This Project</a>
+                    </li>
+                    <li class="nav-item" style="border-right:1px solid rgba(0,0,0,0.2);">
+                        <a class="nav-link footerLink" style="color:#003057;" target="_blank" href="https://www.surveymonkey.com/r/9J7LGK6">Feedback Survey</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://www.surveymonkey.com/r/9J7LGK6">Feedback Survey</a>
-                    </li>
-                    <li class="nav-item">
-                        <p style="padding: .5rem 1rem;">*University logos sized by 5-Year Loan Repayment Success Rates</p>
+                        <p style="padding: .5rem 1rem;">Note: Larger school logos have higher loan repayment success.</p>
                     </li>
                 </ul>
             </div>

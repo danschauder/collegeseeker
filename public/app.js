@@ -263,7 +263,7 @@ Promise.all([getNodes(db,nodeConverter), getEdges(db,edgeConverter),]).then((dat
                         // document.multiselect('#statePicker').selectAll();
                         let stateSelectBox = new vanillaSelectBox("#statePicker",{
                             "maxHeight":200,
-                            "placeHolder":"State",
+                            "placeHolder":"States",
                             "search":true
                             // "title":"State"
                         }).setValue('all');
